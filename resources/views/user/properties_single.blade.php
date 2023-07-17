@@ -1,10 +1,5 @@
-<!-- /*
-* Template Name: Property
-* Template Author: Untree.co
-* Template URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/ -->
-
+@extends('layout.master')
+@section('content')
   <body>
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
@@ -269,4 +264,4 @@
       </div>
     </div>
   </body>
-
+  @endsection

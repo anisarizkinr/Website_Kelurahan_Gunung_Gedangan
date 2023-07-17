@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('user/home');
+    return view('user.beranda');
 });
+Route::get('/beranda ',[UserController::class, 'beranda']);
+Route::get('/properti ',[UserController::class, 'beranda']);
+Route::get('/kontak ',[UserController::class, 'beranda']);
+Route::get('/tentang ',[UserController::class, 'beranda']);
+Route::get('/beranda ',[UserController::class, 'beranda']);
+Route::get('/beranda ',[UserController::class, 'beranda']);

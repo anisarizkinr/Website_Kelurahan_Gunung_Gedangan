@@ -16,25 +16,34 @@
       <div class="hero-slide">
         <div
           class="img overlay"
-          style="background-image: url('images/hero_bg_3.jpg')"
+          style="background-image: url('images/gambar_1.png'); opacity: 0.5;"
         ></div>
         <div
           class="img overlay"
-          style="background-image: url('images/hero_bg_2.jpg')"
+          style="background-image: url('images/gambar_2.png')"
         ></div>
         <div
           class="img overlay"
-          style="background-image: url('images/hero_bg_1.jpg')"
+          style="background-image: url('images/gambar_3.png')"
         ></div>
       </div>
 
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="col-lg-9 text-center">
-            <h1 class="heading" data-aos="fade-up">
-              Easiest way to find your dream home
+            <h1 class="heading" data-aos="fade-up" style="text-align: left;"> 
+              Selamat Datang di Kelurahan Kedundung!
             </h1>
-            <form
+            {{-- <h3 class='heading'data-aos="fade-up">
+              Selamat datang di website resmi Kelurahan Gunung Gedangan, Tempat yang penuh dengan keindahan alam dan masyrakat yang ramah. Kami dengan bangga mempersembahkan berbagai informasi tentang kelurahan kami, termasuk Sejarah, Layanan Publik dan Informasi lainnya
+            </h3> --}}
+            <h2 class='heading' data-aos="fade-up" style="text-align: left; font-weight: normal;font-size: 18px;">
+              Selamat datang di website resmi Kelurahan Gunung Gedangan. Kami dengan bangga mempersembahkan berbagai informasi tentang kelurahan kami, termasuk Sejarah, Layanan Publik dan Informasi lainnya
+          </h2>
+          {{-- <button type="submit" class="btn btn-primary">Explore Lebih Jauh</button> --}}
+          <a href="{{url('/profil/tentang')}}" class="btn btn-warning rounded-pill py-3 px-5 animated slideInLeft">Explore Lebih Jauh</a>
+
+            {{-- <form
               action="#"
               class="narrow-w form-search d-flex align-items-stretch mb-3"
               data-aos="fade-up"
@@ -45,8 +54,8 @@
                 class="form-control px-4"
                 placeholder="Your ZIP code or City. e.g. New York"
               />
-              <button type="submit" class="btn btn-primary">Search</button>
-            </form>
+              <button type="submit" class="btn btn-primary">Explore Lebih Jauh</button>
+            </form> --}}
           </div>
         </div>
       </div>
