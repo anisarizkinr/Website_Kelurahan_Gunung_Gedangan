@@ -16,35 +16,31 @@
             <li class="has-children">
               <a href="properties.html" style="font-size: 18px;">Profil</a>
               <ul class="dropdown">
-                <li><a href="#">Tentang Kami</a></li>
-                <li><a href="#">Struktur Organisasi</a></li>
-                <li><a href="#">Pegawai</a></li>
                 <li><a href="#">Visi & Misi</a></li>
-                <li><a href="#">Sejarah</a></li>
-                <li><a href="#">Kondisi Geografi</a></li>
-                <li><a href="#">Peta Wilayah</a></li>
-                <li><a href="#">Lembaga Kemasyarakatan</a></li>
-                {{-- <li class="has-children">
-                  <a href="#">Dropdown</a>
-                  <ul class="dropdown">
-                    <li><a href="#">Sub Menu One</a></li>
-                    <li><a href="#">Sub Menu Two</a></li>
-                    <li><a href="#">Sub Menu Three</a></li>
-                  </ul>
-                </li> --}}
+                <li><a href="#">Geografis & Kependudukan</a></li>
+                <li><a href="#">Struktur Pemerintahan</a></li>
+                <li><a href="#">Potensi Wilayah</a></li>
               </ul>
             </li>
-            <li><a href="services.html" style="font-size: 18px;">Data</a></li>
-            <li><a href="about.html" style="font-size: 18px;">Inovasi</a></li>
-            <li><a href="contact.html" style="font-size: 18px;">Produk Hukum</a></li>
             <li class="has-children">
               <a href="properties.html" style="font-size: 18px;">Informasi</a>
               <ul class="dropdown">
-                <li><a href="#">Informasi 1</a></li>
-                <li><a href="#">Informasi 2</a></li>
-                <li><a href="#">Informasi 3</a></li>
+                <li><a href="#">Kegiatan</a></li>
+                <li><a href="#">Pengumuman</a></li>
+                <li><a href="#">Galeri</a></li>
+                <li><a href="#">Vidio</a></li>
+                <li><a href="#">Download</a></li>
               </ul>
             </li>
+            <li class="has-children">
+              <a href="properties.html" style="font-size: 18px;">Layanan</a>
+              <ul class="dropdown">
+                <li><a href="#">Suket Plano</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html" style="font-size: 18px;">Pencapaian</a></li>
+            <li><a href="https://curhatningita.lapor.go.id/" style="font-size: 18px;">Curhat Ning Ita</a></li>
+            
           </ul>
 
           <a
