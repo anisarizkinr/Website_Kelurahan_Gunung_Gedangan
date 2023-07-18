@@ -20,11 +20,11 @@
         ></div>
         <div
           class="img overlay"
-          style="background-image: url('images/gambar_2.png')"
+          style="background-image: url('images/gambar_2.png'); opacity: 0.5;"
         ></div>
         <div
           class="img overlay"
-          style="background-image: url('images/gambar_3.png')"
+          style="background-image: url('images/gambar_3.png'); opacity: 0.5;"
         ></div>
       </div>
 
@@ -41,7 +41,7 @@
               Selamat datang di website resmi Kelurahan Gunung Gedangan. Kami dengan bangga mempersembahkan berbagai informasi tentang kelurahan kami, termasuk Sejarah, Layanan Publik dan Informasi lainnya
           </h2>
           {{-- <button type="submit" class="btn btn-primary">Explore Lebih Jauh</button> --}}
-          <a href="{{url('/profil/tentang')}}" class="btn btn-warning rounded-pill py-3 px-5 animated slideInLeft">Explore Lebih Jauh</a>
+          <a href="{{url('/profil/tentang')}}" class="btn btn-warning rounded-pill py-3 px-5 animated slideInLeft" style="background-color: #FF8811; color:white">Explore Lebih Jauh</a>
 
             {{-- <form
               action="#"
@@ -54,7 +54,7 @@
                 class="form-control px-4"
                 placeholder="Your ZIP code or City. e.g. New York"
               />
-              <button type="submit" class="btn btn-primary">Explore Lebih Jauh</button>
+              <button type="submit" class="btn btn-primary" style="background-color: #FF8811; ">Explore Lebih Jauh</button>
             </form> --}}
           </div>
         </div>
