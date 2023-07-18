@@ -8,14 +8,6 @@
                   class="img-fluid w-5 mb-4 float-start"
                 />
           <a href="index.html" class="logo m-0 float-start">Kelurahan <br> Kedundung </a>
-          
-          
-          {{-- <div class="clearfix">
-            <img src="images/logo kota mojokerto.png" alt="Image" class="img-fluid w-5 mb-4 float-start" />
-            <a href="index.html" class="logo m-0">Kelurahan Gunung Gedangan</a>
-          </div> --}}
-          
-        
           <ul
             class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
           >
