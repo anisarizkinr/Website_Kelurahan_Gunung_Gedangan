@@ -61,7 +61,7 @@
       </div>
     </div>
 
-    <div class="section">
+    {{-- <div class="section">
       <div class="container">
         <div class="row mb-5 align-items-center">
           <div class="col-lg-6">
@@ -416,26 +416,26 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
 
-    <section class="features-1">
+    {{-- <section class="features-1">
       <div class="container">
         <div class="row">
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
             <div class="box-feature">
               <span class="flaticon-house"></span>
-              <h3 class="mb-3">Our Properties</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptates, accusamus.
-              </p>
-              <p><a href="#" class="learn-more">Learn More</a></p>
+              <h2 class="mb-3">Lurah Kedundung</h2>
+              <img
+              src="images/person_1-min.jpg"
+              alt="Image"
+              class="img-fluid rounded-circle w-5 mb-4"
+              />
             </div>
           </div>
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
             <div class="box-feature">
-              <span class="flaticon-building"></span>
-              <h3 class="mb-3">Property for Sale</h3>
+              <h2 class="mb-3">KEGIATAN</h2>
+              <img src="images/gambar_3.png" alt="Image" class="img-fluid rounded w-5 mb-4"/>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptates, accusamus.
@@ -456,8 +456,7 @@
           </div>
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
             <div class="box-feature">
-              <span class="flaticon-house-1"></span>
-              <h3 class="mb-3">House for Sale</h3>
+              <h2 class="mb-3">Pengaduan</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptates, accusamus.
@@ -467,14 +466,14 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> --}}
 
     <div class="section sec-testimonials">
       <div class="container">
         <div class="row mb-5 align-items-center">
           <div class="col-md-6">
             <h2 class="font-weight-bold heading text-primary mb-4 mb-md-0">
-              Customer Says
+              Kepengurusan
             </h2>
           </div>
           <div class="col-md-6 text-md-end">
@@ -505,16 +504,12 @@
                   <span class="icon-star text-warning"></span>
                   <span class="icon-star text-warning"></span>
                 </div>
-                <h3 class="h5 text-primary mb-4">James Smith</h3>
+                <h3 class="h5 text-primary mb-4">YUKHAL MEI IRWANTO </h3>
                 <blockquote>
                   <p>
-                    &ldquo;Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove right at the
-                    coast of the Semantics, a large language ocean.&rdquo;
+                    Lurah Kedundung
                   </p>
                 </blockquote>
-                <p class="text-black-50">Designer, Co-founder</p>
               </div>
             </div>
 
@@ -532,16 +527,13 @@
                   <span class="icon-star text-warning"></span>
                   <span class="icon-star text-warning"></span>
                 </div>
-                <h3 class="h5 text-primary mb-4">Mike Houston</h3>
+                <h3 class="h5 text-primary mb-4">ENI WULANDARI, SH</h3>
                 <blockquote>
                   <p>
-                    &ldquo;Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove right at the
-                    coast of the Semantics, a large language ocean.&rdquo;
+                    Sekretaris
                   </p>
                 </blockquote>
-                <p class="text-black-50">Designer, Co-founder</p>
+                {{-- <p class="text-black-50">Designer, Co-founder</p> --}}
               </div>
             </div>
 
@@ -559,16 +551,12 @@
                   <span class="icon-star text-warning"></span>
                   <span class="icon-star text-warning"></span>
                 </div>
-                <h3 class="h5 text-primary mb-4">Cameron Webster</h3>
+                <h3 class="h5 text-primary mb-4">NURALIH , SE</h3>
                 <blockquote>
                   <p>
-                    &ldquo;Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove right at the
-                    coast of the Semantics, a large language ocean.&rdquo;
+                    Kepala Seksi Tata Pemerintahan, Ketentraman dan Ketertiban Umum
                   </p>
                 </blockquote>
-                <p class="text-black-50">Designer, Co-founder</p>
               </div>
             </div>
 
@@ -586,16 +574,12 @@
                   <span class="icon-star text-warning"></span>
                   <span class="icon-star text-warning"></span>
                 </div>
-                <h3 class="h5 text-primary mb-4">Dave Smith</h3>
+                <h3 class="h5 text-primary mb-4">MOCHAMMAD AGUS WIDODO</h3>
                 <blockquote>
                   <p>
-                    &ldquo;Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove right at the
-                    coast of the Semantics, a large language ocean.&rdquo;
+                    Kepala Seksi Sosial dan Pemberdayaan Masyarakat
                   </p>
                 </blockquote>
-                <p class="text-black-50">Designer, Co-founder</p>
               </div>
             </div>
           </div>
