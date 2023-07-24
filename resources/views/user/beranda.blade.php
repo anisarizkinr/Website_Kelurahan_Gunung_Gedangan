@@ -61,21 +61,21 @@
       </div>
     </div>
 
-    {{-- <div class="section">
+    <div class="section">
       <div class="container">
         <div class="row mb-5 align-items-center">
           <div class="col-lg-6">
             <h2 class="font-weight-bold text-primary heading">
-              Popular Properties
+              Kegiatan
             </h2>
           </div>
           <div class="col-lg-6 text-lg-end">
             <p>
               <a
-                href="#"
+                href="{{url('/informasi/kegiatan')}}"
                 target="_blank"
                 class="btn btn-primary text-white py-3 px-4"
-                >View all properties</a
+                >Lihat semua kegiatan</a
               >
             </p>
           </div>
@@ -86,32 +86,28 @@
               <div class="property-slider">
                 <div class="property-item">
                   <a href="property-single.html" class="img">
-                    <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+                    <img src="images/kegiatan/gambar2.png" alt="Image" class="img-fluid" />
                   </a>
 
                   <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    {{-- <div class="price mb-2"><span>$1,291,000</span></div> --}}
                     <div>
                       <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
+                        >10 November 2022</span
                       >
-                      <span class="city d-block mb-3">California, USA</span>
+                      <span class="city d-block mb-3">Kelurahan Kedundung, Kolaborasi Benik Sekeping dan KWT Turunkan Stunting</span>
 
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
+                       <p>
+                        KELURAHAN Kedundung, Kecamatan Magersari turut berkontribusi aktif dalam mewujudkan Kota Mojokerto menuju zero stunting. 
+                        Berkat kolaborasi antara program Benik Sekeping dan Kelompok Wanita Tani (KWT) Kelurahan Kedundung yang berhasil sukseskan percepatan penurunan 
+
+                       </p>
+                     
 
                       <a
-                        href="property-single.html"
+                        href=""
                         class="btn btn-primary py-2 px-3"
-                        >See details</a
+                        >Lihat lebih lanjut</a
                       >
                     </div>
                   </div>
@@ -120,32 +116,29 @@
 
                 <div class="property-item">
                   <a href="property-single.html" class="img">
-                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                    <img src="images/kegiatan/gambar1.jpg" alt="Image" class="img-fluid" />
                   </a>
 
                   <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    {{-- <div class="price mb-2"><span>$1,291,000</span></div> --}}
                     <div>
                       <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
+                        >26 Juli 2022</span
                       >
-                      <span class="city d-block mb-3">California, USA</span>
+                      <span class="city d-block mb-3">Kedundung Kota Mojokerto Masuk Nominasi Kelurahan Terbaik Lomba Gotong Royong Tingkat Provinsi Jatim</span>
 
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
+                        <p>
+                          Kota Mojokerto, Bhirawa
+                          Kehidupan masyarakat Kota Mojokerto ternyata masih memegang teguh budaya leluhurnya yakni sifat
+                          berat sama dipikul,   
+                          
+                        </p>
+                     
 
                       <a
-                        href="property-single.html"
+                        href="https://www.harianbhirawa.co.id/kedundung-kota-mojokerto-masuk-nominasi-kelurahan-terbaik-lomba-gotong-royong-tingkat-provinsi-jatim/"
                         class="btn btn-primary py-2 px-3"
-                        >See details</a
+                        >Lihat lebih lanjut</a
                       >
                     </div>
                   </div>
@@ -154,32 +147,30 @@
 
                 <div class="property-item">
                   <a href="property-single.html" class="img">
-                    <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
+                    <img src="images/kegiatan/gambar3.jpg" alt="Image" class="img-fluid" />
                   </a>
 
                   <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    {{-- <div class="price mb-2"><span>$1,291,000</span></div> --}}
                     <div>
                       <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
+                        >15 oktober 2022</span
                       >
-                      <span class="city d-block mb-3">California, USA</span>
+                      <span class="city d-block mb-3">Sebanyak 1.584 Kepala Keluarga Warga Kelurahan Kedundung Mendapat BLT Tahap VII Dari Kemensos</span>
 
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
+                        <p>
+                          <p>
+                            KOTA MOJOKERTO – RI, Warga Kelurahan Kedundung hari ini, Rabu (14/10/20) 
+                            telah mendapat Bantuan Langsung Tunai (BLT) tahap VII dari Kemensos, sebanyak 1584 Kepala Keluarga (KK) 
+                           
+                          </p>
+                        </p>
+                      
 
                       <a
-                        href="property-single.html"
+                        href="https://radarindonesiaonline.com/sebanyak-1-584-kepala-keluarga-warga-kelurahan-kedundung-mendapat-blt-tahap-vii-dari-kemensos/"
                         class="btn btn-primary py-2 px-3"
-                        >See details</a
+                        >Lihat lebih lanjut</a
                       >
                     </div>
                   </div>
@@ -192,202 +183,40 @@
                   </a>
 
                   <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    {{-- <div class="price mb-2"><span>$1,291,000</span></div> --}}
                     <div>
                       <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
+                        >10 april 2022</span
                       >
-                      <span class="city d-block mb-3">California, USA</span>
+                      <span class="city d-block mb-3">........</span>
 
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
+                   <p>
+                    .........................
+                   </p>
 
                       <a
                         href="property-single.html"
                         class="btn btn-primary py-2 px-3"
-                        >See details</a
+                        >Lihat lebih lanjut</a
                       >
                     </div>
                   </div>
                 </div>
                 <!-- .item -->
 
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_5.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
-                    </div>
-                  </div>
-                </div>
+             
                 <!-- .item -->
 
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_6.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
-                    </div>
-                  </div>
-                </div>
+                
                 <!-- .item -->
 
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_7.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
-                    </div>
-                  </div>
-                </div>
+                
                 <!-- .item -->
 
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_8.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
-                    </div>
-                  </div>
-                </div>
+               
                 <!-- .item -->
 
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
-                    </div>
-                  </div>
-                </div>
+              
                 <!-- .item -->
               </div>
 
@@ -416,9 +245,9 @@
           </div>
         </div>
       </div>
-    </div> --}}
+    </div>
 
-    {{-- <section class="features-1">
+    <section class="features-1">
       <div class="container">
         <div class="row">
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
@@ -466,7 +295,7 @@
           </div>
         </div>
       </div>
-    </section> --}}
+    </section>
 
     <div class="section sec-testimonials">
       <div class="container">
