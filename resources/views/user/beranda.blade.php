@@ -60,8 +60,63 @@
         </div>
       </div>
     </div>
-
+    
     <div class="section">
+      <div class="container">
+        <div class="row section-counter mt-5">
+          <div
+            class="col-6 col-sm-6 col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="counter-wrap mb-5 mb-lg-0">
+              <span class="number"
+                ><span class="countup text-primary">16330</span></span
+              >
+              <span class="caption text-black-50"> Jumlah Penduduk /Jiwa</span>
+            </div>
+          </div>
+          <div
+            class="col-6 col-sm-6 col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="counter-wrap mb-5 mb-lg-0">
+              <span class="number"
+                ><span class="countup text-primary">8087</span></span
+              >
+              <span class="caption text-black-50">Jumlah Penduduk Laki-laki/Jiwa</span>
+            </div>
+          </div>
+          <div
+            class="col-6 col-sm-6 col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="counter-wrap mb-5 mb-lg-0">
+              <span class="number"
+                ><span class="countup text-primary">7826</span></span
+              >
+              <span class="caption text-black-50">Jumlah Penduduk Perempuan/Jiwa</span>
+            </div>
+          </div>
+          <div
+            class="col-6 col-sm-6 col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="counter-wrap mb-5 mb-lg-0">
+              <span class="number"
+                ><span class="countup text-primary">1</span></span
+              >
+              <span class="caption text-black-50">Jumlah Kepala Keluarga /Jiwa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" style="background-color: #edf2fb;">
       <div class="container">
         <div class="row mb-5 align-items-center">
           <div class="col-lg-6">
@@ -513,7 +568,7 @@
 
             <div class="d-flex feature-h">
                 <span class="wrap-icon me-3">
-                  <a href="https://curhatningita.lapor.go.id/">
+                  <a href="https://curhatningita.lapor.go.id/">9
                   <span class="icon-phone"></span>
                   </a>
                 </span>
@@ -526,56 +581,6 @@
             </div>
           </div>
         </div>
-        {{-- <div class="row section-counter mt-5">
-          <div
-            class="col-6 col-sm-6 col-md-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="counter-wrap mb-5 mb-lg-0">
-              <span class="number"
-                ><span class="countup text-primary">3298</span></span
-              >
-              <span class="caption text-black-50"># of Buy Properties</span>
-            </div>
-          </div>
-          <div
-            class="col-6 col-sm-6 col-md-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <div class="counter-wrap mb-5 mb-lg-0">
-              <span class="number"
-                ><span class="countup text-primary">2181</span></span
-              >
-              <span class="caption text-black-50"># of Sell Properties</span>
-            </div>
-          </div>
-          <div
-            class="col-6 col-sm-6 col-md-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="500"
-          >
-            <div class="counter-wrap mb-5 mb-lg-0">
-              <span class="number"
-                ><span class="countup text-primary">9316</span></span
-              >
-              <span class="caption text-black-50"># of All Properties</span>
-            </div>
-          </div>
-          <div
-            class="col-6 col-sm-6 col-md-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="600"
-          >
-            <div class="counter-wrap mb-5 mb-lg-0">
-              <span class="number"
-                ><span class="countup text-primary">7191</span></span
-              >
-              <span class="caption text-black-50"># of Agents</span>
-            </div>
-          </div>
-        </div> --}}
       </div>
     </div>
 
