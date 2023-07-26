@@ -10,57 +10,13 @@
       <div class="site-mobile-menu-body"></div>
     </div>
 
-
-    <div class="hero">
-      <div class="hero-slide">
-        <div
-          class="img overlay"
-          style="background-image: url({{asset('images/gambar_1.png.jpg')}}); opacity: 0.5;"
-        ></div>
-        <div
-          class="img overlay"
-          style="background-image: url({{asset('images/gambar_2.png.jpg')}}); opacity: 0.5;"
-        ></div>
-        <div
-          class="img overlay"
-          style="background-image: url({{asset('images/gambar_3.png.jpg')}}); opacity: 0.5;"
-        ></div>
-      </div>
-
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-lg-9 text-center">
-            <h1 class="heading" data-aos="fade-up" style="text-align: left;"> 
-              Selamat Datang di Kelurahan Kedundung!
-            </h1>
-            {{-- <h3 class='heading'data-aos="fade-up">
-              Selamat datang di website resmi Kelurahan Gunung Gedangan, Tempat yang penuh dengan keindahan alam dan masyrakat yang ramah. Kami dengan bangga mempersembahkan berbagai informasi tentang kelurahan kami, termasuk Sejarah, Layanan Publik dan Informasi lainnya
-            </h3> --}}
-            <h2 class='heading' data-aos="fade-up" style="text-align: left; font-weight: normal;font-size: 18px;">
-              Selamat datang di website resmi Kelurahan Gunung Gedangan. Kami dengan bangga mempersembahkan berbagai informasi tentang kelurahan kami, termasuk Sejarah, Layanan Publik dan Informasi lainnya
-          </h2>
-          {{-- <button type="submit" class="btn btn-primary">Explore Lebih Jauh</button> --}}
-          <a href="{{url('/profil/tentang')}}" class="btn btn-warning rounded-pill py-3 px-5 animated slideInLeft" style="background-color: #FF8811; color:white">Explore Lebih Jauh</a>
-
-            {{-- <form
-              action="#"
-              class="narrow-w form-search d-flex align-items-stretch mb-3"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <input
-                type="text"
-                class="form-control px-4"
-                placeholder="Your ZIP code or City. e.g. New York"
-              />
-              <button type="submit" class="btn btn-primary" style="background-color: #FF8811; ">Explore Lebih Jauh</button>
-            </form> --}}
-          </div>
-        </div>
-      </div>
-    </div>
-
+    
+    
+   
     <div class="section">
+
+    </div>
+    <div class="section" style="background-color: #edf2fb;">
       <div class="container">
         <div class="row mb-5 align-items-center">
           <div class="col-lg-6">
@@ -68,16 +24,7 @@
               Kegiatan
             </h2>
           </div>
-          {{-- <div class="col-lg-6 text-lg-end">
-            <p>
-              <a
-                href="{{url('/informasi/kegiatan')}}"
-                target="_blank"
-                class="btn btn-primary text-white py-3 px-4"
-                >Lihat semua kegiatan</a
-              >
-            </p>
-          </div> --}}
+          
         </div>
         <div class="row">
           <div class="col-12">
@@ -85,7 +32,7 @@
               <div class="property-slider">
                 <div class="property-item">
                   <a href="property-single.html" class="img">
-                    <img src="images/kegiatan/gambar2.png" alt="Image" class="img-fluid" />
+                    <img src="{{asset('images/kegiatan/gambar2.png')}}" alt="Image" class="img-fluid" />
                   </a>
 
                   <div class="property-content">
@@ -115,7 +62,7 @@
 
                 <div class="property-item">
                   <a href="property-single.html" class="img">
-                    <img src="images/kegiatan/gambar1.jpg" alt="Image" class="img-fluid" />
+                    <img src="{{asset('images/kegiatan/gambar1.jpg')}}" alt="Image" class="img-fluid" />
                   </a>
 
                   <div class="property-content">
@@ -146,7 +93,7 @@
 
                 <div class="property-item">
                   <a href="property-single.html" class="img">
-                    <img src="images/kegiatan/gambar3.jpg" alt="Image" class="img-fluid" />
+                    <img src="{{asset('images/kegiatan/gambar3.jpg')}}" alt="Image" class="img-fluid" />
                   </a>
 
                   <div class="property-content">
@@ -182,7 +129,7 @@
                   </a>
 
                   <div class="property-content">
-                    {{-- <div class="price mb-2"><span>$1,291,000</span></div> --}}
+                    <div class="price mb-2"><span>$1,291,000</span></div>
                     <div>
                       <span class="d-block mb-2 text-black-50"
                         >10 april 2022</span
@@ -201,22 +148,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- .item -->
-
-             
-                <!-- .item -->
-
-                
-                <!-- .item -->
-
-                
-                <!-- .item -->
-
-               
-                <!-- .item -->
-
-              
-                <!-- .item -->
               </div>
 
               <div
@@ -246,7 +177,15 @@
       </div>
     </div>
 
-    
+  
+
+
+
+   
+
+
+ 
+
 
 
     <!-- Preloader -->
