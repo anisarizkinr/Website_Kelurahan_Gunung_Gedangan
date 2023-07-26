@@ -40,9 +40,16 @@
               </ul>
             </li>
             <li><a href="{{url('/pencapaian')}}" style="font-size: 18px;">Pencapaian</a></li>
+            <li><a href="{{url('/data')}}" style="font-size: 18px;">Data</a></li>
             <li><a href="https://curhatningita.lapor.go.id/" style="font-size: 18px;">Curhat Ning Ita</a></li>
             
+          
+            
+
+
+
           </ul>
+
 
           <a
             href="#"

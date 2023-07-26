@@ -13,6 +13,7 @@ use App\Http\Controllers\VidioController;
 use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\LayananController;
 use App\Http\Controllers\PencapaianController;
+use App\Http\Controllers\DataController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +32,7 @@ Route::get('/', function () {
 Route::get('/beranda ',[UserController::class, 'beranda']);
 Route::get('/layanan ',[LayananController::class, 'layanan']);
 Route::get('/pencapaian ',[PencapaianController::class, 'pencapaian']);
+Route::get('/data ',[DataController::class, 'data']);
   
   
 
