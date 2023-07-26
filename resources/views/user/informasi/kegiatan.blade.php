@@ -176,17 +176,7 @@
         </div>
       </div>
     </div>
-
-  
-
-
-
-   
-
-
- 
-
-
+    
 
     <!-- Preloader -->
     <div id="overlayer"></div>
