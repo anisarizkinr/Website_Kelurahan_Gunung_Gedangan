@@ -6,7 +6,7 @@ use App\Http\Controllers\VisiController;
 use App\Http\Controllers\GeografisController;
 use App\Http\Controllers\StrukturController;
 use App\Http\Controllers\PotensiWilayahController;
-use App\Http\Controllers\KegiatanController;
+use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\PengumumanController;
 use App\Http\Controllers\GaleriController;
 use App\Http\Controllers\VidioController;
@@ -55,11 +55,9 @@ Route::get('/', function () {
 Route::get('/beranda ',[UserController::class, 'beranda']);
 Route::prefix('informasi')->group(function () {
    
-    Route::get('/kegiatan',[KegiatanController::class, 'kegiatan']);
-    Route::get('/pengumuman',[PengumumanController::class, 'pengumuman']);
+    Route::get('/berita',[BeritaController::class, 'berita']);
     Route::get('/galeri',[GaleriController::class, 'galeri']);
-    Route::get('/vidio',[VidioController::class, 'vidio']);
-    Route::get('/download',[DownloadController::class, 'download']);
+ 
 });
 
 

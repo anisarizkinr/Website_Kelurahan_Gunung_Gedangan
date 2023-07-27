@@ -26,27 +26,28 @@
             <li class="has-children">
               <a href="" style="font-size: 18px;">Informasi</a>
               <ul class="dropdown">
-                <li><a href="{{url('/informasi/kegiatan')}}">Kegiatan</a></li>
-                <li><a href="{{url('/informasi/pengumuman')}}">Pengumuman</a></li>
+                <li><a href="{{url('/informasi/berita')}}">Berita</a></li>
                 <li><a href="{{url('/informasi/galeri')}}">Galeri</a></li>
-                <li><a href="{{url('/informasi/vidio')}}">Vidio</a></li>
-                <li><a href="{{url('/informasi/download')}}">Download</a></li>
               </ul>
             </li>
             <li class="has-children">
               <a style="font-size: 18px;">Layanan</a>
               <ul class="dropdown">
-                <li><a href="{{url('/layanan')}}">Suket Plano</a></li>
+
+                <li><a href="{{url('/layanan')}}">Persyaratan Surat Pernyataan Ahli Waris</a></li>
+                <li><a href="{{url('/layanan')}}">Persyaratan Nikah</a></li>
+                <li><a href="{{url('/layanan')}}">Persyaratan Surat Keterangan Usaha</a></li>
+                <li><a href="{{url('/layanan')}}">Persyaratan SKCK</a></li>
+                <li><a href="{{url('/layanan')}}">Persyaratan Surat Keterangan Tidak Mampu</a></li>
+                <li><a href="{{url('/layanan')}}">Persyaratan Surat Keterangan Beda Identitas</a></li>
+                <li><a href="{{url('/layanan')}}">Persyaratan Surat Keterangan Domisili</a></li>
               </ul>
             </li>
-            <li><a href="{{url('/pencapaian')}}" style="font-size: 18px;">Pencapaian</a></li>
             <li><a href="{{url('/data')}}" style="font-size: 18px;">Data</a></li>
             <li><a href="https://curhatningita.lapor.go.id/" style="font-size: 18px;">Curhat Ning Ita</a></li>
             
           
-            
-
-
+  
 
           </ul>
 
