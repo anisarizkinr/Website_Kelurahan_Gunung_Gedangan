@@ -15238,6 +15238,7 @@ nav[aria-label="breadcrumb"] li:before {
   /* border: 1px solid #000; */
   padding: 20px;
   background-color: #efefef;
+  width: 800px;
 }
 
 .centered-text {
