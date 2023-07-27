@@ -51,11 +51,42 @@
     <!-- Footer End -->
 
     {{-- Javascript library --}}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('js/tiny-slider.js') }}"></script>
     <script src="{{ asset('js/aos.js') }}"></script>
     <script src="{{ asset('js/navbar.js') }}"></script>
     <script src="{{ asset('js/counter.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
+    <script>
+      $(document).ready(function() {
+        // Dapatkan URL halaman saat ini
+        var currentUrl = window.location.href;
+    
+        // Hapus parameter kueri dari URL (jika ada)
+        var urlWithoutParams = currentUrl.split("?")[0];
+    
+        // Temukan semua tautan menu
+        var menuLinks = $(".site-menu a");
+    
+        // Loop melalui setiap tautan menu
+        menuLinks.each(function() {
+          // Dapatkan atribut href dari tautan
+          var linkUrl = $(this).attr("href");
+    
+          // Hapus parameter kueri dari URL tautan (jika ada)
+          var linkUrlWithoutParams = linkUrl.split("?")[0];
+    
+          // Periksa apakah URL tautan saat ini cocok dengan URL halaman saat ini
+          if (urlWithoutParams === linkUrlWithoutParams) {
+            // Tambahkan kelas 'active' pada elemen 'li' yang menjadi parent tautan
+            $(this).closest("li").addClass("active");
+          }
+        });
+      });
+    </script>
   </body>
+ 
+  
 </html>
+

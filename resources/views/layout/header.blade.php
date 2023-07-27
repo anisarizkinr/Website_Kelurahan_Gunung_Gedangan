@@ -13,7 +13,7 @@
             class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
           >
           <br>
-            <li class="active"><a href="{{url('/beranda')}}" style="font-size: 18px;">Home</a></li>
+            <li ><a href="{{url('/beranda')}}" style="font-size: 18px;">Home</a></li>
             <li class="has-children">
               <a href="" style="font-size: 18px;">Profil</a>
               <ul class="dropdown">
@@ -21,7 +21,6 @@
                 <li><a href="{{url('/profil/visi')}}">Visi & Misi</a></li>
                 <li><a href="{{url('/profil/geografis')}}">Geografis & Kependudukan</a></li>
                 <li><a href="{{url('/profil/struktur')}}">Struktur Pemerintahan</a></li>
-                <li><a href="{{url('/profil/potensiwilayah')}}">Potensi Wilayah</a></li>
               </ul>
             </li>
             <li class="has-children">
@@ -46,10 +45,7 @@
             </li>
             <li><a href="{{url('/data')}}" style="font-size: 18px;">Data</a></li>
             <li><a href="https://curhatningita.lapor.go.id/" style="font-size: 18px;">Curhat Ning Ita</a></li>
-            
-          
-  
-
+            <li><a href="{{url('/login')}}" class="btn btn-secondary rounded-pill py-3 px-5">Login</a></li>
           </ul>
 
 

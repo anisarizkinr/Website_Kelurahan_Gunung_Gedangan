@@ -15265,3 +15265,8 @@ nav[aria-label="breadcrumb"] li:before {
   border-radius: 50%;
   margin-right: 10px;
 }
+
+.site-menu li.active a {
+  color: #FF0000; /* Ganti warna menu aktif sesuai keinginan */
+  font-weight: bold; /* Tambahkan gaya tambahan jika diinginkan */
+}
