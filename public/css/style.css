@@ -14711,7 +14711,8 @@ textarea {
 }
 
 .person .person-contents {
-  padding: 30px;
+  padding: 20px;
+  margin: 10px;
 }
 
 .person .person-contents h2,
