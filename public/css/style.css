@@ -15271,3 +15271,15 @@ nav[aria-label="breadcrumb"] li:before {
   color: #FF0000; /* Ganti warna menu aktif sesuai keinginan */
   font-weight: bold; /* Tambahkan gaya tambahan jika diinginkan */
 }
+
+.box-child2 {
+  /* border: 1px solid #000; */
+  padding: 15px;
+  margin-top: 10px;
+  background-color: #dee2e6;;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 70px;
+}
