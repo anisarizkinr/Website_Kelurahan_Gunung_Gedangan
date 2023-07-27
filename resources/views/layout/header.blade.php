@@ -33,7 +33,6 @@
             <li class="has-children">
               <a style="font-size: 18px;">Layanan</a>
               <ul class="dropdown">
-
                 <li><a href="{{url('/layanan/p_ahliwaris')}}">Persyaratan Surat Pernyataan Ahli Waris</a></li>
                 <li><a href="{{url('/layanan/p_nikah')}}">Persyaratan Nikah</a></li>
                 <li><a href="{{url('/layanan/p_keterangan_usaha')}}">Persyaratan Surat Keterangan Usaha</a></li>
@@ -47,8 +46,6 @@
             <li><a href="https://curhatningita.lapor.go.id/" style="font-size: 18px;">Curhat Ning Ita</a></li>
             <li><a href="{{url('/login')}}" class="btn btn-secondary rounded-pill py-3 px-5">Login</a></li>
           </ul>
-
-
           <a
             href="#"
             class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
