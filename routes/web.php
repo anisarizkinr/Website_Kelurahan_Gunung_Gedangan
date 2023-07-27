@@ -5,14 +5,10 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\VisiController;
 use App\Http\Controllers\GeografisController;
 use App\Http\Controllers\StrukturController;
-use App\Http\Controllers\PotensiWilayahController;
 use App\Http\Controllers\BeritaController;
-use App\Http\Controllers\PengumumanController;
 use App\Http\Controllers\GaleriController;
-use App\Http\Controllers\VidioController;
-use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\LayananController;
-use App\Http\Controllers\PencapaianController;
+use App\Http\Controllers\SejarahController;
 use App\Http\Controllers\DataController;
 
 /*
@@ -30,7 +26,7 @@ Route::get('/', function () {
     return view('user.beranda');
 });
 Route::get('/beranda ',[UserController::class, 'beranda']);
-Route::get('/layanan ',[LayananController::class, 'layanan']);
+// Route::get('/layanan ',[LayananController::class, 'layanan']);
 Route::get('/pencapaian ',[PencapaianController::class, 'pencapaian']);
 Route::get('/data ',[DataController::class, 'data']);
   
@@ -42,21 +38,33 @@ Route::get('/', function () {
 Route::get('/beranda ',[UserController::class, 'beranda']);
 Route::prefix('profil')->group(function () {
    
+    Route::get('/sejarah',[SejarahController::class, 'sejarah']);
     Route::get('/visi',[VisiController::class, 'visi']);
     Route::get('/geografis',[GeografisController::class, 'geografis']);
     Route::get('/struktur',[StrukturController::class, 'struktur']);
-    Route::get('/potensiwilayah',[PotensiWilayahController::class, 'potensiwilayah']);
+  
     
 });
 
-Route::get('/', function () {
-    return view('user.beranda');
-});
+
+
 Route::get('/beranda ',[UserController::class, 'beranda']);
 Route::prefix('informasi')->group(function () {
    
     Route::get('/berita',[BeritaController::class, 'berita']);
     Route::get('/galeri',[GaleriController::class, 'galeri']);
+ 
+});
+
+
+Route::prefix('layanan')->group(function () {
+    Route::get('/p_ahliwaris',[LayananController::class, 'p_ahliwaris']);
+    Route::get('/p_nikah',[LayananController::class, 'p_nikah']);
+    Route::get('/p_keterangan_usaha',[LayananController::class, 'p_keterangan_usaha']);
+    Route::get('/p_skck',[LayananController::class, 'p_skck']);
+    Route::get('/p_keterangan_tidakmampu',[LayananController::class, 'p_keterangan_tidakmampu']);
+    Route::get('/p_keterangan_bedaidentitas',[LayananController::class, 'p_keterangan_bedaidentitas']);
+    Route::get('/p_keterangan_domisili',[LayananController::class, 'p_keterangan_domisili']);
  
 });
 
