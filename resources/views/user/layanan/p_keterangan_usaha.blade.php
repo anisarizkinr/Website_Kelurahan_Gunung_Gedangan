@@ -29,11 +29,11 @@
                 <h2 class="font-weight-bold heading text-primary mb-4 ">
                   Persyaratan Surat Keterangan Usaha
                 </h2>
-                <h5 class="box-child">1. Pengantar RT,RW </h5>
-                <h5 class="box-child">2. Foto Copy KK</h5>
-                <h5 class="box-child">3. Foto Copy KTP</h5>
-                <h5 class="box-child">4. Surat Pernyataan Usaha Bermaterai Rp.10.000,-(Blangko disediakan Kelurahan)</h5>
-                <h5 class="box-child">5. Print Foto Usaha</h5>
+                <h5 class="box-child2">1. Pengantar RT,RW </h5>
+                <h5 class="box-child2">2. Foto Copy KK</h5>
+                <h5 class="box-child2">3. Foto Copy KTP</h5>
+                <h5 class="box-child2">4. Surat Pernyataan Usaha Bermaterai Rp.10.000,-(Blangko disediakan Kelurahan)</h5>
+                <h5 class="box-child2">5. Print Foto Usaha</h5>
               </div>
             </div>
           </div>
