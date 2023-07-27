@@ -25,14 +25,14 @@
           
           <div class="container">
             <div class="row justify-content-center text-center mb-5">
-              <div class="col-lg-6 mb-5 box"></div>
+              <div class="col-lg-6 mb-5 box">
                 <h2 class="font-weight-bold heading text-primary mb-4 ">
-                  Persyaratan Surat Keterangan Domisili
+                  Persyaratan SKCK
                 </h2>
                 <h5 class="box-child">1. Pengantar RT,RW</h5>
                 <h5 class="box-child">2. Foto Copy KK</h5>
                 <h5 class="box-child">3. Foto Copy KTP</h5>
-                <h5 class="box-child">4. Surat Pernyataan Bermaterai Rp.10.000,- apabila tidak ber KTP Kelurahan Kedundung (Blangko disediakan Kelurahan) </h5>
+                <h5 class="box-child">4. Surat Pernyataan Bermaterai Rp.10.000,- apabila tidak ber KTP Kelurahan Kedundung (Blangko disediakan Kelurahan)</h5>
               
               </div>
             </div>
