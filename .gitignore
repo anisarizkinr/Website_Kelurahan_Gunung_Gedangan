@@ -13,3 +13,6 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+public/assets/css/style.css
+public/images/login.jpg
+resources/views/auth/login.blade.php
