@@ -10,6 +10,8 @@ use App\Http\Controllers\GaleriController;
 use App\Http\Controllers\LayananController;
 use App\Http\Controllers\SejarahController;
 use App\Http\Controllers\DataController;
+use App\Http\Controllers\DashboardController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -68,12 +70,8 @@ Route::prefix('layanan')->group(function () {
  
 });
 
-
-
-
-
+Route::get('/dashboard ',[DashboardController::class, 'dashboard']);
 
   
 Auth::routes();
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
