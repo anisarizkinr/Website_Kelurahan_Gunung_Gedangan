@@ -14842,6 +14842,7 @@ textarea {
   border-radius: 4px;
   padding: 30px;
   margin-bottom: 30px;
+  height: 330px;
 }
 
 .box-feature h3,
@@ -15282,4 +15283,12 @@ nav[aria-label="breadcrumb"] li:before {
   align-items: center;
   flex-direction: row;
   height: 70px;
+}
+.map-container {
+  display: flex;
+  justify-content: center;
+}
+
+.map-container iframe {
+  margin: 0 auto;
 }
