@@ -72,4 +72,7 @@ Route::prefix('layanan')->group(function () {
 
   
 Auth::routes();
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/dashboard ',[DashboardController::class, 'dashboard']);
+    
+// });
