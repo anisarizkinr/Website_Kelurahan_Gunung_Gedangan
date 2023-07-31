@@ -16115,8 +16115,7 @@ table.footable-paging-center>tfoot>tr.footable-paging>td {
 .login-card .auth-box button i {
   padding: 5px 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  
 }
 
 .login-card.auth-body {
@@ -16292,6 +16291,8 @@ table.footable-paging-center>tfoot>tr.footable-paging>td {
   /* border-radius: 5px; */
   width: 400px;
   height: 400px;
+  margin-bottom: 200px;
+  margin-left: 100px;
 }
 
 .auth-box .confirm h3 {
@@ -21328,12 +21329,11 @@ table.footable-paging-center>tfoot>tr.footable-paging>td {
 }
 
 .img-about{
-  width: 260%;
-  height: 260%;
+  width: 190%;
+  height: 190%;
   margin-bottom: 200px;
   margin-top: 20px;
-  margin-left: 215px;
-  object-fit: cover;
+  margin-left: -23px;
 }
 
 
