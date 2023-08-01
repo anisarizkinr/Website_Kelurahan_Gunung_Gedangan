@@ -36,10 +36,10 @@
                     <span class="pcoded-mcaret"></span>
                 </a>
             </li>
-            <li class="pcoded-hasmenu">
+            {{-- <li class="pcoded-hasmenu">
                 <a href="javascript:void(0)">
                     <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
-                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Components</span>
+                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Galeri</span>
                     <span class="pcoded-mcaret"></span>
                 </a>
                 <ul class="pcoded-submenu">
@@ -115,14 +115,14 @@
                     </li>
 
                 </ul>
-            </li>
+            </li> --}}
         </ul>
-        <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Forms &amp; Tables</div>
+        {{-- <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Forms &amp; Tables</div> --}}
         <ul class="pcoded-item pcoded-left-item">
             <li>
-                <a href="form-elements-component.html">
+                <a href="{{route('galeri.index')}}">
                     <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
-                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Form Components</span>
+                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Galeri</span>
                     <span class="pcoded-mcaret"></span>
                 </a>
             </li>
