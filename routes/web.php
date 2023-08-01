@@ -6,6 +6,7 @@ use App\Http\Controllers\VisiController;
 use App\Http\Controllers\GeografisController;
 use App\Http\Controllers\StrukturController;
 use App\Http\Controllers\BeritaUserController;
+use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\GaleriUserController;
 use App\Http\Controllers\LayananController;
 use App\Http\Controllers\SejarahController;
@@ -13,6 +14,7 @@ use App\Http\Controllers\DataController;
 use App\Http\Controllers\GaleriController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KategoriController;
+use App\Models\Berita;
 
 /*
 |--------------------------------------------------------------------------
@@ -76,6 +78,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('galeri', GaleriController::class);
+Route::resource('berita', BeritaController::class);
 
 Route::get('/dashboard ',[DashboardController::class, 'dashboard']);
 

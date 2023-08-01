@@ -42,7 +42,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="bs-basic-table.html">
+                    <a href="{{route('berita.index')}}">
                         <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
                         <span class="pcoded-mtext" data-i18n="nav.form-components.main">Berita</span>
                         <span class="pcoded-mcaret"></span>

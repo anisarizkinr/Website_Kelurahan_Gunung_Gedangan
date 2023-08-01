@@ -10,7 +10,15 @@
     </div>
     <div class="site-mobile-menu-body"></div>
   </div>
-
+  <div class="section">
+  </div>
+  <div class="section">
+  </div>
+  <div class="col-lg-6 text-center mx-auto">
+    <h2 class="font-weight-bold text-primary heading">
+      DATA KELURAHAN KEDUNDUNG
+    </h2>
+  </div>
   <div class="map-container">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15824.03755714312!2d112.44941831093658!3d-7.464211637455119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e780dbf5aaac4b9:0x69b511b918f37238!2sKedundung,%20Magersari,%20Mojokerto%20City,%20East%20Java!5e0!3m2!1sen!2sid!4v1524357305622" width="800" height="450" style="margin-top: 180px;"></iframe>
   </div>
