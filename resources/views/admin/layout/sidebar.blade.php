@@ -48,16 +48,16 @@
                         <span class="pcoded-mcaret"></span>
                     </a>
                 </li>
-                <li>
+                {{-- <li>
                     <a href="bs-basic-table.html">
                         <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
                         <span class="pcoded-mtext" data-i18n="nav.form-components.main">Data</span>
                         <span class="pcoded-mcaret"></span>
                     </a>
-                </li>
+                </li> --}}
                 
             </ul>
-            {{-- <li class="pcoded-hasmenu">
+            <li class="pcoded-hasmenu">
                 <a href="javascript:void(0)">
                     <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
                     <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Data</span>
@@ -65,20 +65,20 @@
                 </a>
                 <ul class="pcoded-submenu">
                     <li class=" ">
-                        <a href="accordion.html">
+                        <a href="{{url('/kategori')}}">
                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                            <span class="pcoded-mtext" data-i18n="nav.basic-components.alert"></span>
+                            <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Kategori Data</span>
                             <span class="pcoded-mcaret"></span>
                         </a>
                     </li>
                     <li class=" ">
                         <a href="breadcrumb.html">
                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                            <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Breadcrumbs</span>
+                            <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Tabel Data</span>
                             <span class="pcoded-mcaret"></span>
                         </a>
                     </li>
-                    <li class=" ">
+                    {{-- <li class=" ">
                         <a href="button.html">
                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                             <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Button</span>
@@ -133,10 +133,10 @@
                             <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Icon</span>
                             <span class="pcoded-mcaret"></span>
                         </a>
-                    </li>
+                    </li> --}}
 
                 </ul>
-            </li> --}}
+            </li>
         </ul>
         
         {{-- <ul class="pcoded-item pcoded-left-item">
