@@ -6,6 +6,7 @@ use App\Http\Controllers\VisiController;
 use App\Http\Controllers\GeografisController;
 use App\Http\Controllers\StrukturController;
 use App\Http\Controllers\BeritaUserController;
+use App\Http\Controllers\GaleriUserController;
 use App\Http\Controllers\LayananController;
 use App\Http\Controllers\SejarahController;
 use App\Http\Controllers\DataController;
@@ -54,7 +55,7 @@ Route::get('/beranda ',[UserController::class, 'beranda']);
 Route::prefix('informasi')->group(function () {
    
     Route::get('/berita',[BeritaUserController::class, 'berita']);
-    Route::get('/galeri',[GaleriController::class, 'galeri']);
+    Route::get('/galeri',[GaleriUserController::class, 'galeri']);
  
 });
 

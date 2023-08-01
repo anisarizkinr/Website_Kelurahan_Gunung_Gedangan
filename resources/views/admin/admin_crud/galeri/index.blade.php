@@ -59,7 +59,7 @@
                     <div class="card">
                         <div class="card-header">
                             <h5>Galeri Kegiatan </h5>
-                            <div class="card-header-right">    <ul class="list-unstyled card-option">        <li><i class="icofont icofont-simple-left "></i></li>        <li><i class="icofont icofont-maximize full-card"></i></li>        <li><i class="icofont icofont-minus minimize-card"></i></li>        <li><i class="icofont icofont-refresh reload-card"></i></li>        <li><i class="icofont icofont-error close-card"></i></li>    </ul></div>
+                            <div class="card-header-right"> <ul class="list-unstyled card-option">  <li><i class="icofont icofont-simple-left "></i></li>        <li><i class="icofont icofont-maximize full-card"></i></li>        <li><i class="icofont icofont-minus minimize-card"></i></li>        <li><i class="icofont icofont-refresh reload-card"></i></li>        <li><i class="icofont icofont-error close-card"></i></li>    </ul></div>
                         </div>
 
                         <div class="card-body">
@@ -95,7 +95,7 @@
                                             @endif
                                           <td>
                                             <form action="{{ route('galeri.destroy',$glr->id) }}" method="POST">
-                                              <a class="btn btn-warning" href="{{ route('galeri.edit',$glr->id) }}"><i class="fa fa-edit"></i></a>
+                                              <a class="btn btn-warning" href="{{ route('galeri.edit',$glr->id) }}"><i class="fa-solid fa-pen-to-square"></i> </a>
                                               @csrf
                                               @method('DELETE')
                                               <button type="submit" onclick="return confirm('Apakah anda yakin hapus data ini ?')"
