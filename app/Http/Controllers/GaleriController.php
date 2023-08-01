@@ -100,8 +100,27 @@ class GaleriController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+         ///melakukan validasi data
+         $request->validate([
+            'gambar' => 'image|file|max:1024|required',
+        ]);
+
+        $galeri = Galeri::where('id', $id)->first();
+        if ($galeri->gambar && file_exists(storage_path('app/public/' . $galeri->gambar))) {
+            Storage::delete('public/' . $galeri->gambar);
+        }
+
+        $image_name = $request->file('gambar')->store('images', 'public');
+        // update data
+
+        $galeri->gambar = $image_name;
+        $galeri->save();
+
+        //jika data berhasil diupdate, akan kembali ke halaman utama
+        return redirect()->route('galeri.index')
+            ->with('success', 'Data Galeri Berhasil Diupdate');
     }
+    
 
     /**
      * Remove the specified resource from storage.
@@ -110,7 +129,10 @@ class GaleriController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
-    {
-        //
-    }
+    
+        {
+            Galeri::where('id', $id)->delete();
+            return redirect()->route('galeri.index')->with('success', 'Data Galeri Berhasil Dihapus');
+        }
+    
 }

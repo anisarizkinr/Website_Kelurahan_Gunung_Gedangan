@@ -1,24 +1,7 @@
 @extends('admin.layout.master')
 @section('content')
 
-    <!-- Pre-loader start -->
-    <div class="theme-loader">
-        <div class="ball-scale">
-            <div class='contain'>
-                <div class="ring"><div class="frame"></div></div>
-                <div class="ring"><div class="frame"></div></div>
-                <div class="ring"><div class="frame"></div></div>
-                <div class="ring"><div class="frame"></div></div>
-                <div class="ring"><div class="frame"></div></div>
-                <div class="ring"><div class="frame"></div></div>
-                <div class="ring"><div class="frame"></div></div>
-                <div class="ring"><div class="frame"></div></div>
-                <div class="ring"><div class="frame"></div></div>
-                <div class="ring"><div class="frame"></div></div>
-            </div>
-        </div>
-    </div>
-    <!-- Pre-loader end -->
+  
    
     <div class="pcoded-content">
         <div class="pcoded-inner-content">
@@ -93,21 +76,7 @@
       <!-- /.content -->
 
 
-  <!-- /.card-body -->
-  <div class="card-footer">
-    <div class="paginate">
-      <div class="container">
-        <div class="row">
-          <div class="mx-auto">
-            <div class="paginate-button col-md-12">
-              {{ $paginate->links() }}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- /.card-footer-->
+ 
 
 
 
