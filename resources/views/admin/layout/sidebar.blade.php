@@ -32,20 +32,8 @@
                     <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
                     <span class="pcoded-mcaret"></span>
                 </a>
-
-            {{-- <li class="pcoded-hasmenu">
-                <a href="javascript:void(0)">
-                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
-                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Galeri</span>
-
-            <ul class="pcoded-item pcoded-left-item">
-                <li>
-                    <a href="form-elements-component.html">
-                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
-                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Kegiatan</span>
-                        <span class="pcoded-mcaret"></span>
-                    </a>
-                </li>
+            </li>
+            <li class="pcoded-hasmenu">
                 <li>
                     <a href="bs-basic-table.html">
                         <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
@@ -53,100 +41,96 @@
                         <span class="pcoded-mcaret"></span>
                     </a>
                 </li>
-                {{-- <li>
+                <li>
                     <a href="bs-basic-table.html">
                         <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
-                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Data</span>
+                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Kegiatan</span>
                         <span class="pcoded-mcaret"></span>
                     </a>
-                </li> --}}
-                
+                </li>
+                <li class="pcoded-hasmenu">
+                    <a href="javascript:void(0)">
+                        <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                        <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Data</span>
+                        <span class="pcoded-mcaret"></span>
+                    </a>
+                    <ul class="pcoded-submenu">
+                        <li class=" ">
+                            <a href="{{url('/kategori')}}">
+                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Kategori Data</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a href="breadcrumb.html">
+                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Tabel Data</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        {{-- <li class=" ">
+                            <a href="button.html">
+                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Button</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a href="tabs.html">
+                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Tabs</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a href="color.html">
+                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Color</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a href="label-badge.html">
+                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Label Badge</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a href="tooltip.html">
+                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Tooltip</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a href="typography.html">
+                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Typography</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a href="notification.html">
+                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Notification</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a href="icon-themify.html">
+                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Icon</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li> --}}
+                    </ul>
+                </li>
             </ul>
-            <li class="pcoded-hasmenu">
-                <a href="javascript:void(0)">
-                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
-                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Data</span>
-
-                    <span class="pcoded-mcaret"></span>
-                </a>
-                <ul class="pcoded-submenu">
-                    <li class=" ">
-                        <a href="{{url('/kategori')}}">
-                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                            <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Kategori Data</span>
-                            <span class="pcoded-mcaret"></span>
-                        </a>
-                    </li>
-                    <li class=" ">
-                        <a href="breadcrumb.html">
-                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                            <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Tabel Data</span>
-                            <span class="pcoded-mcaret"></span>
-                        </a>
-                    </li>
-                    {{-- <li class=" ">
-                        <a href="button.html">
-                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                            <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Button</span>
-                            <span class="pcoded-mcaret"></span>
-                        </a>
-                    </li>
-                    <li class=" ">
-                        <a href="tabs.html">
-                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                            <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Tabs</span>
-                            <span class="pcoded-mcaret"></span>
-                        </a>
-                    </li>
-                    <li class=" ">
-                        <a href="color.html">
-                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                            <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Color</span>
-                            <span class="pcoded-mcaret"></span>
-                        </a>
-                    </li>
-                    <li class=" ">
-                        <a href="label-badge.html">
-                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                            <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Label Badge</span>
-                            <span class="pcoded-mcaret"></span>
-                        </a>
-                    </li>
-                    <li class=" ">
-                        <a href="tooltip.html">
-                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                            <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Tooltip</span>
-                            <span class="pcoded-mcaret"></span>
-                        </a>
-                    </li>
-                    <li class=" ">
-                        <a href="typography.html">
-                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                            <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Typography</span>
-                            <span class="pcoded-mcaret"></span>
-                        </a>
-                    </li>
-                    <li class=" ">
-                        <a href="notification.html">
-                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                            <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Notification</span>
-                            <span class="pcoded-mcaret"></span>
-                        </a>
-                    </li>
-                    <li class=" ">
-                        <a href="icon-themify.html">
-                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                            <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Icon</span>
-                            <span class="pcoded-mcaret"></span>
-                        </a>
-                    </li> --}}
-
-                </ul>
-            </li> --}}
-        </ul>
 
         {{-- <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Forms &amp; Tables</div> --}}
-        <ul class="pcoded-item pcoded-left-item">
+        {{-- <ul class="pcoded-item pcoded-left-item">
             <li>
                 <a href="{{route('galeri.index')}}">
                     <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
@@ -162,14 +146,13 @@
                 </a>
             </li>
             
-        </ul>
+        </ul> --}}
 
-        <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Chart &amp; Maps</div>
-        <ul class="pcoded-item pcoded-left-item">
+        {{-- <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Chart &amp; Maps</div>
+        <ul class="pcoded-item pcoded-left-item"> --}}
 
         
         {{-- <ul class="pcoded-item pcoded-left-item">
->>>>>>> 2b137ba8e5c1a3139a85315f78a8a057fa746973
             <li>
                 <a href="chart.html">
                     <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
