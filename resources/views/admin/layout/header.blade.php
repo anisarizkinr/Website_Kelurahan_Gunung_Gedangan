@@ -78,11 +78,25 @@
                         <i class="ti-angle-down"></i>
                     </a>
                     <ul class="show-notification profile-notification">
-                        <li>
-                            <a href="auth-normal-sign-in.html">
-                                <i class="ti-layout-sidebar-left"></i> Logout
+                        {{-- <li>
+                            <form action="{{route('logout')}}" method="POST">
+                               
+                                <i class="ti-layout-sidebar-left">Logout</i> 
+                                @csrf
+                            </form> 
+                        </li> --}}
+                        <li class="nav-item">
+                            <a href="{{ route('logout') }}" class="nav-link"
+                                onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
+                                <i class="far fa-circle nav-icon"></i>
+                                {{ __('Logout') }}
                             </a>
-                        </li>
+                
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                @csrf
+                            </form>
+                          </li>
                     </ul>
                 </li>
             </ul>

@@ -14,10 +14,10 @@ class KategoriController extends Controller
      */
     public function index()
     {
-        $data = Kategori::all();
+        $kategori = Kategori::all();
         $title = 'Kategori data';
         $paginate = Kategori::orderBy('id', 'asc')->paginate(5);
-        return view('admin.admin_crud.kategori.index', compact('data','title','paginate'));
+        return view('admin.admin_crud.kategori.index', compact('kategori','title','paginate'));
     }
 
     /**
@@ -43,15 +43,15 @@ class KategoriController extends Controller
         // $testing = Kategori::where('nama_kategori', $request -> nama_kategori)->first();
         $request->validate([
             'nama_kategori' => 'required',
-            'gambar' => 'image|file|max:1024|required',
+            'gambar_kategori' => 'image|file|max:1024|required',
         ]);
-        if ($request->file('gambar')) {
-            $image_name = $request->file('gambar')->store('gambar', 'public');
+        if ($request->file('gambar_kategori')) {
+            $image_name = $request->file('gambar_kategori')->store('gambar_kategori', 'public');
         }
 
         $kategori = new kategori;
         $kategori->nama_kategori = $request->nama_kategori;
-        $galeri->gambar = $image_name;
+        $kategori->gambar_kategori = $image_name;
         $kategori->save();
 
         return redirect()->route('kategori.index')->with('success', 'Data Kategori Berhasil Ditambahkan');
@@ -92,18 +92,19 @@ class KategoriController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'gambar' => 'image|file|max:1024|required',
+            'nama_kategori' => 'required',
+            'gambar_kategori' => 'image|file|max:1024|required',
         ]);
 
         $kategori = Kategori::where('id', $id)->first();
-        if ($kategori->gambar && file_exists(storage_path('app/public/' . $kategori->gambar))) {
-            Storage::delete('public/' . $kategori->gambar);
+        if ($kategori->gambar_kategori && file_exists(storage_path('app/public/' . $kategori->gambar_kategori))) {
+            Storage::delete('public/' . $kategori->gambar_kategori);
         }
 
-        $image_name = $request->file('gambar')->store('images', 'public');
+        $image_name = $request->file('gambar_kategori')->store('images', 'public');
         // update data
 
-        $kategori->gambar = $image_name;
+        $kategori->gambar_kategori = $image_name;
         $kategori->nama_kategori = $nama_kategori;
         $kategori->save();
 

@@ -12,7 +12,8 @@
                             <div class="page-header-title">
                                 <i class="icofont icofont-table bg-c-blue"></i>
                                 <div class="d-inline">
-                                    <title>$title</title>
+                                    <h2>Kategori Data</h2>
+                                    <span>Isi Data Kategori</span>
                                 </div>
                             </div>
                         </div>
@@ -48,6 +49,7 @@
                                     <tr>
                                         <th>No</th>
                                         <th>Nama Kategori</th>
+                                        <th>Gambar</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
@@ -57,18 +59,27 @@
                                         <th scope="row">{{$ktg->id}}</th>
                                         <td>{{$ktg->nama_kategori}}</td>
                                         <td>
+                                            @if ($ktg -> gambar_kategori)
+                                            <img src="{{asset('storage/'.$ktg -> gambar_kategori)}}" class="img-flui" alt="{{ $ktg -> gambar_kategori }}" width="350px">
+                            
+                                            @else
+                                            <img src="{{asset('assets/images/gambar_kategori/'.$ktg -> id.'.jpg')}}" class="img-flui" alt="{{ $ktg -> id }}"
+                                              width="350px">
+                                            @endif
+                                          </td>
+                                        <td>
                                             <form action="{{route('kategori.edit',$ktg->id)}}" method="POST">
                                                 @csrf
                                                 @method('PUT')
-                                                <a class="btn btn-warning" href="{{route('kategori.edit',$pgr->id)}}"><i class="icofont icofont-edit"></i></a>
+                                                <a class="btn btn-warning" href="{{route('kategori.edit',$ktg->id)}}"><i class="icofont icofont-edit"></i></a>
                                             </form>
-                                            <form action="{{route('kategori.update',$ktg->id)}}" method="POST">
+                                            {{-- <form action="{{route('kategori.update',$ktg->id)}}" method="POST">
                                                 @csrf
                                                 @method('PUT')
                                                 <input type="hidden" name="id" value="{{$ktg->id}}">
                                                 <button type="submit" class="btn btn-info"><i class="icofont icofont-update"></i></button>
-                                            </form>
-                                            <form action="{{route('kategori.destroy',$pgr->id)}}" method="POST">
+                                            </form> --}}
+                                            <form action="{{route('kategori.destroy',$ktg->id)}}" method="POST">
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit" onclick="return confirm('Apakah anda yakin hapus data ini ? ')" class="btn btn-danger"><i class="icofont icofont-trash"></i></button>
