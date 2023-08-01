@@ -1,44 +1,117 @@
 @extends('layout.master')
 @section('content')
+
 <body>
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close">
-          <span class="icofont-close js-menu-toggle"></span>
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+
+
+  <div class="section">
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row mb-5 align-items-center">
+        <div class="col-lg-6 text-center mx-auto">
+          <h2 class="font-weight-bold text-primary heading">
+            DATA KELURAHAN KEDUNDUNG
+          </h2>
         </div>
       </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="property-slider-wrap">
+            <div class="property-slider">
+              <div class="property-item">
+                <a href="property-single.html" class="img">
+                  <img src="images/data/kependudukan.png" alt="Image" class="img-fluid" />
+                </a>
 
-    
-    
-   
-    <div class="section">
+                <div class="property-content">
+                  <div class="price mb-2"><span>KEPENDUDUKAN</span></div>
+                  <div>
+                    <span class="d-block mb-2 text-black-50">Data Perkembangan Penduduk</span>
 
-    </div>
-    <div class="section" style="background-color: #edf2fb;">
-      <div class="container">
-        <div class="row mb-5 align-items-center">
-          <div class="col-lg-6">
-            <h2 class="font-weight-bold text-primary heading">
-              DATA
-            </h2>
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <!-- .item -->
+
+              <div class="property-item">
+                <a href="property-single.html" class="img">
+                  <img src="images/data/rt.png" alt="Image" class="img-fluid" />
+                </a>
+
+                <div class="property-content">
+                  <div class="price mb-2"><span>RT & RW</span></div>
+                  <div>
+                    <span class="d-block mb-2 text-black-50">Data RT & RW Kelurahan Kedundung</span>
+
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <!-- .item -->
+
+              <div class="property-item">
+                <a href="property-single.html" class="img">
+                  <img src="images/data/lembaga.png" alt="Image" class="img-fluid" />
+                </a>
+
+                <div class="property-content">
+                  <div class="price mb-2"><span>LEMBAGA MASYARAKAT</span></div>
+                  <div>
+                    <span class="d-block mb-2 text-black-50">Data Lembaga Masyarakat</span>
+
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <!-- .item -->
+
+              <div class="property-item">
+                <a href="property-single.html" class="img">
+                  <img src="images/data/sarana.png" alt="Image" class="img-fluid" />
+                </a>
+
+                <div class="property-content">
+                  <div class="price mb-2"><span>SARANA PRASARANA</span></div>
+                  <div>
+                    <span class="d-block mb-2 text-black-50">Data Sarana dan Prasarana</span>
+
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">Lihat</a>
+                  </div>
+                </div>
+              </div>
+              <!-- .item -->
+            </div>
+
+            <div id="property-nav" class="controls" tabindex="0" aria-label="Carousel Navigation">
+              <span class="prev" data-controls="prev" aria-controls="property" tabindex="-1">Prev</span>
+              <span class="next" data-controls="next" aria-controls="property" tabindex="-1">Next</span>
+            </div>
           </div>
-          
         </div>
-      
       </div>
     </div>
-    
+  </div>
 
-    <!-- Preloader -->
-    <div id="overlayer"></div>
-    <div class="loader">
-      <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
+
+  <!-- Preloader -->
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
     </div>
+  </div>
 
 
-  </body>
+</body>
 @endsection
