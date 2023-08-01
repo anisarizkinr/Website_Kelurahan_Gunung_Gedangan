@@ -35,7 +35,7 @@
             </li>
             <li class="pcoded-hasmenu">
                 <li>
-                    <a href="bs-basic-table.html">
+                    <a href="{{route('galeri.index')}}">
                         <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
                         <span class="pcoded-mtext" data-i18n="nav.form-components.main">Galeri</span>
                         <span class="pcoded-mcaret"></span>
@@ -44,7 +44,7 @@
                 <li>
                     <a href="bs-basic-table.html">
                         <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
-                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Kegiatan</span>
+                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Berita</span>
                         <span class="pcoded-mcaret"></span>
                     </a>
                 </li>

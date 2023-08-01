@@ -108,11 +108,8 @@
                           <p>
                             KOTA MOJOKERTO – RI, Warga Kelurahan Kedundung hari ini, Rabu (14/10/20) 
                             telah mendapat Bantuan Langsung Tunai (BLT) tahap VII dari Kemensos, sebanyak 1584 Kepala Keluarga (KK) 
-                           
                           </p>
                         </p>
-                      
-
                       <a
                         href="https://radarindonesiaonline.com/sebanyak-1-584-kepala-keluarga-warga-kelurahan-kedundung-mendapat-blt-tahap-vii-dari-kemensos/"
                         class="btn btn-primary py-2 px-3"
