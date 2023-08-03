@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Kategori;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class KategoriController extends Controller
 {
@@ -79,7 +80,7 @@ class KategoriController extends Controller
     {
         $title ="Edit Data Kategori";
         $kategori = Kategori::find($id);
-        return view('admin.admin_crud.kegiatan.edit', compact('title', 'kategori'));
+        return view('admin.admin_crud.kategori.edit', compact('title', 'kategori'));
     }
 
     /**
@@ -105,7 +106,7 @@ class KategoriController extends Controller
         // update data
 
         $kategori->gambar_kategori = $image_name;
-        $kategori->nama_kategori = $nama_kategori;
+        $kategori->nama_kategori = $request->get('nama_kategori');
         $kategori->save();
 
         //jika data berhasil diupdate, akan kembali ke halaman utama
@@ -122,7 +123,7 @@ class KategoriController extends Controller
      */
     public function destroy($id)
     {
-        Galeri::where('id', $id)->delete();
+        Kategori::where('id', $id)->delete();
         return redirect()->route('kategori.index')->with('success', 'Data Kategori Berhasil Dihapus');
     }
 }

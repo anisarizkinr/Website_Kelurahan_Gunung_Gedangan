@@ -2,6 +2,7 @@
 @section('content')
 
 <body>
+  <div class="section"></div>
   <div class="site-mobile-menu site-navbar-target">
     <div class="site-mobile-menu-header">
       <div class="site-mobile-menu-close">
@@ -9,10 +10,6 @@
       </div>
     </div>
     <div class="site-mobile-menu-body"></div>
-  </div>
-  <div class="section">
-  </div>
-  <div class="section">
   </div>
   <div class="col-lg-6 text-center mx-auto">
     <h2 class="font-weight-bold text-primary heading">

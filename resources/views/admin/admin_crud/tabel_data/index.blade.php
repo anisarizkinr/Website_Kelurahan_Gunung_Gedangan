@@ -12,7 +12,7 @@
                             <div class="page-header-title">
                                 <i class="icofont icofont-table bg-c-blue"></i>
                                 <div class="d-inline">
-                                    <h2>Kategori Data</h2>
+                                    <h2>Tabel Data</h2>
                                     <span>Isi Data Kategori</span>
                                 </div>
                             </div>
@@ -21,11 +21,11 @@
                             <div class="page-header-breadcrumb">
                                <ul class="breadcrumb-title">
                                 <li class="breadcrumb-item">
-                                    <a href="{{url('/dashboard')}}">
+                                    <a href="{{url('/data')}}">
                                         <i class="icofont icofont-home"></i>
                                     </a>
                                 </li>
-                                <li class="breadcrumb-item"><a href="{{url('/kategori')}}">Kategori Data</a>
+                                <li class="breadcrumb-item"><a href="{{url('/data')}}">Kategori Data</a>
                                 </li>
                             </ul>
                         </div>
@@ -39,7 +39,7 @@
                 <!-- Basic table card start -->
                 <div class="card">
                     <div class="card-header">
-                        <a class="btn btn-primary" href="{{route('kategori.create')}}"> Tambah Kategori</a>
+                        <a class="btn btn-primary" href="{{route('data.create')}}"> Tambah Data</a>
                         <div class="card-header-right">    <ul class="list-unstyled card-option">        <li><i class="icofont icofont-simple-left "></i></li>        <li><i class="icofont icofont-maximize full-card"></i></li>        <li><i class="icofont icofont-minus minimize-card"></i></li>        <li><i class="icofont icofont-refresh reload-card"></i></li>        <li><i class="icofont icofont-error close-card"></i></li>    </ul></div>
                     </div>
                     <div class="card-block table-border-style">
@@ -48,30 +48,30 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Nama Kategori</th>
-                                        <th>Gambar</th>
-                                        <th>Aksi</th>
+                                        <th>Judul</th>
+                                        <th>Isi Data</th>
+                                        <th>Keterangan</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($paginate as $ktg)
+                                    @foreach ($paginate as $dt)
                                     <tr>
-                                        <th scope="row">{{$ktg->id}}</th>
-                                        <td>{{$ktg->nama_kategori}}</td>
+                                        <th scope="row">{{$dt->id}}</th>
+                                        <td>{{$dt->nama_kategori}}</td>
                                         <td>
-                                            @if ($ktg -> gambar_kategori)
-                                            <img src="{{asset('storage/'.$ktg -> gambar_kategori)}}" class="img-flui" alt="{{ $ktg -> gambar_kategori }}" width="350px">
+                                            @if ($dt -> gambar_kategori)
+                                            <img src="{{asset('storage/'.$dt -> gambar_kategori)}}" class="img-flui" alt="{{ $dt -> gambar_kategori }}" width="350px">
                             
                                             @else
-                                            <img src="{{asset('assets/images/gambar_kategori/'.$ktg -> id.'.png')}}" class="img-flui" alt="{{ $ktg -> id }}"
+                                            <img src="{{asset('assets/images/gambar_kategori/'.$dt -> id.'.png')}}" class="img-flui" alt="{{ $dt -> id }}"
                                               width="350px">
                                             @endif
                                           </td>
                                         <td>
-                                            <form action="{{route('kategori.edit',$ktg->id)}}" method="POST">
+                                            <form action="{{route('kategori.edit',$dt->id)}}" method="POST">
                                                 @csrf
                                                 @method('PUT')
-                                                <a class="btn btn-warning" href="{{route('kategori.edit',$ktg->id)}}"><i class="icofont icofont-edit"></i></a>
+                                                <a class="btn btn-warning" href="{{route('kategori.edit',$dt->id)}}"><i class="icofont icofont-edit"></i></a>
                                             </form>
                                             {{-- <form action="{{route('kategori.update',$ktg->id)}}" method="POST">
                                                 @csrf
@@ -79,7 +79,7 @@
                                                 <input type="hidden" name="id" value="{{$ktg->id}}">
                                                 <button type="submit" class="btn btn-info"><i class="icofont icofont-update"></i></button>
                                             </form> --}}
-                                            <form action="{{route('kategori.destroy',$ktg->id)}}" method="POST">
+                                            <form action="{{route('kategori.destroy',$dt->id)}}" method="POST">
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit" onclick="return confirm('Apakah anda yakin hapus data ini ? ')" class="btn btn-danger"><i class="icofont icofont-trash"></i></button>

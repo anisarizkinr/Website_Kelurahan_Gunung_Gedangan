@@ -10,10 +10,11 @@ use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\GaleriUserController;
 use App\Http\Controllers\LayananController;
 use App\Http\Controllers\SejarahController;
-use App\Http\Controllers\DataController;
+use App\Http\Controllers\DataUserController;
 use App\Http\Controllers\GaleriController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\DataController;
 use App\Models\Berita;
 
 /*
@@ -83,5 +84,6 @@ Route::resource('berita', BeritaController::class);
 Route::get('/dashboard ',[DashboardController::class, 'dashboard']);
 
 Route::resource('kategori', KategoriController::class);
+
 // });
 

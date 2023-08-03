@@ -13,7 +13,7 @@
                             <div class="page-header-title">
                                 <i class="icofont icofont-file-code bg-c-blue"></i>
                                 <div class="d-inline">
-                                    <h4>Tambah Kategori Data</h4>
+                                    <h4>Tambah Tabel Data</h4>
                                 </div>
                             </div> 
                         </div>
@@ -25,7 +25,7 @@
                                             <i class="icofont icofont-home"></i>
                                         </a>
                                     </li>
-                                    <li class="breadcrumb-item"><a href="{{route('kategori.create')}}">Tambah Kategori Data</a>
+                                    <li class="breadcrumb-item"><a href="{{route('data.create')}}">Tambah Tabel Data</a>
                                     </li>
                                 </ul>
                             </div>
@@ -44,30 +44,47 @@
 
                                     </div>
                                     <div class="card-block">
-                                        <h4 class="sub-title">Kategori data</h4>
-                                        <form action="{{route('kategori.store')}}" method="POST" enctype="multipart/form-data">
+                                        <h4 class="sub-title">Tabel data</h4>
+                                        <form action="{{route('data.store')}}" method="POST" enctype="multipart/form-data">
                                             @csrf
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Id Data</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" name="id" id="id" class="form-control form-control-round"
+                                                    placeholder="{{$data->id}}" disabled>
+                                                </div>
+                                            </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-2 col-form-label">Id Kategori Data</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" name="id" id="id" class="form-control form-control-round"
-                                                    placeholder="{{$kategori->id}}" disabled>
+                                                    <input type="text" name="id_kategori" id="id" class="form-control form-control-round"
+                                                    placeholder="{{$data->id}}" disabled>
                                                 </div>
                                             </div>
                                                 <div class="form-group row">
-                                                    <label class="col-sm-2 col-form-label">Nama Kategori</label>
+                                                    <label class="col-sm-2 col-form-label">Judul</label>
                                                     <div class="col-sm-10">
-                                                        <input type="text" name="nama_kategori" id="nama_kategori"
+                                                        <input type="text" name="judul" id="judul"
                                                         class="form-control form-control-round"
-                                                        placeholder="Nama Kategori">
+                                                        placeholder="Judul Kategori">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-sm-2 col-form-label">Gambar Kategori Data</label>
-                                                        <div class="col-sm-10">
-                                                            <input type="file" name="gambar_kategori" id="gambar_kategori" class="form-control form-control-round">
-                                                        </div>
+                                                    <label class="col-sm-2 col-form-label">Isi Data</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" name="isi_data" id="isi_data"
+                                                        class="form-control form-control-round"
+                                                        placeholder="Isi Data">
                                                     </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">Keterangan</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" name="keterangan" id="keterangan"
+                                                        class="form-control form-control-round"
+                                                        placeholder="Keterangan">
+                                                    </div>
+                                                </div>
                                                     <button type="submit" class="btn btn-warning float-right"> Submit</button>
                                             </form>
                                         </div>
