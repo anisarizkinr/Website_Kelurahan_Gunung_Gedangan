@@ -29,22 +29,34 @@
           <div class="property-slider-wrap">
             <div class="property-slider">
               <div class="property-item">
-                <a href="property-single.html" class="img">
-                  <img src="images/data/kependudukan.png" alt="Image" class="img-fluid" />
-                </a>
-
-                <div class="property-content">
-                  <div class="price mb-2"><span>KEPENDUDUKAN</span></div>
-                  <div>
-                    <span class="d-block mb-2 text-black-50">Data Perkembangan Penduduk</span>
-
-                    <a href="property-single.html" class="btn btn-primary py-2 px-3">Lihat</a>
+                <div class="row">
+                  @foreach ($paginate as $ktg )
+                  @if ($ktg -> gambar_kategori)
+                    <img src="{{('storage/'.$ktg -> gambar_kategori)}}" class="img-flui" alt="{{ $ktg -> gambar_kategori }}">
+                  @else
+                    <img src="{{('assets/images/gambar_kategori/'.$ktg -> id.'.png')}}" class="card-img-top" alt="{{ $ktg -> id }}">
+                  @endif
+                  <div class="property-content">
+                    <div class="price mb-2"><span>{{$ktg->nama_kategori}}</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">Data Perkembangan Penduduk</span>
+  
+                      <a href="property-single.html" class="btn btn-primary py-2 px-3">Lihat</a>
+                    </div>
                   </div>
+
+                @endforeach
                 </div>
+               
+                {{-- <a href="property-single.html" class="img">
+                  <img src="images/data/kependudukan.png" alt="Image" class="img-fluid" />
+                </a> --}}
+
+                
               </div>
               <!-- .item -->
 
-              <div class="property-item">
+              {{-- <div class="property-item">
                 <a href="property-single.html" class="img">
                   <img src="images/data/rt.png" alt="Image" class="img-fluid" />
                 </a>
@@ -57,10 +69,10 @@
                     <a href="property-single.html" class="btn btn-primary py-2 px-3">Lihat</a>
                   </div>
                 </div>
-              </div>
+              </div> --}}
               <!-- .item -->
 
-              <div class="property-item">
+              {{-- <div class="property-item">
                 <a href="property-single.html" class="img">
                   <img src="images/data/lembaga.png" alt="Image" class="img-fluid" />
                 </a>
@@ -73,10 +85,10 @@
                     <a href="property-single.html" class="btn btn-primary py-2 px-3">Lihat</a>
                   </div>
                 </div>
-              </div>
+              </div> --}}
               <!-- .item -->
 
-              <div class="property-item">
+              {{-- <div class="property-item">
                 <a href="property-single.html" class="img">
                   <img src="images/data/sarana.png" alt="Image" class="img-fluid" />
                 </a>
@@ -89,7 +101,7 @@
                     <a href="property-single.html" class="btn btn-primary py-2 px-3">Lihat</a>
                   </div>
                 </div>
-              </div>
+              </div> --}}
               <!-- .item -->
             </div>
 

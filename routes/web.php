@@ -34,7 +34,7 @@ Route::get('/', function () {
 Route::get('/beranda ',[UserController::class, 'beranda']);
 // Route::get('/layanan ',[LayananController::class, 'layanan']);
 Route::get('/pencapaian ',[PencapaianController::class, 'pencapaian']);
-// Route::get('/data ',[DataController::class, 'data']);
+Route::get('/data ',[DataUserController::class, 'data']);
   
   
 

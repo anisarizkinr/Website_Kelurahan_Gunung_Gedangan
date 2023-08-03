@@ -9,8 +9,8 @@ use Illuminate\Http\Request;
 class DataUserController extends Controller
 {
     public function data(){
-        return view('user.data', 
-        ['title'=> 'data']);
+        $paginate = Kategori::orderBy('id', 'asc')->paginate(5);
+        return view('user.data', compact('paginate'));
     }
     
     public function pilihdata()
