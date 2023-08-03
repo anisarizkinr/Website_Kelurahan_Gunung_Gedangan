@@ -95,11 +95,11 @@
                                             @endif
                                           <td>
                                             <form action="{{ route('galeri.destroy',$glr->id) }}" method="POST">
-                                              <a class="btn btn-warning" href="{{ route('galeri.edit',$glr->id) }}"><i class="fa-solid fa-pen-to-square"></i> </a>
+                                              <a class="btn btn-warning" href="{{ route('galeri.edit',$glr->id) }}"><i class="icofont icofont-edit"></i> </a>
                                               @csrf
                                               @method('DELETE')
                                               <button type="submit" onclick="return confirm('Apakah anda yakin hapus data ini ?')"
-                                                class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                                                class="btn btn-danger"><i class="icofont icofont-trash"></i></button>
                                           </td>
                                           @endforeach
 
