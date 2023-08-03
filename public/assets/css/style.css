@@ -16138,7 +16138,7 @@ table.footable-paging-center>tfoot>tr.footable-paging>td {
   align-items: center;
   justify-content: center;
   margin-top: 200px;
-  margin-left: 160px;
+  margin-left: 200px;
 }
 
 .login-card h1 {
@@ -21329,12 +21329,16 @@ table.footable-paging-center>tfoot>tr.footable-paging>td {
 }
 
 .img-about{
-  width: 170%;
-  height: 170%;
+  width: 283%;
+  height: 283%;
   margin-bottom: 200px;
   margin-top: 20px;
-  margin-left: 250px;
+  margin-left: -15px;
 }
-
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
 
 /*# sourceMappingURL=style.css.map */
