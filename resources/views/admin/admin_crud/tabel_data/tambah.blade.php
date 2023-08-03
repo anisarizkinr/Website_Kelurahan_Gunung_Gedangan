@@ -51,14 +51,18 @@
                                                 <label class="col-sm-2 col-form-label">Id Data</label>
                                                 <div class="col-sm-10">
                                                     <input type="text" name="id" id="id" class="form-control form-control-round"
-                                                    placeholder="{{$data->id}}" disabled>
+                                                    placeholder="Id " disabled>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">Id Kategori Data</label>
+                                                <label class="col-sm-2 col-form-label">Kategori</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" name="id_kategori" id="id" class="form-control form-control-round"
-                                                    placeholder="{{$data->id}}" disabled>
+                                                    <select name="id_kategori" id="id_kategori" class="form-control form-control-round">
+                                                        <option value="opt1">Pilih Kategori Data</option>
+                                                        <option value="opt2">Type 2</option>
+                                                        <option value="opt3">Type 3</option>
+                                                        <option value="opt4">Type 4</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                                 <div class="form-group row">

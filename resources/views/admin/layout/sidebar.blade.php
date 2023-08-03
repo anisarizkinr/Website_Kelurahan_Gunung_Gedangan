@@ -36,21 +36,21 @@
             <li class="pcoded-hasmenu">
                 <li>
                     <a href="{{route('galeri.index')}}">
-                        <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                        <span class="pcoded-micon"><i class="ti-gallery"></i></span>
                         <span class="pcoded-mtext" data-i18n="nav.form-components.main">Galeri</span>
                         <span class="pcoded-mcaret"></span>
                     </a>
                 </li>
                 <li>
                     <a href="{{route('berita.index')}}">
-                        <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                        <span class="pcoded-micon"><i class="ti-announcement"></i></span>
                         <span class="pcoded-mtext" data-i18n="nav.form-components.main">Berita</span>
                         <span class="pcoded-mcaret"></span>
                     </a>
                 </li>
                 <li class="pcoded-hasmenu">
                     <a href="javascript:void(0)">
-                        <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                        <span class="pcoded-micon"><i class="ti-server"></i></span>
                         <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Data</span>
                         <span class="pcoded-mcaret"></span>
                     </a>
@@ -63,7 +63,7 @@
                             </a>
                         </li>
                         <li class=" ">
-                            <a href="{{url('/data')}}">
+                            <a href="{{url('/pilihdata')}}">
                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                 <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Tabel Data</span>
                                 <span class="pcoded-mcaret"></span>

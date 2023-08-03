@@ -12,8 +12,8 @@
                             <div class="page-header-title">
                                 <i class="icofont icofont-table bg-c-blue"></i>
                                 <div class="d-inline">
-                                    <h2>Tabel Data</h2>
-                                    <span>Isi Data Kategori</span>
+                                    <h3>Tabel Data</h3>
+                                    {{-- <span>Isi Data Kategori</span> --}}
                                 </div>
                             </div>
                         </div>
@@ -38,12 +38,51 @@
             <div class="page-body">
                 <!-- Basic table card start -->
                 <div class="card">
-                    <div class="card-header">
-                        <a class="btn btn-primary" href="{{route('data.create')}}"> Tambah Data</a>
-                        <div class="card-header-right">    <ul class="list-unstyled card-option">        <li><i class="icofont icofont-simple-left "></i></li>        <li><i class="icofont icofont-maximize full-card"></i></li>        <li><i class="icofont icofont-minus minimize-card"></i></li>        <li><i class="icofont icofont-refresh reload-card"></i></li>        <li><i class="icofont icofont-error close-card"></i></li>    </ul></div>
+                    <div class="row">
+                        <!-- card1 start -->
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card widget-card-1">
+                                <div class="card-block-small">
+                                    <i class="icofont icofont-people bg-c-green card1-icon"></i>
+                                    <span class="text-c-black f-w-600"><h3>Kegiatan</h3></span>
+                                    {{-- <h4>Jumlah</h4> --}}
+                                    <a class="btn btn-warning" href="{{route('data.index')}}"> Lihat</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card1 end -->
+                        <!-- card1 start -->
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card widget-card-1">
+                                <div class="card-block-small">
+                                    <i class="icofont icofont-picture bg-c-pink card1-icon"></i>
+                                    <span class="text-c-pink f-w-600">Galeri</span>
+                                    <h4>Jumlah</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card1 end -->
+                        <!-- card1 start -->
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card widget-card-1">
+                                <div class="card-block-small">
+                                    <i class="icofont icofont-pie-chart bg-c-blue card1-icon"></i>
+                                    <span class="text-c-green f-w-600">Data</span>
+                                    <h4>Jumlah</h4>
+                                    {{-- <div>
+                                        <span class="f-left m-t-10 text-muted">
+                                            <i class="text-c-green f-16 icofont icofont-tag m-r-10"></i>Tracked via microsoft
+                                        </span>
+                                    </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card1 end -->
+
+                        </div>
                     </div>
                     <div class="card-block table-border-style">
-                        <div class="table-responsive">
+                        {{-- <div class="table-responsive">
                             <table class="table">
                                 <thead>
                                     <tr>
@@ -51,7 +90,6 @@
                                         <th>Judul</th>
                                         <th>Isi Data</th>
                                         <th>Keterangan</th>
-                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -74,12 +112,6 @@
                                                 @method('PUT')
                                                 <a class="btn btn-warning" href="{{route('kategori.edit',$dt->id)}}"><i class="icofont icofont-edit"></i></a>
                                             </form>
-                                            {{-- <form action="{{route('kategori.update',$ktg->id)}}" method="POST">
-                                                @csrf
-                                                @method('PUT')
-                                                <input type="hidden" name="id" value="{{$ktg->id}}">
-                                                <button type="submit" class="btn btn-info"><i class="icofont icofont-update"></i></button>
-                                            </form> --}}
                                             <form action="{{route('kategori.destroy',$dt->id)}}" method="POST">
                                                 @csrf
                                                 @method('DELETE')
@@ -91,7 +123,8 @@
                                    
                                 </tbody>
                             </table>
-                        </div>
+                        </div> --}}
+
                         <div class="btn-container">
                             {{$paginate->links()}}
                           </div>

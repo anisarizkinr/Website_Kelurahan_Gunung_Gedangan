@@ -34,7 +34,7 @@ Route::get('/', function () {
 Route::get('/beranda ',[UserController::class, 'beranda']);
 // Route::get('/layanan ',[LayananController::class, 'layanan']);
 Route::get('/pencapaian ',[PencapaianController::class, 'pencapaian']);
-Route::get('/data ',[DataController::class, 'data']);
+// Route::get('/data ',[DataController::class, 'data']);
   
   
 
@@ -84,6 +84,8 @@ Route::resource('berita', BeritaController::class);
 Route::get('/dashboard ',[DashboardController::class, 'dashboard']);
 
 Route::resource('kategori', KategoriController::class);
+Route::resource('data', DataController::class);
+Route::get('/pilihdata ',[DataUserController::class, 'pilihdata']);
 
 // });
 

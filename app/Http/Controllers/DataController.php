@@ -17,7 +17,8 @@ class DataController extends Controller
     public function index()
     {
         $data = Data::all();
-        return view('admin.admin_crud.tabel_data.index', compact('data'));
+        $paginate = Data::orderBy('id', 'asc')->paginate(5);
+        return view('admin.admin_crud.tabel_data.index', compact('data','paginate'));
     }
 
     /**
