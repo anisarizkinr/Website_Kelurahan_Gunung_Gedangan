@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Berita;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class BeritaController extends Controller
 {
@@ -118,10 +119,10 @@ class BeritaController extends Controller
         // update data
 
         $berita->gambar_berita = $image_name;
-        $berita->tanggal_berita = $tanggal_berita;
-        $berita->judul_berita = $judul_berita;
-        $berita->isi_berita = $isi_berita;
-        $berita->link = $link;
+        $berita->tanggal_berita = $request->get('tanggal_berita');
+        $berita->judul_berita = $request->get('judul_berita');
+        $berita->isi_berita = $request->get('isi_berita');
+        $berita->link = $request->get('link');
         $berita->save();
 
         //jika data berhasil diupdate, akan kembali ke halaman utama
