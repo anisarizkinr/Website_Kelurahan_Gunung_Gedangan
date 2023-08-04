@@ -17,8 +17,9 @@ class DataController extends Controller
     public function index()
     {
         $data = Data::all();
+        $kategori = Kategori::all();
         $paginate = Data::orderBy('id', 'asc')->paginate(5);
-        return view('admin.admin_crud.tabel_data.index', compact('data','paginate'));
+        return view('admin.admin_crud.tabel_data.index', compact('data', 'kategori','paginate'));
     }
 
     /**
@@ -29,7 +30,8 @@ class DataController extends Controller
     public function create()
     {
         $data = Data:: all();
-        return view('admin.admin_crud.tabel_data.tambah', compact('data'));
+        $kategori= Kategori::all();
+        return view('admin.admin_crud.tabel_data.tambah', compact('data','kategori'));
     }
 
     /**
@@ -40,17 +42,23 @@ class DataController extends Controller
      */
     public function store(Request $request)
     {
+        $targetKategori = Kategori::where('nama_kategori', $request->id_kategori)->first();
+
         $request->validate([
             'judul' => 'required',
             'isi_data' => ' required',
         ]);
-
+        // $data['id_kategori'] = $targetKategori->id_kategori;
+        // Data::create($data);
+        // $kategori = Kategori::all();
+        // $data = Data::all();
         $data = new Data();
         $data->id_kategori = $request->id_kategori;
         $data->judul = $request->judul;
         $data->isi_data = $request->isi_data;
+        // $data->keterangan = $request->keterangan;
         $data->save();
-        return redirect()->route('data.index')->with('success', 'Tabel Data Berhasil Ditambahkan');
+        return redirect()->route('data.kategori',$data->id_kategori)->with('success', 'Tabel Data Berhasil Ditambahkan');
     }
 
     /**

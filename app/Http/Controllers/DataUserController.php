@@ -15,9 +15,9 @@ class DataUserController extends Controller
     
     public function pilihdata()
     {
-        $data = Data::all();
-        $paginate = Data::orderBy('id', 'asc')->paginate(5);
-        return view("admin.admin_crud.tabel_data.pilihdata", compact('data','paginate'));
+        $kategori = Kategori::all();
+        $paginate = Kategori::orderBy('id', 'asc')->paginate(6);
+        return view("admin.admin_crud.tabel_data.pilihdata", compact('kategori','paginate'));
     }
     
 }
