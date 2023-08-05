@@ -10,13 +10,13 @@ class Kategori extends Model
 {
     use HasFactory;
     protected $table='kategoris';
-    protected $primaryKey = 'id'; 
+    protected $primaryKey = 'id';
 
     protected $fillable = [
         'nama_kategori',
     ];
     public function data()
     {
-        return $this->hasMany(Data::class);
+        return $this->hasMany(Data::class, 'id');
     }
 }

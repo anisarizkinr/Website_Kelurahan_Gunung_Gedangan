@@ -19,6 +19,7 @@ class DataController extends Controller
         $data = Data::all();
         $kategori = Kategori::all();
         $paginate = Data::orderBy('id', 'asc')->paginate(5);
+        $firstData = Data::first();
         return view('admin.admin_crud.tabel_data.index', compact('data', 'kategori','paginate'));
     }
 
@@ -42,8 +43,7 @@ class DataController extends Controller
      */
     public function store(Request $request)
     {
-        $targetKategori = Kategori::where('nama_kategori', $request->id_kategori)->first();
-
+        $targetKategori = Kategori::where('id', $request->id_kategori)->first();
         $request->validate([
             'judul' => 'required',
             'isi_data' => ' required',

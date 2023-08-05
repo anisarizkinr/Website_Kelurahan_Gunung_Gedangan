@@ -15,7 +15,7 @@
                                 <div class="d-inline">
                                     <h4>Tambah Tabel Data</h4>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="page-header-breadcrumb">
@@ -60,7 +60,7 @@
                                                     <select name="id_kategori" id="id_kategori" class="form-control form-control-round">
                                                         <option>Pilih Kategori Data</option>
                                                         @foreach ($kategori as $ktg)
-                                                        <option value="{{$ktg->id_kategori}}">{{$ktg->nama_kategori}}</option>
+                                                        <option value="{{$ktg->id}}">{{$ktg->nama_kategori}}</option>
                                                         @endforeach
                                                     </select>
                                                 </div>
