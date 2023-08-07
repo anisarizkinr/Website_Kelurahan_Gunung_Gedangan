@@ -91,7 +91,7 @@
 
 
 
-                        <div class="col-md-12 col-xl-4">
+                        {{-- <div class="col-md-12 col-xl-4">
                                 <div class="card fb-card">
                                     <div class="card-header">
                                         <i class="icofont icofont-social-facebook"></i>
@@ -344,7 +344,7 @@
                             
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
                 <div id="styleSelector">
 
