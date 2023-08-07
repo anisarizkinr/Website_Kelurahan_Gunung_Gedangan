@@ -24,7 +24,7 @@
           </h2>
         </div>
       </div>
-      <div class="row">
+      {{-- <div class="row">
         <div class="col-12">
           <div class="property-slider-wrap">
             <div class="property-slider">
@@ -47,62 +47,7 @@
 
                 @endforeach
                 </div>
-               
-                {{-- <a href="property-single.html" class="img">
-                  <img src="images/data/kependudukan.png" alt="Image" class="img-fluid" />
-                </a> --}}
-
-                
               </div>
-              <!-- .item -->
-
-              {{-- <div class="property-item">
-                <a href="property-single.html" class="img">
-                  <img src="images/data/rt.png" alt="Image" class="img-fluid" />
-                </a>
-
-                <div class="property-content">
-                  <div class="price mb-2"><span>RT & RW</span></div>
-                  <div>
-                    <span class="d-block mb-2 text-black-50">Data RT & RW Kelurahan Kedundung</span>
-
-                    <a href="property-single.html" class="btn btn-primary py-2 px-3">Lihat</a>
-                  </div>
-                </div>
-              </div> --}}
-              <!-- .item -->
-
-              {{-- <div class="property-item">
-                <a href="property-single.html" class="img">
-                  <img src="images/data/lembaga.png" alt="Image" class="img-fluid" />
-                </a>
-
-                <div class="property-content">
-                  <div class="price mb-2"><span>LEMBAGA MASYARAKAT</span></div>
-                  <div>
-                    <span class="d-block mb-2 text-black-50">Data Lembaga Masyarakat</span>
-
-                    <a href="property-single.html" class="btn btn-primary py-2 px-3">Lihat</a>
-                  </div>
-                </div>
-              </div> --}}
-              <!-- .item -->
-
-              {{-- <div class="property-item">
-                <a href="property-single.html" class="img">
-                  <img src="images/data/sarana.png" alt="Image" class="img-fluid" />
-                </a>
-
-                <div class="property-content">
-                  <div class="price mb-2"><span>SARANA PRASARANA</span></div>
-                  <div>
-                    <span class="d-block mb-2 text-black-50">Data Sarana dan Prasarana</span>
-
-                    <a href="property-single.html" class="btn btn-primary py-2 px-3">Lihat</a>
-                  </div>
-                </div>
-              </div> --}}
-              <!-- .item -->
             </div>
 
             <div id="property-nav" class="controls" tabindex="0" aria-label="Carousel Navigation">
@@ -111,6 +56,28 @@
             </div>
           </div>
         </div>
+      </div> --}}
+      <div class="row">
+        @foreach ($paginate as $ktg )
+          <div class="col-lg-4 col-md-6 mb-4"> <!-- Wrap each card in a 3-column layout -->
+            <div class="property-item">
+              <div class="row">
+                @if ($ktg->gambar_kategori)
+                  <img src="{{('storage/'.$ktg->gambar_kategori)}}" class="img-flui" alt="{{ $ktg->gambar_kategori }}">
+                @else
+                  <img src="{{('assets/images/gambar_kategori/'.$ktg->id.'.png')}}" class="card-img-top" alt="{{ $ktg->id }}">
+                @endif
+                <div class="property-content">
+                  <div class="price mb-2"><span>{{$ktg->nama_kategori}}</span></div>
+                  <div>
+                    <span class="d-block mb-2 text-black-50">Data Perkembangan Penduduk</span>
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">Lihat</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        @endforeach
       </div>
     </div>
   </div>
