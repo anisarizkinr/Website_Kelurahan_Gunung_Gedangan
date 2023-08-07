@@ -42,7 +42,7 @@
                 <li><a href="{{url('/layanan/p_keterangan_domisili')}}">Persyaratan Surat Keterangan Domisili</a></li>
               </ul>
             </li>
-            <li><a href="{{url('/data')}}" style="font-size: 18px;">Data</a></li>
+            <li><a href="{{url('/data_user')}}" style="font-size: 18px;">Data</a></li>
             <li><a href="https://curhatningita.lapor.go.id/" style="font-size: 18px;">Curhat Ning Ita</a></li>
             <li><a href="{{url('/login')}}" class="btn btn-secondary rounded-pill py-3 px-5">Login</a></li>
           </ul>
