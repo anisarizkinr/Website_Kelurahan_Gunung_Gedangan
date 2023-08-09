@@ -76,9 +76,10 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-2 col-form-label">Isi Data</label>
                                                     <div class="col-sm-10">
-                                                        <input type="text" name="isi_data" id="isi_data"
-                                                        class="form-control form-control-round"
-                                                        placeholder="Isi Data">
+                                                        <textarea name="isi_data" id="isi_data"
+                                                            class="form-control "
+                                                            placeholder="Isi Data"
+                                                            rows="5"></textarea>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">

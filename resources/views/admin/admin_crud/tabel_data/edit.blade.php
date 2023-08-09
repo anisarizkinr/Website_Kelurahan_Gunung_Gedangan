@@ -25,7 +25,7 @@
                                             <i class="icofont icofont-home"></i>
                                         </a>
                                     </li>
-                                    <li class="breadcrumb-item"><a href="{{route('data.create')}}">Tambah Kategori Data</a>
+                                    <li class="breadcrumb-item"><a href="{{route('data.create')}}">Edit Tabel Data</a>
                                     </li>
                                 </ul>
                             </div>
@@ -56,10 +56,14 @@
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">Id Kategori Data</label>
+                                                <label class="col-sm-2 col-form-label">Kategori</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" name="id_kategori" id="id" class="form-control form-control-round"
-                                                    placeholder="{{$data->id_kategori}}}" disabled>
+                                                    <select name="id_kategori" id="id_kategori" class="form-control form-control-round" value="{{$data->id_kategori}}">
+                                                        <option>{{$data->id_kategori}}</option>
+                                                        @foreach ($kategori as $ktg)
+                                                        <option value="{{$ktg->id}}">{{$ktg->nama_kategori}}</option>
+                                                        @endforeach
+                                                    </select>
                                                 </div>
                                             </div>
                                                 <div class="form-group row">
@@ -73,11 +77,20 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-2 col-form-label">Isi Data</label>
                                                     <div class="col-sm-10">
+                                                        <textarea name="isi_data" id="isi_data" value="{{$data->isi_data}}"
+                                                            class="form-control "
+                                                            placeholder="Isi Data"
+                                                            rows="5">{{$data->isi_data}}</textarea>
+                                                    </div>
+                                                </div>
+                                                {{-- <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">Isi Data</label>
+                                                    <div class="col-sm-10">
                                                         <input type="text" name="isi_data" id="isi_data" value="{{$data->isi_data}}"
                                                         class="form-control form-control-round"
                                                         placeholder="isi_data">
                                                     </div>
-                                                </div>
+                                                </div> --}}
                                                 <div class="form-group row">
                                                     <label class="col-sm-2 col-form-label">Keterangan</label>
                                                     <div class="col-sm-10">

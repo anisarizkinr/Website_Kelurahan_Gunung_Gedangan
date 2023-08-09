@@ -35,6 +35,8 @@ Route::get('/beranda ',[UserController::class, 'beranda']);
 // Route::get('/layanan ',[LayananController::class, 'layanan']);
 Route::get('/pencapaian ',[PencapaianController::class, 'pencapaian']);
 Route::get('/data_user ',[DataUserController::class, 'data']);
+Route::get('/data_user_tabel/{kategori}',[DataUserController::class, 'data_user_tabel']);
+Route::get('/data_user_tabel_isi/{kategori}/{id}',[DataUserController::class, 'data_user_tabel_isi']);
   
   
 
@@ -77,15 +79,13 @@ Route::prefix('layanan')->group(function () {
   
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 Route::resource('galeri', GaleriController::class);
 Route::resource('berita', BeritaController::class);
-
 Route::get('/dashboard ',[DashboardController::class, 'dashboard']);
-
 Route::resource('kategori', KategoriController::class);
 Route::resource('data', DataController::class);
 Route::get('/pilihdata ',[DataUserController::class, 'pilihdata']);
+Route::get('/data_admin/{kategori}',[DataUserController::class, 'indexKategori'])->name('data.kategori');
 
 // });
 

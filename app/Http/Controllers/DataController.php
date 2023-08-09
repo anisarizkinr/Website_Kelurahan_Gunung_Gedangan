@@ -56,7 +56,7 @@ class DataController extends Controller
         $data->id_kategori = $request->id_kategori;
         $data->judul = $request->judul;
         $data->isi_data = $request->isi_data;
-        // $data->keterangan = $request->keterangan;
+        $data->keterangan = $request->keterangan;
         $data->save();
         return redirect()->route('data.kategori',$data->id_kategori)->with('success', 'Tabel Data Berhasil Ditambahkan');
     }
@@ -81,7 +81,8 @@ class DataController extends Controller
     public function edit($id)
     {
         $data = Data::find($id);
-        return view('admin.admin_crud.tabel_data.edit', compact('data'));
+        $kategori = Kategori::all();
+        return view('admin.admin_crud.tabel_data.edit', compact('data', 'kategori'));
     }
 
     /**
@@ -93,19 +94,26 @@ class DataController extends Controller
      */
     public function update(Request $request, $id)
     {
+        // Validasi input
         $request->validate([
             'judul' => 'required',
             'isi_data' => 'required',
         ]);
-        $data->id_kategori = $request->get('id_kategori');
-        $data->judul = $request->get('judul');
-        $data->isi_data = $request->get('isi_data');
-        $data->keterangan = $request->get('keterangan');
+
+        // Cari data berdasarkan ID
+        $data = Data::findOrFail($id);
+
+        // Update nilai-nilai pada data
+        $data->id_kategori = $request->input('id_kategori');
+        $data->judul = $request->input('judul');
+        $data->isi_data = $request->input('isi_data');
+        $data->keterangan = $request->input('keterangan');
+
+        // Simpan perubahan
         $data->save();
 
-        //jika data berhasil diupdate, akan kembali ke halaman utama
-        return redirect()->route('data.index')
-            ->with('success', 'Tabel Data Berhasil Diupdate');
+        // Jika data berhasil diupdate, akan kembali ke halaman utama
+        return redirect()->route('data.kategori',$data->id_kategori)->with('success', 'Tabel Data Berhasil Diupdate');
     }
 
     /**

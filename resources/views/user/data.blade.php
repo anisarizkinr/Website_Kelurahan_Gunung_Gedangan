@@ -71,7 +71,7 @@
                   <div class="price mb-2"><span>{{$ktg->nama_kategori}}</span></div>
                   <div>
                     <span class="d-block mb-2 text-black-50">Data Perkembangan Penduduk</span>
-                    <a href="property-single.html" class="btn btn-primary py-2 px-3">Lihat</a>
+                    <a href="{{url('/data_user_tabel',$ktg->id)}}" class="btn btn-primary py-2 px-3">Lihat</a>
                   </div>
                 </div>
               </div>

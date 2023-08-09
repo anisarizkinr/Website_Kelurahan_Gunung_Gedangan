@@ -41,13 +41,13 @@
                     <div class="row">
                         <!-- card1 start -->
                         @foreach ($kategori as $ktg )
-                        <div class="col-md-6 col-xl-3">
+                        <div class="col-md-6 col-xl-3" style="margin-left: 60px">
                             <div class="card widget-card-1">
                                 <div class="card-block-small">
                                     <i class="icofont icofont-database bg-c-green card1-icon"></i><br>
                                     <span class="text-c-black f-w-600"><h4>{{$ktg->nama_kategori}}</h4></span>
                                     {{-- <h4>Jumlah</h4> --}}
-                                    <a class="btn btn-warning" href="{{route('data.index', $ktg->id_kategori)}}"> Lihat</a>
+                                    <a class="btn btn-warning" href="{{route('data.kategori',$ktg->id)}}"> Lihat</a>
                                 </div>
                             </div>
                         </div>

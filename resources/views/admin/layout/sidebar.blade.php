@@ -5,16 +5,8 @@
             <div class="main-menu-header">
                 <div class="user-details">
                     <span>Admin K. Kedundung</span>
-                    <span id="more-details">Admin<i class="ti-angle-down"></i></span>
+                    <span id="more-details"></span>
                 </div>
-            </div>
-
-            <div class="main-menu-content">
-                <ul>
-                    <li class="more-details">
-                        <a href="auth-normal-sign-in.html"><i class="ti-layout-sidebar-left"></i>Logout</a>
-                    </li>
-                </ul>
             </div>
         </div>
         {{-- Button Search --}}

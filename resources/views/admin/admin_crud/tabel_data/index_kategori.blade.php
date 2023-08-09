@@ -69,20 +69,9 @@
                                             <th scope="row">{{$dt->id}}</th>
                                             <th scope="row">{{$dt->kategori->nama_kategori}}</th>
                                             <td>{{$dt->judul}}</td>
-                                            {{-- <td>{{$dt->isi_data}}</td> --}}
                                             <td>
                                                 <textarea class="form-control form-control-round custom-textarea" readonly rows="5">{{$dt->isi_data}}</textarea>
                                             </td>
-                                            {{-- <td>
-                                                @if ($dt -> gambar_kategori)
-                                                <img src="{{asset('storage/'.$dt -> gambar_kategori)}}" class="img-flui"
-                                                    alt="{{ $dt -> gambar_kategori }}" width="350px">
-
-                                                @else
-                                                <img src="{{asset('assets/images/gambar_kategori/'.$dt -> id.'.png')}}"
-                                                    class="img-flui" alt="{{ $dt -> id }}" width="350px">
-                                                @endif
-                                            </td> --}}
                                             <td>{{$dt->keterangan}}</td>
                                             <td>
                                                 <form action="{{route('data.edit',$dt->id)}}" method="POST">
@@ -92,13 +81,6 @@
                                                         href="{{route('data.edit',$dt->id)}}"><i
                                                             class="icofont icofont-edit"></i></a>
                                                 </form>
-                                                {{-- <form action="{{route('kategori.update',$ktg->id)}}" method="POST">
-                                                @csrf
-                                                @method('PUT')
-                                                <input type="hidden" name="id" value="{{$ktg->id}}">
-                                                <button type="submit" class="btn btn-info"><i
-                                                        class="icofont icofont-update"></i></button>
-                                                </form> --}}
                                                 <form action="{{route('data.destroy',$dt->id)}}" method="POST">
                                                     @csrf
                                                     @method('DELETE')
@@ -115,7 +97,7 @@
                                 </table>
                             </div>
                             <div class="btn-container">
-                                {{$paginate->links()}}
+                                {{$data->links()}}
                             </div>
                         </div>
                     </div>
