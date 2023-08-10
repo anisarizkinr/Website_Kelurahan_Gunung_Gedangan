@@ -24,12 +24,17 @@ class DataUserController extends Controller
 
     public function data_user_tabel_isi(Kategori $kategori, Data $dt)
     {
+            
+
         $isi_data = Data::where('id_kategori', $kategori->id)->where('id', $dt->id)->first();
                     
         return view('user.isi_tabel_data', [
             'kategori' => $kategori,
             'isi_data' => $isi_data,
+
+            
         ]);
+        
     }
 
     // Admin
