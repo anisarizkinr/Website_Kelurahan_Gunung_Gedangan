@@ -64,7 +64,6 @@ Route::prefix('informasi')->group(function () {
  
 });
 
-
 Route::prefix('layanan')->group(function () {
     Route::get('/p_ahliwaris',[LayananController::class, 'p_ahliwaris']);
     Route::get('/p_nikah',[LayananController::class, 'p_nikah']);
@@ -76,16 +75,33 @@ Route::prefix('layanan')->group(function () {
  
 });
 
-  
+// Route Admin
 Auth::routes();
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::resource('galeri', GaleriController::class);
-Route::resource('berita', BeritaController::class);
-Route::get('/dashboard ',[DashboardController::class, 'dashboard']);
-Route::resource('kategori', KategoriController::class);
-Route::resource('data', DataController::class);
-Route::get('/pilihdata ',[DataUserController::class, 'pilihdata']);
-Route::get('/data_admin/{kategori}',[DataUserController::class, 'indexKategori'])->name('data.kategori');
+
+Route::middleware(['auth'])->group(function () {
+    Route::resource('galeri', GaleriController::class);
+    Route::resource('berita', BeritaController::class);
+    Route::get('/dashboard', [DashboardController::class, 'dashboard']);
+    Route::resource('kategori', KategoriController::class);
+    Route::resource('data', DataController::class);
+    Route::get('/pilihdata', [DataUserController::class, 'pilihdata']);
+    Route::get('/data_admin/{kategori}', [DataUserController::class, 'indexKategori'])->name('data.kategori');
+});
+
+
+  
+
+// Auth::routes();
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::resource('galeri', GaleriController::class);
+// Route::resource('berita', BeritaController::class);
+// Route::get('/dashboard ',[DashboardController::class, 'dashboard']);
+// Route::resource('kategori', KategoriController::class);
+// Route::resource('data', DataController::class);
+// Route::get('/pilihdata ',[DataUserController::class, 'pilihdata']);
+// Route::get('/data_admin/{kategori}',[DataUserController::class, 'indexKategori'])->name('data.kategori');
 
 // });
 
