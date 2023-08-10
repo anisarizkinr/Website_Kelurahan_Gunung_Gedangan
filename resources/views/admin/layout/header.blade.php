@@ -8,8 +8,8 @@
             <a class="mobile-search morphsearch-search" href="#">
                 <i class="ti-search"></i>
             </a>
-            <a href="index.html">
-                <img class="img-fluid" src="assets/images/logo.png" alt="Theme-Logo" />
+            <a href="{{url('/dashboard')}}">
+               <span>Selamat Datang, Admin</span>
             </a>
             <a class="mobile-options">
                 <i class="ti-more"></i>
@@ -72,7 +72,7 @@
                     </ul>
                 </li> --}}
                 <li class="user-profile header-notification">
-                    <a href="#!">
+                    <a href="{{url('/dashboard')}}">
                         <img src="assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
                         <span>Admin</span>
                         <i class="ti-angle-down"></i>

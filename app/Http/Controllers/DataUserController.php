@@ -21,16 +21,25 @@ class DataUserController extends Controller
             'data' => $data,
         ]);
     }
-
-    public function data_user_tabel_isi(Kategori $kategori, Data $dt)
+    
+    public function data_user_tabel_isi(Kategori $kategori, $id)
     {
-        $isi_data = Data::where('id_kategori', $kategori->id)->where('id', $dt->id)->first();
-                    
+        $isi_data = Data::where('id_kategori', $kategori->id)->where('id', $id)->first();
         return view('user.isi_tabel_data', [
             'kategori' => $kategori,
-            'isi_data' => $isi_data,   
-        ]); 
+            'isi_data' => $isi_data,
+        ]);
     }
+
+    // public function data_user_tabel_isi(Kategori $kategori, Data $dt)
+    // {
+    //     $isi_data = Data::where('id_kategori', $kategori->id)->where('id', $dt->id)->first();
+                    
+    //     return view('user.isi_tabel_data', [
+    //         'kategori' => $kategori,
+    //         'isi_data' => $isi_data,   
+    //     ]); 
+    // }
 
     // Admin
     public function pilihdata()

@@ -12,8 +12,8 @@
                             <div class="card widget-card-1">
                                 <div class="card-block-small">
                                     <i class="icofont icofont-people bg-c-green card1-icon"></i>
-                                    <span class="text-c-blue f-w-600">Kegiatan</span>
-                                    <h4>Jumlah</h4>
+                                    <span class="text-c-blue f-w-600">Berita</span>
+                                    <h4>{{$berita}}</h4>
                                     {{-- <div>
                                         <span class="f-left m-t-10 text-muted">
                                             <i class="text-c-blue f-16 icofont icofont-warning m-r-10"></i>Get more space
@@ -29,7 +29,7 @@
                                 <div class="card-block-small">
                                     <i class="icofont icofont-picture bg-c-pink card1-icon"></i>
                                     <span class="text-c-pink f-w-600">Galeri</span>
-                                    <h4>Jumlah</h4>
+                                    <h4>{{$galeri}}</h4>
                                 </div>
                             </div>
                         </div>
@@ -38,14 +38,18 @@
                         <div class="col-md-6 col-xl-3">
                             <div class="card widget-card-1">
                                 <div class="card-block-small">
+                                    <i class="icofont icofont-folder bg-c-blue card1-icon"></i>
+                                    <span class="text-c-green f-w-600">Kategori</span>
+                                    <h4>{{$kategori}}</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card widget-card-1">
+                                <div class="card-block-small">
                                     <i class="icofont icofont-pie-chart bg-c-blue card1-icon"></i>
                                     <span class="text-c-green f-w-600">Data</span>
-                                    <h4>Jumlah</h4>
-                                    {{-- <div>
-                                        <span class="f-left m-t-10 text-muted">
-                                            <i class="text-c-green f-16 icofont icofont-tag m-r-10"></i>Tracked via microsoft
-                                        </span>
-                                    </div> --}}
+                                    <h4>{{$data}}</h4>
                                 </div>
                             </div>
                         </div>
