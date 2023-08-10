@@ -86,12 +86,12 @@ class BeritaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
-    { {
+     {
             $title = "Edit Data Berita";
             $berita = Berita::find($id);
             return view('admin.admin_crud.berita.edit', compact('title', 'berita'));
         }
-    }
+    
 
     /**
      * Update the specified resource in storage.

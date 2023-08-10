@@ -2,21 +2,13 @@
 @section('content')
 
 <body>
+  <!-- Mobile menu -->
   <div class="site-mobile-menu site-navbar-target">
-    <div class="site-mobile-menu-header">
-      <div class="site-mobile-menu-close">
-        <span class="icofont-close js-menu-toggle"></span>
-      </div>
-    </div>
-    <div class="site-mobile-menu-body"></div>
+    <!-- Mobile menu content -->
   </div>
 
-
-
-
-  <div class="section">
-
-  </div>
+  <div class="section"></div>
+  
   <div class="section" style="background-color: #edf2fb;">
     <div class="container">
       <div class="row mb-5 align-items-center">
@@ -35,18 +27,16 @@
                 <div class="property-content">
                   <a href="property-single.html" class="img">
                     @if ($brt->gambar_berita)
-                    <img src="{{('storage/'.$brt->gambar_berita)}}" class="card-img-top" alt="{{ $brt->gambar_berita }}">
+                    <img src="{{ asset('storage/' . $brt->gambar_berita) }}" class="card-img-top img-fluid" alt="{{ $brt->gambar_berita }}">
                     @else
-                    <img src="{{('assets/images/gambar_berita/'.$brt->id.'.jpg')}}" class="card-img-top" alt="{{ $brt->id }}">
+                    <img src="{{ asset('assets/images/gambar_berita/' . $brt->id . '.jpg') }}" class="card-img-top img-fluid" alt="{{ $brt->id }}">
                     @endif
                   </a>
                   <div>
                     <span class="d-block mb-2 text-black-50">{{ \Carbon\Carbon::parse($brt->tanggal_berita)->format('d F Y') }}</span>
-                    <span class="city d-block mb-3">{{$brt->judul_berita}}</span>
-                    <p>
-                      {{$brt->isi_berita}}
-                    </p>
-                    <a href="{{$brt->link}}" class="btn btn-primary py-2 px-3">Lihat lebih lanjut</a>
+                    <span class="city d-block mb-3">{{ $brt->judul_berita }}</span>
+                    <p>{{ $brt->isi_berita }}</p>
+                    <a href="{{ $brt->link }}" class="btn btn-primary py-2 px-3">Lihat lebih lanjut</a>
                   </div>
                 </div>
               </div>
@@ -64,7 +54,6 @@
     </div>
   </div>
 
-
   <!-- Preloader -->
   <div id="overlayer"></div>
   <div class="loader">
@@ -72,7 +61,6 @@
       <span class="visually-hidden">Loading...</span>
     </div>
   </div>
-
 
 </body>
 @endsection
