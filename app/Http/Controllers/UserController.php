@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Berita;
 
 class UserController extends Controller
 {
     public function beranda()
     {
-        return view('user.beranda');
+        $berita = Berita::all();
+        return view('user.beranda', ['data' => $berita]);
     }
 
     public function properti()
@@ -32,7 +34,5 @@ class UserController extends Controller
         return view('user.kontak');
 
     }
-
-
     
 }

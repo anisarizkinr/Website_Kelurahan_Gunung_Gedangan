@@ -58,6 +58,7 @@
                                             <label class="col-sm-2 col-form-label">Gambar Berita</label>
                                             <div class="col-sm-10">
                                                 <input type="file" name="gambar_berita" id="gambar_berita" class="form-control form-control-round" value="{{$berita->gambar_berita}}">
+                                                <small class="form-text text-muted">Pastikan gambar memiliki rasio (1:1) untuk hasil terbaik.</small>
                                                 <img width="250px" src="{{asset('storage/'.$berita->gambar_berita)}}" alt="Image">
                                             </div>
                                         </div>

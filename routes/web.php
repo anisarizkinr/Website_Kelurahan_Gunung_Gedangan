@@ -28,21 +28,15 @@ use App\Models\Berita;
 |
 */
 
-Route::get('/', function () {
-    return view('user.beranda');
-});
+Route::get('/', [UserController::class, 'beranda']);
+
 Route::get('/beranda ',[UserController::class, 'beranda']);
 // Route::get('/layanan ',[LayananController::class, 'layanan']);
 Route::get('/pencapaian ',[PencapaianController::class, 'pencapaian']);
 Route::get('/data_user ',[DataUserController::class, 'data']);
 Route::get('/data_user_tabel/{kategori}',[DataUserController::class, 'data_user_tabel']);
 Route::get('/data_user_tabel_isi/{kategori}/{id}',[DataUserController::class, 'data_user_tabel_isi']);
-  
-  
 
-Route::get('/', function () {
-    return view('user.beranda');
-});
 Route::get('/beranda ',[UserController::class, 'beranda']);
 Route::prefix('profil')->group(function () {
    

@@ -15287,8 +15287,23 @@ nav[aria-label="breadcrumb"] li:before {
 .map-container {
   display: flex;
   justify-content: center;
+  margin-top: 70px;
+  padding-bottom: 20px;
 }
 
 .map-container iframe {
   margin: 0 auto;
 }
+
+.map-heading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 20px; /* Atur padding atas dan bawah sesuai kebutuhan */
+  background-color: rgba(255, 255, 255, 0.8); /* Atur warna latar belakang sesuai kebutuhan */
+  font-weight: bold;
+  margin-top: 160px;
+}
+
