@@ -33,7 +33,7 @@
             Selamat datang di website resmi Kelurahan Kedundung. Kami dengan bangga mempersembahkan berbagai informasi tentang kelurahan kami, termasuk Sejarah, Layanan Publik dan Informasi lainnya
           </h2>
           {{-- <button type="submit" class="btn btn-primary">Explore Lebih Jauh</button> --}}
-          <a href="{{url('/profil/tentang')}}" class="btn btn-warning rounded-pill py-3 px-5 animated slideInLeft" style="background-color: #FF8811; color:white">Explore Lebih Jauh</a>
+          <a href="{{url('/profil/sejarah')}}" class="btn btn-warning rounded-pill py-3 px-5 animated slideInLeft" style="background-color: #FF8811; color:white">Explore Lebih Jauh</a>
 
           {{-- <form
               action="#"
