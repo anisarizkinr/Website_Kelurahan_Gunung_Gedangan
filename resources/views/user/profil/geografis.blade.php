@@ -77,7 +77,7 @@
       <div class="row section-counter mt-5">
         <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
           <div class="counter-wrap mb-5 mb-lg-0">
-            <span class="number"><span class="countup text-primary">16330</span></span>
+            <span class="number"><span class="countup text-primary">15913</span></span>
             <span class="caption text-black-50"> Jumlah Penduduk /Jiwa</span>
           </div>
         </div>
@@ -95,7 +95,7 @@
         </div>
         <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
           <div class="counter-wrap mb-5 mb-lg-0">
-            <span class="number"><span class="countup text-primary">1</span></span>
+            <span class="number"><span class="countup text-primary">0</span></span>
             <span class="caption text-black-50">Jumlah Kepala Keluarga /Jiwa</span>
           </div>
         </div>
