@@ -27,6 +27,15 @@ class KategoriSeeder extends Seeder
             ],
             [
                 'nama_kategori' => 'Sarana Prasarana',
+            ],
+            [
+                'nama_kategori' => 'Pertanian',
+            ],
+            [
+                'nama_kategori' => 'Industri',
+            ],
+            [
+                'nama_kategori' => 'Potensi Desa',
             ]
         ]
         );
