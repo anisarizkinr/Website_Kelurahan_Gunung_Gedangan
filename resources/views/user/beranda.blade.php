@@ -89,7 +89,7 @@
       <div class="row mb-5 align-items-center">
         <div class="col-lg-6">
           <h2 class="font-weight-bold text-primary heading">
-            Kegiatan
+            Berita
           </h2>
         </div>
         <div class="col-lg-6 text-lg-end">
