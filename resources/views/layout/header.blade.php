@@ -18,7 +18,7 @@
               <a href="" style="font-size: 18px;">Profil</a>
               <ul class="dropdown">
                 <li><a href="{{url('/profil/sejarah')}}">Sejarah</a></li>
-                <li><a href="{{url('/profil/visi')}}">Visi & Misi</a></li>
+                <li><a href="{{url('/profil/visi')}}">Motto & Prima</a></li>
                 <li><a href="{{url('/profil/geografis')}}">Geografis & Kependudukan</a></li>
                 <li><a href="{{url('/profil/struktur')}}">Struktur Pemerintahan</a></li>
               </ul>
