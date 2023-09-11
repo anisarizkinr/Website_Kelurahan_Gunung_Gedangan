@@ -59,17 +59,23 @@
             <h2 class="font-weight-bold heading text-primary mb-4 centered-text">
               PRIMA
             </h2>
-            <h5 class="box-child">
-              <img src="{{asset('images/sdm.png')}}" alt="Image" class="img-fluid w-5 mb-4 float-start" />
+            <h5 class="box-child3">
+              <img src="{{asset('images/letter-p.png')}}" alt="Image" class="img-fluid w-5 mb-4 float-start" />
               Profesional dalam melaksanakan tugas
             </h5>
-            <h5 class="box-child">
-              <img src="{{asset('images/sdm.png')}}" alt="Image" class="img-fluid w-5 mb-4 float-start" />
+            <h5 class="box-child3">
+              <img src="{{asset('images/letter-r.png')}}" alt="Image" class="img-fluid w-5 mb-4 float-start" />
               Ramah dalam melayani masyarakat
             </h5>
-            <h5 class="box-child">Informatif dalam memberikan pelayanan</h5>
-            <h5 class="box-child">Melayani dengan hati yang tulus</h5>
-            <h5 class="box-child">Akuntable dalam menjalankan tugas</h5>
+            <h5 class="box-child3">
+              <img src="{{asset('images/letter-i.png')}}" alt="Image" class="img-fluid w-5 mb-4 float-start" />
+              Informatif dalam memberikan pelayanan</h5>
+            <h5 class="box-child3">
+              <img src="{{asset('images/letter-m.png')}}" alt="Image" class="img-fluid w-5 mb-4 float-start" />
+              Melayani dengan hati yang tulus</h5>
+            <h5 class="box-child3">
+              <img src="{{asset('images/letter-a.png')}}" alt="Image" class="img-fluid w-5 mb-4 float-start" />
+              Akuntable dalam menjalankan tugas</h5>
           </div>
         </div>
       </div>
