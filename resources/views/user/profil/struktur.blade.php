@@ -27,7 +27,7 @@
         <div class="row justify-content-between mb-5">
           <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
             <div class="img-about dots">
-              <img src="{{asset('images/struktur.png')}}" alt="Image" class="img-fluid" />
+              <img src="{{asset('images/bagan.jpg')}}" alt="Image" class="img-fluid" />
             </div>
           </div>
           <div class="col-lg-4">
@@ -36,7 +36,7 @@
                 <span class="icon-person"></span>
               </span>
               <div class="feature-text">
-                <h3 class="heading">YUKHAL MEI IRWANTO</h3>
+                <h3 class="heading">MOKHAMMAD NURIHUDAH, SH</h3>
                 <p class="text-black-50">
                   Lurah Kedundung
                 </p>

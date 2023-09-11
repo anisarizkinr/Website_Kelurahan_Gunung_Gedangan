@@ -58,25 +58,25 @@
       <div class="row section-counter mt-5">
         <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
           <div class="counter-wrap mb-5 mb-lg-0">
-            <span class="number"><span class="countup text-primary">15913</span></span>
+            <span class="number"><span class="countup text-primary">16095</span></span>
             <span class="caption text-black-50"> Jumlah Penduduk /Jiwa</span>
           </div>
         </div>
         <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
           <div class="counter-wrap mb-5 mb-lg-0">
-            <span class="number"><span class="countup text-primary">8087</span></span>
+            <span class="number"><span class="countup text-primary">8179</span></span>
             <span class="caption text-black-50">Jumlah Penduduk Laki-laki/Jiwa</span>
           </div>
         </div>
         <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
           <div class="counter-wrap mb-5 mb-lg-0">
-            <span class="number"><span class="countup text-primary">7826</span></span>
+            <span class="number"><span class="countup text-primary">7916</span></span>
             <span class="caption text-black-50">Jumlah Penduduk Perempuan/Jiwa</span>
           </div>
         </div>
         <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
           <div class="counter-wrap mb-5 mb-lg-0">
-            <span class="number"><span class="countup text-primary">0</span></span>
+            <span class="number"><span class="countup text-primary">5308</span></span>
             <span class="caption text-black-50">Jumlah Kepala Keluarga /Jiwa</span>
           </div>
         </div>
@@ -158,8 +158,10 @@
         <div class="testimonial-slider">
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
             <div class="box-feature">
-              <h3 class="mb-3">YUKHAL MEI IRWANTO</h3>
-              <img src="images/person_1-min.jpg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
+              {{-- <span class="flaticon-house"></span> --}}
+              <br>
+              <h3 class="mb-3">MOKHAMMAD NURIHUDAH, SH</h3>
+              <img src="images/person_4-min.jpg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
               <p class="mb-3">Lurah Kedundung</p>
             </div>
           </div>
@@ -177,7 +179,7 @@
               {{-- <span class="flaticon-house"></span> --}}
               <br>
               <h3 class="mb-3">
-                NURALIH , SE </h3>
+                NURALIH, SE </h3>
               <img src="images/person_4-min.jpg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
               <p class="mb-3">Kepala Seksi Tata Pemerintahan, Ketentraman dan Ketertiban Umum</p>
             </div>
@@ -187,7 +189,7 @@
               {{-- <span class="flaticon-house"></span> --}}
               <br>
               <h3 class="mb-3">
-                MOCHAMMAD AGUS WIDODO </h3>
+                MOCHAMMAD AGUS WIDODO, S.Sos </h3>
               <img src="images/person_2-min.jpg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
               <p class="mb-3">Kepala Seksi Sosial dan Pemberdayaan Masyarakat</p>
             </div>
@@ -197,9 +199,9 @@
               {{-- <span class="flaticon-house"></span> --}}
               <br>
               <h3 class="mb-3">
-                HERI W.</h3>
+                ENDARWATI SULISTYORINI, SH</h3>
               <img src="images/person_3-min.jpg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
-              <p class="mb-3">Kepala Seksi Prasana dan Prasarana Wilayah</p>
+              <p class="mb-3">Kepala Seksi Perekonomian, Fisik dan Prasarana Wilayah</p>
             </div>
           </div>
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
@@ -209,7 +211,7 @@
               <h3 class="mb-3">
                 ENI NURHAYATI</h3>
               <img src="images/person_5-min.jpg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
-              <p class="mb-3">Pengelola Keuangan</p>
+              <p class="mb-3">Pelaksana</p>
             </div>
           </div>
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
@@ -219,7 +221,7 @@
               <h3 class="mb-3">
                 ASIYAH, SE</h3>
               <img src="images/person_4-min.jpg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
-              <p class="mb-3">Pengadministrasi Pemerintahan</p>
+              <p class="mb-3">Pelaksana</p>
             </div>
           </div>
 
@@ -388,7 +390,7 @@
 
           <div class="d-flex feature-h">
             <span class="wrap-icon me-3">
-              <a href="https://curhatningita.lapor.go.id/">9
+              <a href="https://curhatningita.lapor.go.id/">
                 <span class="icon-phone"></span>
               </a>
             </span>

@@ -23,9 +23,9 @@
                     Persyaratan Surat Keterangan Tidak Mampu
                 </h2>
                 <h5 class="box-child2">1. Pengantar RT,RW </h5>
+                <h5 class="box-child2">2. Pelunasan PBB tahun berjalan</h5>
                 <h5 class="box-child2">2. Foto Copy KK</h5>
                 <h5 class="box-child2">3. Foto Copy KTP</h5>
-                <h5 class="box-child2">4. Surat Pernyataan Bermaterai Rp.10.000,- (Blangko disediakan Kelurahan)</h5>
               </div>
             </div>
           </div>

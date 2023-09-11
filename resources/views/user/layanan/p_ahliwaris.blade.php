@@ -30,14 +30,14 @@
                     Persyaratan Surat Pernyataan Ahli Waris
                 </h2>
                 <h5 class="box-child2">1. Pengantar RT,RW</h5>
-                <h5 class="box-child2">2. Mengisi Formulir Pengurusan Surat Pernyataan Ahli Waris (Formulir disediakan oleh kelurahan)</h5>
-                <h5 class="box-child2">3. Foto Copy Surat Kematian dari Lurah/Akte Kematian = 3 lembar</h5>
-                <h5 class="box-child2">4. Foto Copy Surat Menikah yang meninggal = 3 lembar </h5>
-                <h5 class="box-child2">5. Foto Copy Kartu Keluarga/KK dan KTP yang meninggal = 3 lembar </h5>
-                <h5 class="box-child2">6. Foto Copy KK,KTP, KTP Ahli Waris = 3 lembar </h5>
-                <h5 class="box-child2">7. Foto Copy KTP 2(dua) orang saksi = 3 lembar </h5>
-                <h5 class="box-child2">8. Foto Copy Dokumentasi/Berkas yang akan diurus (Sertifkat,Buku Tabungan,dll) </h5>
-                <h5 class="box-child2">9. Materai Rp.10.000,- = minimal 3 lembar (menyesuaikan dengan julah keperluan yang diurus) </h5>
+                <h5 class="box-child2">2. Pelunasan PBB tahun berjalan</h5>
+                <h5 class="box-child2">3. Sidang dihadiri Pak Camat, Pak Lurah, dan semua ahli waris</h5>
+                <h5 class="box-child2">4. Foto Copy KK dan KTP yang meninggal = 3 lembar </h5>
+                <h5 class="box-child2">5. Foto Copy KK, KTP, KTP Ahli Waris = 3 lembar </h5>
+                <h5 class="box-child2">6. Foto Copy KK, KTP 2(dua) orang saksi = 3 lembar </h5>
+                <h5 class="box-child2">7. Materai Rp.10.000,- = minimal 2 lembar (menyesuaikan dengan julah keperluan yang diurus) </h5>
+                <h5 class="box-child2">8. Foto Copy Sertifikat, Kartu BPJS (Digunakan untuk persyaratan sesuai dengan kebutuhan;) </h5>
+                
               </div>
             </div>
           </div>
