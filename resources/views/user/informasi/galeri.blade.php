@@ -42,6 +42,11 @@
             </div>
             @endforeach
           </div>
+          <div style="display: flex; justify-content: center;">
+            <div class="paginate-button col-md-12">
+              {{ $data->links() }}
+            </div>
+          </div>     
     </div>
     </div>
 </div>

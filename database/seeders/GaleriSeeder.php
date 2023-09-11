@@ -31,6 +31,18 @@ class GaleriSeeder extends Seeder
             ], [
                 
             ],
+            [
+                
+            ],
+            [
+                
+            ],
+            [
+                
+            ],
+            [
+                
+            ],
             
         ]
         );
