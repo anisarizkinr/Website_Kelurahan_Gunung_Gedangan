@@ -31,7 +31,7 @@
                 </h2>
                 <h5 style="text-align: left; font-weight: bold">LAKI-LAKI</h5>
                 <h5 class="box-child2">1. Pengantar RT,RW</h5>
-                <h5 class="box-child2">2. Pelunasan PBB tahun berjalan</h5>
+                <h5 class="box-child2">2. Pelunasan PBB sesuai tahun berjalan</h5>
                 <h5 class="box-child2">3. Blangko Ni dan N4 dari Kelurahan/Desa Asal</h5>
                 <h5 class="box-child2">4. Rekomendasi KUA Asal (Apabila dari luar wilayah KUA Setempat)</h5>
                 <h5 class="box-child2">5. Surat Keterangan Numpang Nikah dari Kelurahan/Desa Asal </h5>
