@@ -161,7 +161,7 @@
               {{-- <span class="flaticon-house"></span> --}}
               <br>
               <h3 class="mb-3">MOKHAMMAD NURIHUDAH, SH</h3>
-              <img src="images/person_4-min.jpg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
+              <img src="images/lurah.jpeg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
               <p class="mb-3">Lurah Kedundung</p>
             </div>
           </div>
@@ -170,7 +170,7 @@
               {{-- <span class="flaticon-house"></span> --}}
               <br>
               <h3 class="mb-3">ENI WULANDARI, SH</h3>
-              <img src="images/person_4-min.jpg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
+              <img src="images/sekretaris_eni.jpeg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
               <p class="mb-3">Sekretaris</p>
             </div>
           </div>
@@ -180,7 +180,7 @@
               <br>
               <h3 class="mb-3">
                 NURALIH, SE </h3>
-              <img src="images/person_4-min.jpg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
+              <img src="images/nuralih.jpeg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
               <p class="mb-3">Kepala Seksi Tata Pemerintahan, Ketentraman dan Ketertiban Umum</p>
             </div>
           </div>
@@ -190,7 +190,7 @@
               <br>
               <h3 class="mb-3">
                 MOCHAMMAD AGUS WIDODO, S.Sos </h3>
-              <img src="images/person_2-min.jpg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
+              <img src="images/agus_widodo.jpeg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
               <p class="mb-3">Kepala Seksi Sosial dan Pemberdayaan Masyarakat</p>
             </div>
           </div>
@@ -200,7 +200,7 @@
               <br>
               <h3 class="mb-3">
                 ENDARWATI SULISTYORINI, SH</h3>
-              <img src="images/person_3-min.jpg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
+              <img src="images/endarwati.jpeg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
               <p class="mb-3">Kepala Seksi Perekonomian, Fisik dan Prasarana Wilayah</p>
             </div>
           </div>
@@ -210,7 +210,7 @@
               <br>
               <h3 class="mb-3">
                 ENI NURHAYATI</h3>
-              <img src="images/person_5-min.jpg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
+              <img src="images/pelaksana_eni.png" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
               <p class="mb-3">Pelaksana</p>
             </div>
           </div>
@@ -220,7 +220,7 @@
               <br>
               <h3 class="mb-3">
                 ASIYAH, SE</h3>
-              <img src="images/person_4-min.jpg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
+              <img src="images/pelaksana_asiyah.png" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
               <p class="mb-3">Pelaksana</p>
             </div>
           </div>
@@ -390,14 +390,14 @@
 
           <div class="d-flex feature-h">
             <span class="wrap-icon me-3">
-              <a href="https://curhatningita.lapor.go.id/">
+              <a href="tel://0321326481">
                 <span class="icon-phone"></span>
               </a>
             </span>
             <div class="feature-text">
-              <h3 class="heading">Chat Disini</h3>
+              <h3 class="heading">Telepon (0321326481)</h3>
               <p class="text-black-50">
-                Adukan Laporan Anda melalui pesan Whats App berikut
+                Adukan Laporan Anda melalui pesan nomor berikut
               </p>
             </div>
           </div>
