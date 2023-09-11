@@ -10,7 +10,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Untree.co" />
-    <link rel="shortcut icon" href="{{ asset('favicon.png') }}" />
+    <link rel="shortcut icon" href="{{ asset('images/logo kota mojokerto.png') }}" />
 
    
 

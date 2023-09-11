@@ -30,7 +30,7 @@
                     Persyaratan Surat Pernyataan Ahli Waris
                 </h2>
                 <h5 class="box-child2">1. Pengantar RT,RW</h5>
-                <h5 class="box-child2">2. Pelunasan PBB tahun berjalan</h5>
+                <h5 class="box-child2">2. Pelunasan PBB sesuai tahun berjalan</h5>
                 <h5 class="box-child2">3. Sidang dihadiri Pak Camat, Pak Lurah, dan semua ahli waris</h5>
                 <h5 class="box-child2">4. Foto Copy KK dan KTP yang meninggal = 3 lembar </h5>
                 <h5 class="box-child2">5. Foto Copy KK, KTP, KTP Ahli Waris = 3 lembar </h5>

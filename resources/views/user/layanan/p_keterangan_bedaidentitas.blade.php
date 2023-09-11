@@ -23,7 +23,7 @@
                     Persyaratan Surat Keterangan Beda Identitas
                 </h2>
                 <h5 class="box-child2">1. Pengantar RT,RW </h5>
-                <h5 class="box-child2">2. Pelunasan PBB tahun berjalan</h5>
+                <h5 class="box-child2">2. Pelunasan PBB sesuai tahun berjalan</h5>
                 <h5 class="box-child2">3. Foto Copy KK</h5>
                 <h5 class="box-child2">4. Foto Copy KTP</h5>
                 <h5 class="box-child2">5. Foto Copy Dokumen Pendukung lainnya</h5>
