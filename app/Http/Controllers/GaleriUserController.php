@@ -7,9 +7,10 @@ use App\Models\Galeri;
 
 class GaleriUserController extends Controller
 {
+
      //galeri user
      public function galeri(){
-        $galeri = Galeri::all();
+        $galeri = Galeri::orderBy('id', 'asc')->paginate(9);
         return view('user.informasi.galeri', 
         ['data' => $galeri,
         'title'=> 'Galeri Kelurahan Kedundung']);
