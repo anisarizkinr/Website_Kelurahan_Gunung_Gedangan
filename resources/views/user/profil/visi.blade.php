@@ -21,7 +21,7 @@
       <div class="row justify-content-center align-items-center">
         <div class="col-lg-9 text-center">
           <h1 class="heading" data-aos="fade-up" style="text-align: left;">
-            VISI DAN MISI
+            MOTTO dan PRIMA
 
             <!-- <form
               action="#"
@@ -46,9 +46,9 @@
       <div class="row justify-content-center text-center mb-5">
         <div class="col-lg-6 mb-5 box"> <!-- Tambahkan kelas "box" di sini -->
           <h2 class="font-weight-bold heading text-primary mb-4 centered-text">
-            VISI
+            MOTTO
           </h2>
-          <h5>TERWUJUDNYA KOTA MOJOKERTO YANG BERDAYA SAING, MANDIRI, DEMOKRATIS, ADIL, MAKMUR, SEJAHTERA DAN BERMARTABAT.”</h5>
+          <h5>" KELURAHAN KEDUNDUNG SELALU PRIMA DALAM PELAYANAN”</h5>
         </div>
       </div>
 
@@ -57,21 +57,19 @@
         <div class="row justify-content-center text-center mb-5">
           <div class="col-lg-6 mb-5 box">
             <h2 class="font-weight-bold heading text-primary mb-4 centered-text">
-              MISI
+              PRIMA
             </h2>
             <h5 class="box-child">
               <img src="{{asset('images/sdm.png')}}" alt="Image" class="img-fluid w-5 mb-4 float-start" />
-              Mewujudkan SDM Berkualitas melalui peningkatan akses dan kualitas pendidikan dan pelayanan kesehatan
+              Profesional dalam melaksanakan tugas
             </h5>
             <h5 class="box-child">
               <img src="{{asset('images/sdm.png')}}" alt="Image" class="img-fluid w-5 mb-4 float-start" />
-              Mewujudkan Ketertiban, supremasi hukum dan HAM
+              Ramah dalam melayani masyarakat
             </h5>
-            <h5 class="box-child">Mewujudkan pemerintaha daerah yang efektif, demokratis, bersih, proffesional, dan adil dalam melayani masyarakat</h5>
-            <h5 class="box-child">Mewujudkan ekonomi daerah yang mandiri, berdaya saing, berkeadilan dan berbasis pada ekonomi kerakyatan melalui peningkatan fasilitas pembangunan infrastruktur daerah</h5>
-            <h5 class="box-child">Mewujudkan ketahanan sosial budaya dalam rangka integrasi nasional, pada tatanan masyarakat yang bermartabat, berakhlak mulia, beretika, dan berbudaya luhur berlandaskan Pancasila</h5>
-            <h5 class="box-child">Mewujudkan partisipasi masyarakat melalui pemberian akses dan kesempatan dalam pembangunan</h5>
-            <h5 class="box-child">Mewujudkan anggaran pendapatan dan belanja yang lebih mengutamakan kesejahteraan masyarakat</h5>
+            <h5 class="box-child">Informatif dalam memberikan pelayanan</h5>
+            <h5 class="box-child">Melayani dengan hati yang tulus</h5>
+            <h5 class="box-child">Akuntable dalam menjalankan tugas</h5>
           </div>
         </div>
       </div>
