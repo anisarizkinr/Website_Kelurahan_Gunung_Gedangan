@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>GURU Able - Free Lite Admin Template </title>
+    <title>Admin Kelurahan Kedundung </title>
     <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -17,7 +17,7 @@
       <meta name="keywords" content=" Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
       <meta name="author" content="CodedThemes">
       <!-- Favicon icon -->
-      <link rel="icon" href="{{ asset('assets/images/favicon.ico" type="image/x-icon')}}">
+      <link rel="icon" href="{{ asset('images/logo kota mojokerto.png" type="image/x-icon')}}">
       <!-- Google font-->
       <link href="{{ asset('https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet')}}">
       <!-- Required Fremwork -->
