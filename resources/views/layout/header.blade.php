@@ -8,7 +8,7 @@
                   class="img-fluid w-5 mb-4 float-start"
                 />
                 {{-- style="background-image: url({{asset('images/gambar_1.png')}}); opacity: 0.5;" --}}
-          <a href="index.html" class="logo m-0 float-start">Kelurahan <br> Kedundung </a>
+          <a href="{{url('/beranda')}}" class="logo m-0 float-start">Kelurahan <br> Kedundung </a>
           <ul
             class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
           >
