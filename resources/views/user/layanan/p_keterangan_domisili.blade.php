@@ -27,7 +27,7 @@
             <div class="row justify-content-center text-center mb-5">
               <div class="col-lg-6 mb-5 box">
                 <h2 class="font-weight-bold heading text-primary mb-4 ">
-                  Persyaratan SKCK
+                  Persyaratan Surat Keterangan Domisili
                 </h2>
                 <h5 class="box-child2">1. Pengantar RT,RW</h5>
                 <h5 class="box-child2">2. Pelunasan PBB sesuai tahun berjalan</h5>
