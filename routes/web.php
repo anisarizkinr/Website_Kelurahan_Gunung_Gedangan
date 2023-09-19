@@ -15,6 +15,8 @@ use App\Http\Controllers\GaleriController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\DataController;
+use App\Http\Controllers\LayananAdminController;
+use App\Http\Controllers\StrukturAdminController;
 use App\Models\Berita;
 
 /*
@@ -82,6 +84,8 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('data', DataController::class);
     Route::get('/pilihdata', [DataUserController::class, 'pilihdata']);
     Route::get('/data_admin/{kategori}', [DataUserController::class, 'indexKategori'])->name('data.kategori');
+    Route::resource('layanan', LayananAdminController::class);
+    Route::resource('struktur', StrukturAdminController::class);
 });
 
 

@@ -12,8 +12,8 @@
                             <div class="page-header-title">
                                 <i class="icofont icofont-table bg-c-blue"></i>
                                 <div class="d-inline">
-                                    <h2>Kategori Data</h2>
-                                    <span>Isi Data Kategori</span>
+                                    <h2>Layanan</h2>
+                                    <span>Isi Data Layanan</span>
                                 </div>
                             </div>
                         </div>
@@ -25,7 +25,7 @@
                                         <i class="icofont icofont-home"></i>
                                     </a>
                                 </li>
-                                <li class="breadcrumb-item"><a href="{{url('/kategori')}}">Kategori Data</a>
+                                <li class="breadcrumb-item"><a href="{{url('/layanan')}}">Layanan</a>
                                 </li>
                             </ul>
                         </div>
@@ -39,7 +39,7 @@
                 <!-- Basic table card start -->
                 <div class="card">
                     <div class="card-header">
-                        <a class="btn btn-primary" href="{{route('kategori.create')}}"> Tambah Kategori</a>
+                        <a class="btn btn-primary" href="{{route('layanan.create')}}"> Tambah Layanan</a>
                         <div class="card-header-right">    <ul class="list-unstyled card-option">        <li><i class="icofont icofont-simple-left "></i></li>        <li><i class="icofont icofont-maximize full-card"></i></li>        <li><i class="icofont icofont-minus minimize-card"></i></li>        <li><i class="icofont icofont-refresh reload-card"></i></li>        <li><i class="icofont icofont-error close-card"></i></li>    </ul></div>
                     </div>
                     <div class="card-block table-border-style">
@@ -48,38 +48,26 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Nama Kategori</th>
-                                        <th>Gambar</th>
+                                        <th>Judul</th>
+                                        <th>Isi Layanan</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($paginate as $ktg)
+                                    @foreach ($layanan as $lyn)
                                     <tr>
-                                        <th scope="row">{{$loop->iteration}}</th>
-                                        <td>{{$ktg->nama_kategori}}</td>
+                                        <th scope="row">{{$loop->iteration }}</th>
+                                        <td>{{$lyn->judul}}</td>
                                         <td>
-                                            @if ($ktg -> gambar_kategori)
-                                            <img src="{{asset('storage/'.$ktg -> gambar_kategori)}}" class="img-flui" alt="{{ $ktg -> gambar_kategori }}" width="350px">
-                            
-                                            @else
-                                            <img src="{{asset('assets/images/gambar_kategori/'.$ktg -> id.'.png')}}" class="img-flui" alt="{{ $ktg -> id }}"
-                                              width="350px">
-                                            @endif
-                                          </td>
+                                            <textarea class="form-control form-control-round custom-textarea" readonly rows="7">{{$lyn->isi_layanan}}</textarea>
+                                        </td>
                                         <td>
-                                            <form action="{{route('kategori.edit',$ktg->id)}}" method="POST">
+                                            <form action="{{route('layanan.edit',$lyn->id)}}" method="POST">
                                                 @csrf
                                                 @method('PUT')
-                                                <a class="btn btn-warning" href="{{route('kategori.edit',$ktg->id)}}"><i class="icofont icofont-edit"></i></a>
+                                                <a class="btn btn-warning" href="{{route('layanan.edit',$lyn->id)}}"><i class="icofont icofont-edit"></i></a>
                                             </form>
-                                            {{-- <form action="{{route('kategori.update',$ktg->id)}}" method="POST">
-                                                @csrf
-                                                @method('PUT')
-                                                <input type="hidden" name="id" value="{{$ktg->id}}">
-                                                <button type="submit" class="btn btn-info"><i class="icofont icofont-update"></i></button>
-                                            </form> --}}
-                                            <form action="{{route('kategori.destroy',$ktg->id)}}" method="POST">
+                                            <form action="{{route('layanan.destroy',$lyn->id)}}" method="POST">
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit" onclick="return confirm('Apakah anda yakin hapus data ini ? ')" class="btn btn-danger"><i class="icofont icofont-trash"></i></button>
@@ -92,7 +80,7 @@
                             </table>
                         </div>
                         <div class="btn-container">
-                            {{$paginate->links()}}
+                            {{$layanan->links()}}
                           </div>
                     </div>
                 </div>
