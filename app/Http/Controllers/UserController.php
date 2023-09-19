@@ -4,13 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Berita;
+use App\Models\struktur;
 
 class UserController extends Controller
 {
     public function beranda()
     {
         $berita = Berita::all();
-        return view('user.beranda', ['data' => $berita]);
+        $struktur = Struktur::all();
+        return view('user.beranda', ['data' => $berita, 'struktur'=>$struktur]);
     }
 
     public function properti()
