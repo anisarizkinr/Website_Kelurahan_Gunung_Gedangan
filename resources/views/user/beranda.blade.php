@@ -150,82 +150,29 @@
           </div>
         </div>
       </div>
-
+      
       <div class="row">
         <div class="col-lg-4"></div>
       </div>
       <div class="testimonial-slider-wrap">
         <div class="testimonial-slider">
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          @foreach($data as $str)
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">          
             <div class="box-feature">
-              {{-- <span class="flaticon-house"></span> --}}
               <br>
-              <h3 class="mb-3">MOKHAMMAD NURIHUDAH, SH</h3>
-              <img src="images/lurah.jpeg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
-              <p class="mb-3">Lurah Kedundung</p>
+              <h3 class="mb-3">{{ $str->nama_pengurus }}</h3>
+              @if ($str->gambar_pengurus)
+              <img src="{{ asset('storage/' . $str->gambar_pengurus) }}" class="img-fluid rounded-circle w-5 mb-4" alt="{{ $str->gambar_pengurus }}">
+              @else
+              <img src="{{ asset('assets/images/gambar_pengurus/' . $str->id . '.jpeg') }}" class="img-fluid rounded-circle w-5 mb-4" alt="{{ $str->id }}">
+              @endif
+              <p class="mb-3">{{ $str->jabatan }}</p>
             </div>
           </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="box-feature">
-              {{-- <span class="flaticon-house"></span> --}}
-              <br>
-              <h3 class="mb-3">ENI WULANDARI, SH</h3>
-              <img src="images/sekretaris_eni.jpeg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
-              <p class="mb-3">Sekretaris</p>
-            </div>
+          @endforeach
           </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="box-feature">
-              {{-- <span class="flaticon-house"></span> --}}
-              <br>
-              <h3 class="mb-3">
-                NURALIH, SE </h3>
-              <img src="images/nuralih.jpeg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
-              <p class="mb-3">Kepala Seksi Tata Pemerintahan, Ketentraman dan Ketertiban Umum</p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="box-feature">
-              {{-- <span class="flaticon-house"></span> --}}
-              <br>
-              <h3 class="mb-3">
-                MOCHAMMAD AGUS WIDODO, S.Sos </h3>
-              <img src="images/agus_widodo.jpeg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
-              <p class="mb-3">Kepala Seksi Sosial dan Pemberdayaan Masyarakat</p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="box-feature">
-              {{-- <span class="flaticon-house"></span> --}}
-              <br>
-              <h3 class="mb-3">
-                ENDARWATI SULISTYORINI, SH</h3>
-              <img src="images/endarwati.jpeg" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
-              <p class="mb-3">Kepala Seksi Perekonomian, Fisik dan Prasarana Wilayah</p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="box-feature">
-              {{-- <span class="flaticon-house"></span> --}}
-              <br>
-              <h3 class="mb-3">
-                ENI NURHAYATI</h3>
-              <img src="images/pelaksana_eni.png" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
-              <p class="mb-3">Pelaksana</p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="box-feature">
-              {{-- <span class="flaticon-house"></span> --}}
-              <br>
-              <h3 class="mb-3">
-                ASIYAH, SE</h3>
-              <img src="images/pelaksana_asiyah.png" alt="Image" class="img-fluid rounded-circle w-5 mb-4" />
-              <p class="mb-3">Pelaksana</p>
-            </div>
-          </div>
-
         </div>
+        
       </div>
     </div>
   </div>

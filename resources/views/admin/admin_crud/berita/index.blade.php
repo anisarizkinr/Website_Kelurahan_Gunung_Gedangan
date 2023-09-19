@@ -119,12 +119,12 @@
 
                       @foreach ($paginate as $brt)
                       <tr>
-                        <th scope="row">{{$brt->id}}</th>
+                        <th scope="row">{{$loop->iteration}}</th>
                         <td>
                           @if ($brt -> gambar_berita)
                           <img src="{{asset('storage/'.$brt -> gambar_berita)}}" class="img-fluid" alt="..." width="350px">
                           @else
-                          <img src="{{('assets/images/berita/'.$brt -> id.'.jpg')}}" class="img-fluid" alt="..." width="350px">
+                          <img src="{{('assets/images/gambar_berita/'.$brt -> id.'.jpg')}}" class="img-fluid" alt="..." width="350px">
                           @endif
                         </td>
                         <td>{{$brt->tanggal_berita}}</td>
