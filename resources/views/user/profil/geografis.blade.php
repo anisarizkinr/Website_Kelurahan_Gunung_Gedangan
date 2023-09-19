@@ -71,44 +71,28 @@
       </div>
     </div>
   </section>
-
+  
   <div class="section">
     <div class="container">
-      <div class="row section-counter mt-5">
-        <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-          <div class="counter-wrap mb-5 mb-lg-0">
-            <span class="number"><span class="countup text-primary">16095</span></span>
-            <span class="caption text-black-50"> Jumlah Penduduk /Jiwa</span>
-          </div>
+        <div class="row section-counter mt-5">
+            @foreach ($data as $jml)
+            <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="counter-wrap mb-5 mb-lg-0">
+                    <span class="number"><span class="countup text-primary">{{ $jml->jumlah_penduduk }}</span></span>
+                    <span class="caption text-black-50"> {{ $jml->keterangan }}</span>
+                </div>
+            </div>
+            @endforeach
         </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-          <div class="counter-wrap mb-5 mb-lg-0">
-            <span class="number"><span class="countup text-primary">8179</span></span>
-            <span class="caption text-black-50">Jumlah Penduduk Laki-laki/Jiwa</span>
-          </div>
-        </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
-          <div class="counter-wrap mb-5 mb-lg-0">
-            <span class="number"><span class="countup text-primary">7916</span></span>
-            <span class="caption text-black-50">Jumlah Penduduk Perempuan/Jiwa</span>
-          </div>
-        </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
-          <div class="counter-wrap mb-5 mb-lg-0">
-            <span class="number"><span class="countup text-primary">5308</span></span>
-            <span class="caption text-black-50">Jumlah Kepala Keluarga /Jiwa</span>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-  <!-- Preloader -->
-  <div id="overlayer"></div>
-  <div class="loader">
+</div>
+<!-- Preloader -->
+<div id="overlayer"></div>
+<div class="loader">
     <div class="spinner-border" role="status">
-      <span class="visually-hidden">Loading...</span>
+        <span class="visually-hidden">Loading...</span>
     </div>
-  </div>
+</div>
 
 
 </body>

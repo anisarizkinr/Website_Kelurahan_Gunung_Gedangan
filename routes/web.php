@@ -17,6 +17,7 @@ use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\DataController;
 use App\Http\Controllers\LayananAdminController;
 use App\Http\Controllers\StrukturAdminController;
+use App\Http\Controllers\GeografisUserController;
 use App\Models\Berita;
 
 /*
@@ -44,7 +45,7 @@ Route::prefix('profil')->group(function () {
    
     Route::get('/sejarah',[SejarahController::class, 'sejarah']);
     Route::get('/visi',[VisiController::class, 'visi']);
-    Route::get('/geografis',[GeografisController::class, 'geografis']);
+    Route::get('/geografis',[GeografisUserController::class, 'geografis']);
     Route::get('/struktur',[StrukturController::class, 'struktur']);
   
     
@@ -88,6 +89,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/data_admin/{kategori}', [DataUserController::class, 'indexKategori'])->name('data.kategori');
     Route::resource('layanan', LayananAdminController::class);
     Route::resource('struktur', StrukturAdminController::class);
+    Route::resource('geografis', GeografisController::class);
 });
 
 

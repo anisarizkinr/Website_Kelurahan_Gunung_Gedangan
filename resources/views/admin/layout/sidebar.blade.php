@@ -133,6 +133,13 @@
                         <span class="pcoded-mcaret"></span>
                     </a>
                 </li>
+                <li>
+                    <a href="{{route('geografis.index')}}">
+                        <span class="pcoded-micon"><i class="ti-announcement"></i></span>
+                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Geografis</span>
+                        <span class="pcoded-mcaret"></span>
+                    </a>
+                </li>
             </ul>
 
         {{-- <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Forms &amp; Tables</div> --}}
