@@ -8,8 +8,8 @@ use App\Models\struktur;
 class StrukturController extends Controller
 {
     public function struktur(){
-        $struktur = struktur::all();
+        $data = struktur::all();
         return view('user.profil.struktur', 
-        ['data' => $struktur,]);
+        ['data' => $data,]);
     }
 }

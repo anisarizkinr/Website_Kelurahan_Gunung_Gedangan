@@ -30,43 +30,21 @@
               <img src="{{asset('images/bagan.jpg')}}" alt="Image" class="img-fluid" />
             </div>
           </div>
+          @foreach($data as $str)
           <div class="col-lg-4">
             <div class="d-flex feature-h">
               <span class="wrap-icon me-3">
                 <span class="icon-person"></span>
               </span>
               <div class="feature-text">
-                <h3 class="heading">MOKHAMMAD NURIHUDAH, SH</h3>
+                <h3 class="heading">{{ $str->nama_pengurus }}</h3>
                 <p class="text-black-50">
-                  Lurah Kedundung
-                </p>
-              </div>
-            </div>
-
-            <div class="d-flex feature-h">
-              <span class="wrap-icon me-3">
-                <span class="icon-person"></span>
-              </span>
-              <div class="feature-text">
-                <h3 class="heading">ENI WULANDARI, SH</h3>
-                <p class="text-black-50">
-                  Sekretaris Kelurahan Kedundung
-                </p>
-              </div>
-            </div>
-
-            <div class="d-flex feature-h">
-              <span class="wrap-icon me-3">
-                <span class="icon-person"></span>
-              </span>
-              <div class="feature-text">
-                <h3 class="heading">NURALIH , SE</h3>
-                <p class="text-black-50">
-                  Kepala Seksi Tata Pemerintahan, Ketentraman dan Ketertiban Umum
+                {{ $str->jabatan }}
                 </p>
               </div>
             </div>
           </div>
+          @endforeach
         </div>
       </div>
     </div>
