@@ -60,6 +60,8 @@ Route::prefix('informasi')->group(function () {
  
 });
 
+Route::get('/layanan_user ',[LayananController::class, 'pilih_layanan']);
+Route::get('/layanan_user/{id}',[LayananController::class, 'isi_layanan'])->name('layanan.pilih');
 Route::prefix('layanan')->group(function () {
     Route::get('/p_ahliwaris',[LayananController::class, 'p_ahliwaris']);
     Route::get('/p_nikah',[LayananController::class, 'p_nikah']);

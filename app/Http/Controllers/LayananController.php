@@ -2,17 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\layanan;
 use Illuminate\Http\Request;
 
 class LayananController extends Controller
 {
-    public function p_ahliwaris(){
-        return view('user.layanan.p_ahliwaris', 
-        ['title'=> 'persyaratan_surat_keterangan_ahli_waris']);
+    public function pilih_layanan(){
+        $layanan = layanan::orderBy('id','asc')->paginate(6);
+        return view('user.layanan.persyaratan', compact('layanan'));
     }
-    public function p_nikah(){
-        return view('user.layanan.p_nikah', 
-        ['title'=> '']);
+    public function isi_layanan($id){
+        $layanan1 = Layanan::find($id);
+        return view('user.layanan.isi_persyaratan', [
+            'layanan' => $layanan1
+        ]);
     }
     public function p_keterangan_usaha(){
         return view('user.layanan.p_keterangan_usaha', 

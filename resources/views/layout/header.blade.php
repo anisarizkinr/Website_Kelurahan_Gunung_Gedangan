@@ -30,18 +30,7 @@
                 <li><a href="{{url('/informasi/galeri')}}">Galeri</a></li>
               </ul>
             </li>
-            <li class="has-children">
-              <a style="font-size: 18px;">Layanan</a>
-              <ul class="dropdown">
-                <li><a href="{{url('/layanan/p_ahliwaris')}}">Persyaratan Surat Pernyataan Ahli Waris</a></li>
-                <li><a href="{{url('/layanan/p_nikah')}}">Persyaratan Nikah</a></li>
-                <li><a href="{{url('/layanan/p_keterangan_usaha')}}">Persyaratan Surat Keterangan Usaha</a></li>
-                <li><a href="{{url('/layanan/p_skck')}}">Persyaratan SKCK</a></li>
-                <li><a href="{{url('/layanan/p_keterangan_tidakmampu')}}">Persyaratan Surat Keterangan Tidak Mampu</a></li>
-                <li><a href="{{url('/layanan/p_keterangan_bedaidentitas')}}">Persyaratan Surat Keterangan Beda Identitas</a></li>
-                <li><a href="{{url('/layanan/p_keterangan_domisili')}}">Persyaratan Surat Keterangan Domisili</a></li>
-              </ul>
-            </li>
+            <li ><a href="{{url('/layanan_user')}}" style="font-size: 18px;">Layanan</a></li>
             <li><a href="{{url('/data_user')}}" style="font-size: 18px;">Data</a></li>
             <li><a href="https://curhatningita.lapor.go.id/" style="font-size: 18px;">Curhat Ning Ita</a></li>
             <li><a href="{{url('/login')}}" class="btn btn-secondary rounded-pill py-3 px-5">Login</a></li>
