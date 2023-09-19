@@ -9,10 +9,6 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
-
-    
-    
-   
     <div class="section">
 
     </div>
@@ -25,21 +21,21 @@
           
           <div class="container">
             <div class="row justify-content-center text-center mb-5">
-              <div class="col-lg-6 mb-5 box">
-                <h2 class="font-weight-bold heading text-primary mb-4 ">
-                  Persyaratan Surat Keterangan Domisili
-                </h2>
-                <h5 class="box-child2">1. Pengantar RT,RW</h5>
-                <h5 class="box-child2">2. Pelunasan PBB sesuai tahun berjalan</h5>
-                <h5 class="box-child2">3. Foto Copy KK</h5>
-                <h5 class="box-child2">4. Foto Copy KTP</h5>              
+                <div class="col-lg-6 mb-5 box">
+                    <h2 class="font-weight-bold heading text-primary mb-4 ">{{$layanan->judul}}</h2>
+                </div>
+                <div class="col-lg-6 mb-5 box">
+                  {{-- <h5 class="box-child2">{{$layanan->isi_layanan}}</h5> --}}
+                  <div class="table-responsive">
+                    <table class="table">
+                      <td>
+                        <textarea class="form-control form-control-round custom-textarea" readonly rows="15" style="font-size: 24px;">{{ $layanan->isi_layanan }}</textarea>
+                      </td>
+                    </table>
               </div>
             </div>
-          </div>
-          
-
-
-
+        </div>
+        
       </div>
     </div>
     
@@ -51,7 +47,5 @@
         <span class="visually-hidden">Loading...</span>
       </div>
     </div>
-
-
   </body>
 @endsection
