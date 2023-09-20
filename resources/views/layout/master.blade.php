@@ -48,7 +48,7 @@
     @yield('content')
 
     <!-- Footer Start -->
-    @include('layout.footer')
+    {{-- @include('layout.footer') --}}
     <!-- Footer End -->
 
     {{-- Javascript library --}}
