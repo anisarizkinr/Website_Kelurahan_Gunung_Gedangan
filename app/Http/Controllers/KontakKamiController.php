@@ -101,7 +101,7 @@ class KontakKamiController extends Controller
        
         // update data
         $kontakkami = KontakKami::where('id', $id)->first();
-        $kontakkami->jumlah_penduduk = $request->get('alamat');
+        $kontakkami->alamat = $request->get('alamat');
         $kontakkami->telepon = $request->get('telepon');
         $kontakkami->email = $request->get('email');
         $kontakkami->save();

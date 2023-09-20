@@ -49,8 +49,6 @@
                                         @csrf
                                         @method('PUT')
                                        
-                                       
-                                       
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">Alamat</label>
                                             <div class="col-sm-10">
@@ -60,23 +58,25 @@
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">Telepon</label>
                                             <div class="col-sm-10">
-                                                <input type="text" name="keterangan" id="keterangan" value="{{$kontakkami->telepon}}" class="form-control form-control-round" placeholder="telepon">
+                                                <input type="text" name="telepon" id="telepon" value="{{$kontakkami->telepon}}" class="form-control form-control-round" placeholder="telepon">
                                             </div>
-                                            <div class="form-group row">
-                                                <label class="col-sm-2 col-form-label">Email</label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" name="email" id="email" value="{{$kontakkami->email}}" class="form-control form-control-round" placeholder="email">
-                                                </div>
-
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Email</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" name="email" id="email" value="{{$kontakkami->email}}" class="form-control form-control-round" placeholder="email">
+                                            </div>
                                         </div>
                                         
-                                        <button type="submit" class="btn btn-warning float-right"> Submit</button>
+                                        <button type="submit" class="btn btn-warning float-right">Submit</button>
                                     </form>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-
-                @endsection
+            </div>
+        </div>
+    </div>
+</div>
+@endsection

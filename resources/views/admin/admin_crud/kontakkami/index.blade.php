@@ -92,7 +92,7 @@
             </div>
 
             <div class="card-body">
-              <a class="btn btn-primary" href="{{ route('kontakkami.create') }}">Tambah Kontak</a>
+              {{-- <a class="btn btn-primary" href="{{ route('kontakkami.create') }}">Tambah Kontak</a> --}}
               <br><br>
               @if ($message = Session::get('success'))
               <div class="alert alert-success">
@@ -127,11 +127,11 @@
                               @method('PUT')
                               <a class="btn btn-warning" href="{{route('kontakkami.edit',$knt->id)}}"><i class="icofont icofont-edit"></i></a>
                           </form>
-                          <form action="{{route('kontakkami.destroy',$knt->id)}}" method="POST">
+                          {{-- <form action="{{route('kontakkami.destroy',$knt->id)}}" method="POST">
                               @csrf
                               @method('DELETE')
                               <button type="submit" onclick="return confirm('Apakah anda yakin hapus data ini ? ')" class="btn btn-danger"><i class="icofont icofont-trash"></i></button>
-                          </form>
+                          </form> --}}
                       </td>
                         @endforeach
                     </tbody>
