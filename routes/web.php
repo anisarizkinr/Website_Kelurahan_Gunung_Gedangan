@@ -19,6 +19,8 @@ use App\Http\Controllers\LayananAdminController;
 use App\Http\Controllers\StrukturAdminController;
 use App\Http\Controllers\GeografisUserController;
 use App\Http\Controllers\GsoController;
+use App\Http\Controllers\KontakKamiController;
+use App\Http\Controllers\KontakKamiUserController;
 use App\Models\Berita;
 
 /*
@@ -52,7 +54,7 @@ Route::prefix('profil')->group(function () {
     
 });
 
-
+Route::get('/footer ',[KontakKamiUserController::class, 'footer']);
 
 Route::get('/beranda ',[UserController::class, 'beranda']);
 Route::prefix('informasi')->group(function () {
@@ -92,6 +94,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('struktur', StrukturAdminController::class);
     Route::resource('geografis', GeografisController::class);
     Route::resource('gso', GsoController::class);
+    Route::resource('kontakkami', KontakKamiController::class);
 });
 
 
