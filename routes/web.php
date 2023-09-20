@@ -19,7 +19,9 @@ use App\Http\Controllers\LayananAdminController;
 use App\Http\Controllers\StrukturAdminController;
 use App\Http\Controllers\GeografisUserController;
 use App\Http\Controllers\GsoController;
+use App\Http\Controllers\WilayahController;
 use App\Models\Berita;
+use App\Models\Wilayah;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,7 +50,7 @@ Route::prefix('profil')->group(function () {
     Route::get('/visi',[VisiController::class, 'visi']);
     Route::get('/geografis',[GeografisUserController::class, 'geografis']);
     Route::get('/struktur',[StrukturController::class, 'struktur']);
-  
+    
     
 });
 
@@ -92,6 +94,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('struktur', StrukturAdminController::class);
     Route::resource('geografis', GeografisController::class);
     Route::resource('gso', GsoController::class);
+    Route::resource('wilayah',WilayahController::class);
 });
 
 
