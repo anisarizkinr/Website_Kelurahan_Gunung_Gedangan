@@ -4,13 +4,13 @@
       <div class="col-lg-4">
         <div class="widget">
           <h3>Kontak Kami</h3>
-          @foreach ($data as $knt)
+          @if ($kontak)
             <ul class="list-unstyled links">
-              <li>{{ $knt->alamat }}</li>
-              <li> {{ $knt->telepon }}</li>
-              <li> {{ $knt->email }}</li>
+              <li>{{ $kontak->alamat }}</li>
+              <li>{{ $kontak->telepon }}</li>
+              <li>{{ $kontak->email }}</li>
             </ul>
-          @endforeach
+          @endif
           <ul class="list-unstyled social">
             <li>
               <a href="https://www.instagram.com/kelurahan.kdd"><span class="icon-instagram"></span></a>
