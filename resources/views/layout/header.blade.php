@@ -41,7 +41,7 @@
                       </li>
                       <li><a href="{{url('/layanan_user')}}" style="font-size: 18px;">Layanan</a></li>
                       <li><a href="{{url('/data_user')}}" style="font-size: 18px;">Data</a></li>
-                      <li><a href="https://ppid.mojokertokota.go.id/r" style="font-size: 18px;">PPID</a></li>
+                      <li><a href="https://ppid.mojokertokota.go.id/" style="font-size: 18px;">PPID</a></li>
                       <li><a href="https://curhatningita.lapor.go.id/" style="font-size: 18px;">Curhat Ning Ita</a></li>
                       <li><a href="{{url('/login')}}" class="btn btn-secondary rounded-pill py-2 px-3">Login</a></li>
                   </ul>
