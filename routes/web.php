@@ -23,6 +23,7 @@ use App\Http\Controllers\WilayahController;
 use App\Http\Controllers\KontakKamiController;
 use App\Http\Controllers\KontakKamiUserController;
 use App\Http\Controllers\MapsController;
+use App\Http\Controllers\JudulController;
 use App\Models\Maps;
 
 /*
@@ -99,6 +100,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('wilayah',WilayahController::class);
     Route::resource('kontakkami', KontakKamiController::class);
     Route::resource('maps',MapsController::class);
+    Route::resource('judul_web',JudulController::class);
 });
 
 
