@@ -15,7 +15,7 @@
       DATA KELURAHAN KEDUNDUNG
     </h2>
   </div> -->
-  <h2 class="map-heading">LETAK GEOGRAFIS KELURAHAN KEDUNDUNG</h2>
+  <h2 class="map-heading">LETAK GEOGRAFIS KELURAHAN @if ($judul) {{ $judul->judul_web }}@endif</h2>
   <div class="map-container">
   @if ($maps)
     <iframe src="{{ $maps->link }}" width="800" height="450" style="margin-top: 180px;"></iframe>

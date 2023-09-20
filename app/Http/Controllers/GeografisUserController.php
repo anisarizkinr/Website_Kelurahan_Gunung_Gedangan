@@ -7,6 +7,7 @@ use App\Models\Geografis;
 use App\Models\Wilayah;
 use App\Models\KontakKami;
 use App\Models\Maps;
+use App\Models\Judul;
 
 class GeografisUserController extends Controller
 {
@@ -15,12 +16,13 @@ class GeografisUserController extends Controller
         $wilayah = Wilayah::all();
         $maps = Maps::orderBy('id','asc')->first();
         $kontak = KontakKami::orderBy('id','asc')->first();
+        $judul = Judul::orderBy('id','asc')->first();
         return view('user.profil.geografis', [
             'data' => $geografis,
             'wilayah' => $wilayah,
             'kontak' =>$kontak,
             'maps' =>$maps,
-            'title' => 'Geografis Kelurahan Kedundung'
+            'judul'=>$judul,
         ]);
     }
 }
