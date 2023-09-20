@@ -12,8 +12,8 @@
                             <div class="page-header-title">
                                 <i class="icofont icofont-table bg-c-blue"></i>
                                 <div class="d-inline">
-                                    <h2>Gambar Struktur Organisasi</h2>
-                                    <span>Data Gambar Struktur Organisasi</span>
+                                    <h2>Judul Website</h2>
+                                    <span>Isi Judul Website</span>
                                 </div>
                             </div>
                         </div>
@@ -25,7 +25,7 @@
                                         <i class="icofont icofont-home"></i>
                                     </a>
                                 </li>
-                                <li class="breadcrumb-item"><a href="{{url('/gso')}}">Gambar Struktur Organisasi</a>
+                                <li class="breadcrumb-item"><a href="{{url('/judul_web')}}">Judul Website</a>
                                 </li>
                             </ul>
                         </div>
@@ -39,7 +39,6 @@
                 <!-- Basic table card start -->
                 <div class="card">
                     <div class="card-header">
-                        {{-- <a class="btn btn-primary" href="{{route('gso.create')}}"> Tambah Gambar</a> --}}
                         <div class="card-header-right">    <ul class="list-unstyled card-option">        <li><i class="icofont icofont-simple-left "></i></li>        <li><i class="icofont icofont-maximize full-card"></i></li>        <li><i class="icofont icofont-minus minimize-card"></i></li>        <li><i class="icofont icofont-refresh reload-card"></i></li>        <li><i class="icofont icofont-error close-card"></i></li>    </ul></div>
                     </div>
                     <div class="card-block table-border-style">
@@ -48,28 +47,20 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Gambar</th>
+                                        <th>Judul</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($gso as $so)
+                                    @foreach ($judul as $jdl)
                                     <tr>
-                                        <th scope="row">{{$loop->iteration}}</th>
+                                        <th scope="row">{{$loop->iteration }}</th>
+                                        <td>{{$jdl->judul_web}}</td>
                                         <td>
-                                            @if ($so -> gambar_so)
-                                            <img src="{{asset('storage/'.$so -> gambar_so)}}" class="img-flui" alt="{{ $so -> gambar_so }}" width="350px">
-                            
-                                            @else
-                                            <img src="{{asset('assets/images/gambar_so/'.$so -> id.'.png')}}" class="img-flui" alt="{{ $so -> id }}"
-                                              width="350px">
-                                            @endif
-                                          </td>
-                                        <td>
-                                            <form action="{{route('gso.edit',$so->id)}}" method="POST">
+                                            <form action="{{route('judul_web.edit',$jdl->id)}}" method="POST">
                                                 @csrf
                                                 @method('PUT')
-                                                <a class="btn btn-warning" href="{{route('gso.edit',$so->id)}}"><i class="icofont icofont-edit"></i></a>
+                                                <a class="btn btn-warning" href="{{route('judul_web.edit',$jdl->id)}}"><i class="icofont icofont-edit"></i></a>
                                             </form>
                                         </td>
                                     </tr>
@@ -78,9 +69,6 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="btn-container">
-                            {{$gso->links()}}
-                          </div>
                     </div>
                 </div>
                 <!-- Basic table card end -->
