@@ -26,19 +26,66 @@
                 </a>
             </li>
             <li class="pcoded-hasmenu">
-                <li>
-                    <a href="{{route('galeri.index')}}">
-                        <span class="pcoded-micon"><i class="ti-gallery"></i></span>
-                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Galeri</span>
+                <li class="pcoded-hasmenu">
+                    <a href="javascript:void(0)">
+                        <span class="pcoded-micon"><i class="ti-user"></i></span>
+                        <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Profil</span>
                         <span class="pcoded-mcaret"></span>
                     </a>
+                    <ul class="pcoded-submenu">
+                        <li>
+                            <a href="{{route('layanan.index')}}">
+                                <span class="pcoded-micon"><i class="ti-announcement"></i></span>
+                                <span class="pcoded-mtext" data-i18n="nav.form-components.main">Layanan</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{route('struktur.index')}}">
+                                <span class="pcoded-micon"><i class="ti-announcement"></i></span>
+                                <span class="pcoded-mtext" data-i18n="nav.form-components.main">Struktur</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{route('geografis.index')}}">
+                                <span class="pcoded-micon"><i class="ti-announcement"></i></span>
+                                <span class="pcoded-mtext" data-i18n="nav.form-components.main">Jumlah Penduduk</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{route('gso.index')}}">
+                                <span class="pcoded-micon"><i class="ti-announcement"></i></span>
+                                <span class="pcoded-mtext" data-i18n="nav.form-components.main">Gambar Struktur Organisasi</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+
+                    </ul>
                 </li>
-                <li>
-                    <a href="{{route('berita.index')}}">
+                <li class="pcoded-hasmenu">
+                    <a href="javascript:void(0)">
                         <span class="pcoded-micon"><i class="ti-announcement"></i></span>
-                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Berita</span>
+                        <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Informasi</span>
                         <span class="pcoded-mcaret"></span>
                     </a>
+                    <ul class="pcoded-submenu">
+                        <li>
+                            <a href="{{route('galeri.index')}}">
+                                <span class="pcoded-micon"><i class="ti-gallery"></i></span>
+                                <span class="pcoded-mtext" data-i18n="nav.form-components.main">Galeri</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{route('berita.index')}}">
+                                <span class="pcoded-micon"><i class="ti-announcement"></i></span>
+                                <span class="pcoded-mtext" data-i18n="nav.form-components.main">Berita</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="pcoded-hasmenu">
                     <a href="javascript:void(0)">
@@ -61,92 +108,25 @@
                                 <span class="pcoded-mcaret"></span>
                             </a>
                         </li>
-                        {{-- <li class=" ">
-                            <a href="button.html">
-                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Button</span>
-                                <span class="pcoded-mcaret"></span>
-                            </a>
-                        </li>
-                        <li class=" ">
-                            <a href="tabs.html">
-                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Tabs</span>
-                                <span class="pcoded-mcaret"></span>
-                            </a>
-                        </li>
-                        <li class=" ">
-                            <a href="color.html">
-                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Color</span>
-                                <span class="pcoded-mcaret"></span>
-                            </a>
-                        </li>
-                        <li class=" ">
-                            <a href="label-badge.html">
-                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Label Badge</span>
-                                <span class="pcoded-mcaret"></span>
-                            </a>
-                        </li>
-                        <li class=" ">
-                            <a href="tooltip.html">
-                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Tooltip</span>
-                                <span class="pcoded-mcaret"></span>
-                            </a>
-                        </li>
-                        <li class=" ">
-                            <a href="typography.html">
-                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Typography</span>
-                                <span class="pcoded-mcaret"></span>
-                            </a>
-                        </li>
-                        <li class=" ">
-                            <a href="notification.html">
-                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Notification</span>
-                                <span class="pcoded-mcaret"></span>
-                            </a>
-                        </li>
-                        <li class=" ">
-                            <a href="icon-themify.html">
-                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Icon</span>
-                                <span class="pcoded-mcaret"></span>
-                            </a>
-                        </li> --}}
                     </ul>
                 </li>
-                <li>
-                    <a href="{{route('layanan.index')}}">
-                        <span class="pcoded-micon"><i class="ti-announcement"></i></span>
-                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Layanan</span>
+                <li class="pcoded-hasmenu">
+                    <a href="javascript:void(0)">
+                        <span class="pcoded-micon"><i class="ti-layout"></i></span>
+                        <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Footer</span>
                         <span class="pcoded-mcaret"></span>
                     </a>
+                    <ul class="pcoded-submenu">
+                        <li>
+                            <a href="{{route('kontakkami.index')}}">
+                                <span class="pcoded-micon"><i class="ti-announcement"></i></span>
+                                <span class="pcoded-mtext" data-i18n="nav.form-components.main">Kontak</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="{{route('struktur.index')}}">
-                        <span class="pcoded-micon"><i class="ti-announcement"></i></span>
-                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Struktur</span>
-                        <span class="pcoded-mcaret"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{route('geografis.index')}}">
-                        <span class="pcoded-micon"><i class="ti-announcement"></i></span>
-                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Geografis</span>
-                        <span class="pcoded-mcaret"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{route('gso.index')}}">
-                        <span class="pcoded-micon"><i class="ti-announcement"></i></span>
-                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Gambar Struktur Organisasi</span>
-                        <span class="pcoded-mcaret"></span>
-                    </a>
-                </li>
+<<<<<<< HEAD
                 <li>
                     <a href="{{route('wilayah.index')}}">
                         <span class="pcoded-micon"><i class="ti-announcement"></i></span>
@@ -154,6 +134,14 @@
                         <span class="pcoded-mcaret"></span>
                     </a>
                 </li>
+=======
+                
+                
+               
+               
+               
+                
+>>>>>>> b0b5bc400aa6d1e0c52b0840c7e06adcae2765af
             </ul>
 
         {{-- <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Forms &amp; Tables</div> --}}
