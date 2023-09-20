@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Berita;
 use App\Models\struktur;
+use App\Models\Geografis;
 
 class UserController extends Controller
 {
@@ -12,7 +13,8 @@ class UserController extends Controller
     {
         $berita = Berita::all();
         $struktur = Struktur::all();
-        return view('user.beranda', ['data' => $berita, 'struktur'=>$struktur]);
+        $geografis = Geografis::all();
+        return view('user.beranda', ['data' => $berita, 'struktur'=>$struktur, 'geografis'=>$geografis]);
     }
 
     public function properti()
