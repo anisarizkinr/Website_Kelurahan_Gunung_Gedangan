@@ -19,6 +19,7 @@
   <div class="map-container">
   @if ($maps)
     <iframe src="{{ $maps->link }}" width="800" height="450" style="margin-top: 180px;"></iframe>
+  @endif
   </div>
 
 
