@@ -126,12 +126,28 @@
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a href="{{route('wilayah.index')}}">
+                <li class="pcoded-hasmenu">
+                    <a href="javascript:void(0)">
                         <span class="pcoded-micon"><i class="ti-announcement"></i></span>
-                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Batas Wilayah</span>
+                        <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Geografi</span>
                         <span class="pcoded-mcaret"></span>
                     </a>
+                    <ul class="pcoded-submenu">
+                        <li>
+                            <a href="{{route('wilayah.index')}}">
+                                <span class="pcoded-micon"><i class="ti-gallery"></i></span>
+                                <span class="pcoded-mtext" data-i18n="nav.form-components.main">Batas Wilayah</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{route('maps.index')}}">
+                                <span class="pcoded-micon"><i class="ti-announcement"></i></span>
+                                <span class="pcoded-mtext" data-i18n="nav.form-components.main">Maps</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
 

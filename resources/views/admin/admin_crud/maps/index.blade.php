@@ -12,8 +12,8 @@
                             <div class="page-header-title">
                                 <i class="icofont icofont-table bg-c-blue"></i>
                                 <div class="d-inline">
-                                    <h2>Data Batas Wilayah</h2>
-                                    <span>Isi Data Batas Wilayah</span>
+                                    <h2>Data Maps</h2>
+                                    <span>Isi Data Maps</span>
                                 </div>
                             </div>
                         </div>
@@ -25,7 +25,7 @@
                                         <i class="icofont icofont-home"></i>
                                     </a>
                                 </li>
-                                <li class="breadcrumb-item"><a href="{{url('/wilayah')}}">Batas Wilayah</a>
+                                <li class="breadcrumb-item"><a href="{{url('/maps')}}">Maps</a>
                                 </li>
                             </ul>
                         </div>
@@ -44,33 +44,20 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Gambar Arah Mata Angin</th>
-                                        <th>Batas Wilayah</th>
-                                        <th>Deskripsi</th>
                                         <th>Link</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($paginate as $wly)
+                                    @foreach ($paginate as $maps)
                                     <tr>
                                         <th scope="row">{{$loop->iteration}}</th>                                    
+                                        <td>{{$maps->link}}</td>
                                         <td>
-                                            @if ($wly -> gambar_arah)
-                                            <img src="{{asset('storage/'.$wly -> gambar_arah)}}" class="img-flui" alt="{{ $wly -> gambar_arah }}" width="150px">
-                                            @else
-                                            <img src="{{asset('assets/images/gambar_arah/'.$wly -> id.'.png')}}" class="img-flui" alt="{{ $wly -> id }}"
-                                              width="150px">
-                                            @endif
-                                        </td>
-                                        <td>{{$wly->batas_wilayah}}</td>
-                                        <td>{{$wly->deskripsi}}</td>
-                                        <td>{{$wly->link}}</td>
-                                        <td>
-                                            <form action="{{route('wilayah.edit',$wly->id)}}" method="POST">
+                                            <form action="{{route('maps.edit',$maps->id)}}" method="POST">
                                                 @csrf
                                                 @method('PUT')
-                                                <a class="btn btn-warning" href="{{route('wilayah.edit',$wly->id)}}"><i class="icofont icofont-edit"></i></a>
+                                                <a class="btn btn-warning" href="{{route('maps.edit',$maps->id)}}"><i class="icofont icofont-edit"></i></a>
                                             </form>
                                         </td>
                                     </tr>
