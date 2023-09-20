@@ -18,6 +18,7 @@ use App\Http\Controllers\DataController;
 use App\Http\Controllers\LayananAdminController;
 use App\Http\Controllers\StrukturAdminController;
 use App\Http\Controllers\GeografisUserController;
+use App\Http\Controllers\GsoController;
 use App\Models\Berita;
 
 /*
@@ -90,6 +91,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('layanan', LayananAdminController::class);
     Route::resource('struktur', StrukturAdminController::class);
     Route::resource('geografis', GeografisController::class);
+    Route::resource('gso', GsoController::class);
 });
 
 

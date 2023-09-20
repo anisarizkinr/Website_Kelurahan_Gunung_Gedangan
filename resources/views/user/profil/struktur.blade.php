@@ -27,7 +27,11 @@
         <div class="row justify-content-between mb-5">
           <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
             <div class="img-about dots">
-              <img src="{{asset('images/bagan.jpg')}}" alt="Image" class="img-fluid" />
+              @if ($gso->gambar_so)
+              <img src="{{ asset('storage/' . $gso->gambar_so) }}" class="img-fluid" alt="{{ $gso->gambar_so }}">
+              @else
+              <img src="{{ asset('assets/images/gambar_so/' . $gso->id . '.png') }}" class="img-fluid" alt="{{ $gso->id }}">
+              @endif
             </div>
           </div>
           @foreach($data as $str)
