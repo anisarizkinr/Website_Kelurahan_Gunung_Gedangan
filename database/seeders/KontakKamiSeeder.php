@@ -13,14 +13,12 @@ class KontakKamiSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('kontakkami')->insert(
+        DB::table('kontakkami')->insert([
             [
-        [
-            'alamat' => 'Jl. Empunala No. 406 Margelo, Kedundung',
-            'telepon' => 'Telp : (0321) 326481',
-            'email' => 'kelurahankedundung45@gmail.com',
-        ] 
-            ]
-        );
+                'alamat' => 'Jl. Empunala No. 406 Margelo, Kedundung',
+                'telepon' => 'Telp : (0321) 326481',
+                'email' => 'kelurahankedundung45@gmail.com',
+            ] 
+        ]);
     }
 }

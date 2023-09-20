@@ -110,6 +110,7 @@
                         <th>Alamat</th>
                         <th>Telepon</th>
                         <th>Email</th>
+                        <th>Aksi</th>
                       </tr>
                     </thead>
                     <tbody>
