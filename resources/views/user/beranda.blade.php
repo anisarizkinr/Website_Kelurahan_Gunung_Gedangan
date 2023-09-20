@@ -13,30 +13,12 @@
       <div class="row justify-content-center align-items-center">
         <div class="col-lg-9 text-center">
           <h1 class="heading" data-aos="fade-up" style="text-align: left;">
-            Selamat Datang di Kelurahan Kedundung!
+            Selamat Datang di Kelurahan  @if ($judul) {{ $judul->judul_web }}@endif!
           </h1>
-          {{-- <h3 class='heading'data-aos="fade-up">
-              Selamat datang di website resmi Kelurahan Gunung Gedangan, Tempat yang penuh dengan keindahan alam dan masyrakat yang ramah. Kami dengan bangga mempersembahkan berbagai informasi tentang kelurahan kami, termasuk Sejarah, Layanan Publik dan Informasi lainnya
-            </h3> --}}
           <h2 class='heading' data-aos="fade-up" style="text-align: left; font-weight: normal;font-size: 18px;">
-            Selamat datang di website resmi Kelurahan Kedundung. Kami dengan bangga mempersembahkan berbagai informasi tentang kelurahan kami, termasuk Sejarah, Layanan Publik dan Informasi lainnya
+            Selamat datang di website resmi Kelurahan  @if ($judul) {{ $judul->judul_web }}@endif. Kami dengan bangga mempersembahkan berbagai informasi tentang kelurahan kami, termasuk Sejarah, Layanan Publik dan Informasi lainnya
           </h2>
-          {{-- <button type="submit" class="btn btn-primary">Explore Lebih Jauh</button> --}}
           <a href="{{url('/profil/sejarah')}}" class="btn btn-warning rounded-pill py-3 px-5 animated slideInLeft" style="background-color: #FF8811; color:white">Explore Lebih Jauh</a>
-
-          {{-- <form
-              action="#"
-              class="narrow-w form-search d-flex align-items-stretch mb-3"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <input
-                type="text"
-                class="form-control px-4"
-                placeholder="Your ZIP code or City. e.g. New York"
-              />
-              <button type="submit" class="btn btn-primary" style="background-color: #FF8811; ">Explore Lebih Jauh</button>
-            </form> --}}
         </div>
       </div>
     </div>
@@ -150,126 +132,7 @@
       </div>
     </div>
   </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="box-feature">
-              <h3 class="mb-3">YUKHAL MEI IRWANTO</h3>
-              <img
-              src="images/person_1-min.jpg"
-              alt="Image"
-              class="img-fluid rounded-circle w-5 mb-4"
-              />
-              <p class="mb-3">Lurah Kedundung</p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="box-feature">
-              <span class="flaticon-house"></span>
-              <br>
-              <h3 class="mb-3">ENI WULANDARI, SH</h3>
-              <img
-              src="images/person_4-min.jpg"
-              alt="Image"
-              class="img-fluid rounded-circle w-5 mb-4"
-              />
-              <p class="mb-3">Sekretaris</p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="box-feature">
-              <span class="flaticon-house"></span>
-              <br>
-              <h3 class="mb-3">	
-                NURALIH , SE </h3>
-              <img
-              src="images/person_4-min.jpg"
-              alt="Image"
-              class="img-fluid rounded-circle w-5 mb-4"
-              />
-              <p class="mb-3">Kepala Seksi Tata Pemerintahan, Ketentraman dan Ketertiban Umum</p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="box-feature">
-              <span class="flaticon-house"></span>
-              <br>
-              <h3 class="mb-3">	
-                MOCHAMMAD AGUS WIDODO </h3>
-              <img
-              src="images/person_2-min.jpg"
-              alt="Image"
-              class="img-fluid rounded-circle w-5 mb-4"
-              />
-              <p class="mb-3">Kepala Seksi Sosial dan Pemberdayaan Masyarakat</p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="box-feature">
-              <span class="flaticon-house"></span>
-              <br>
-              <h3 class="mb-3">	
-                HERI W.</h3>
-              <img
-              src="images/person_3-min.jpg"
-              alt="Image"
-              class="img-fluid rounded-circle w-5 mb-4"
-              />
-              <p class="mb-3">Kepala Seksi Prasana dan Prasarana Wilayah</p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="box-feature">
-              <span class="flaticon-house"></span>
-              <br>
-              <h3 class="mb-3">	
-                ENI NURHAYATI</h3>
-                <img
-                src="images/person_4-min.jpg"
-                alt="Image"
-                class="img-fluid rounded-circle w-5 mb-4"
-                />
-              <p class="mb-3">Pengelola Keuangan</p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="box-feature">
-              <span class="flaticon-house"></span>
-              <br>
-              <h3 class="mb-3">	
-                ASIYAH, SE</h3>
-              <img
-              src="images/person_4-min.jpg"
-              alt="Image"
-              class="img-fluid rounded-circle w-5 mb-4"
-              />
-              <p class="mb-3">Pengadministrasi Pemerintahan</p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-            <div class="box-feature">
-              <span class="flaticon-house-3"></span>
-              <h3 class="mb-3">Real Estate Agent</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptates, accusamus.
-              </p>
-              <p><a href="#" class="learn-more">Learn More</a></p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
-            <div class="box-feature">
-              <h2 class="mb-3">Pengaduan</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptates, accusamus.
-              </p>
-              <p><a href="#" class="learn-more">Learn More</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> --}}
+     
 
 
 

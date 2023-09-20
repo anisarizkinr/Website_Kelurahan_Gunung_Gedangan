@@ -14,7 +14,9 @@
               <div class="d-flex flex-wrap align-items-center justify-content-between">
                   <div class="logo-container">
                       <img src="{{asset('images/logo kota mojokerto.png')}}" alt="Image" class="img-fluid w-5 mb-4 float-start" />
-                      <a href="{{url('/beranda')}}" class="logo m-0 float-start">Kelurahan <br> Kedundung </a>
+                      <a href="{{url('/beranda')}}" class="logo m-0 float-start">Kelurahan <br> 
+                        @if ($judul) {{ $judul->judul_web }}
+                      @endif </a>
                   </div>
                   
                   <a href="#" class="burger light site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">

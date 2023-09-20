@@ -7,6 +7,7 @@ use App\Models\Berita;
 use App\Models\struktur;
 use App\Models\Geografis;
 use App\Models\KontakKami;
+use App\Models\Judul;
 
 class UserController extends Controller
 {
@@ -16,7 +17,14 @@ class UserController extends Controller
         $struktur = Struktur::all();
         $geografis = Geografis::all();
         $kontak = KontakKami::orderBy('id','asc')->first();
-        return view('user.beranda', ['data' => $berita, 'struktur'=>$struktur, 'geografis'=>$geografis, 'kontak'=>$kontak]);
+        $judul = Judul::orderBy('id','asc')->first();
+        return view('user.beranda', [
+            'data' => $berita, 
+            'struktur'=>$struktur, 
+            'geografis'=>$geografis, 
+            'kontak'=>$kontak,
+            'judul'=>$judul,
+        ]);
     }
 
     public function properti()
