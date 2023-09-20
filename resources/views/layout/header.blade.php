@@ -1,3 +1,12 @@
+<div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
 <nav class="site-nav navbar-expand-lg">
   <div class="container">
       <div class="menu-bg-wrap">
@@ -32,8 +41,9 @@
                       </li>
                       <li><a href="{{url('/layanan_user')}}" style="font-size: 18px;">Layanan</a></li>
                       <li><a href="{{url('/data_user')}}" style="font-size: 18px;">Data</a></li>
+                      <li><a href="https://ppid.mojokertokota.go.id/r" style="font-size: 18px;">PPID</a></li>
                       <li><a href="https://curhatningita.lapor.go.id/" style="font-size: 18px;">Curhat Ning Ita</a></li>
-                      <li><a href="{{url('/login')}}" class="btn btn-secondary rounded-pill py-3 px-5">Login</a></li>
+                      <li><a href="{{url('/login')}}" class="btn btn-secondary rounded-pill py-2 px-3">Login</a></li>
                   </ul>
                   
               </div>
