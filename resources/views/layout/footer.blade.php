@@ -1,29 +1,28 @@
 <div class="site-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="widget">
-            <h3>Kontak Kami</h3>
-            <address>{{ $knt->alamat }}</address>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="widget">
+          <h3>Kontak Kami</h3>
+          @foreach ($data as $knt)
             <ul class="list-unstyled links">
-              <li>{{ $knt->telepon }}</li>
-              <li>
-                {{ $knt->email }}
-              </li>
+              <li>{{ $knt->alamat }}</li>
+              <li> {{ $knt->telepon }}</li>
+              <li> {{ $knt->email }}</li>
             </ul>
-            <ul class="list-unstyled social">
-              <li>
-                <a href="https://www.instagram.com/kelurahan.kdd"><span class="icon-instagram"></span></a>
-              </li>
-            </ul>
-          </div>
-          <!-- /.widget -->
+          @endforeach
+          <ul class="list-unstyled social">
+            <li>
+              <a href="https://www.instagram.com/kelurahan.kdd"><span class="icon-instagram"></span></a>
+            </li>
+          </ul>
         </div>
-        <!-- /.col-lg-4 -->
+        <!-- /.widget -->
       </div>
-      <!-- /.row -->
-
+      <!-- /.col-lg-4 -->
     </div>
-    <!-- /.container -->
+    <!-- /.row -->
   </div>
-  <!-- /.site-footer -->
+  <!-- /.container -->
+</div>
+<!-- /.site-footer -->

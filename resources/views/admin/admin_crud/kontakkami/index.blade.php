@@ -118,8 +118,9 @@
                       @foreach ($paginate as $knt)
                       <tr>
                         <th scope="row">{{$loop->iteration}}</th>
-                        <td>{{$knt->jumlah_penduduk}}</td>
-                        <td>{{$knt->keterangan}}</td>
+                        <td>{{$knt->alamat}}</td>
+                        <td>{{$knt->telepon}}</td>
+                        <td>{{$knt->email}}</td>
                         <td>
                           <form action="{{route('kontakkami.edit',$knt->id)}}" method="POST">
                               @csrf
