@@ -126,7 +126,6 @@
                         </li>
                     </ul>
                 </li>
-<<<<<<< HEAD
                 <li>
                     <a href="{{route('wilayah.index')}}">
                         <span class="pcoded-micon"><i class="ti-announcement"></i></span>
@@ -134,14 +133,6 @@
                         <span class="pcoded-mcaret"></span>
                     </a>
                 </li>
-=======
-                
-                
-               
-               
-               
-                
->>>>>>> b0b5bc400aa6d1e0c52b0840c7e06adcae2765af
             </ul>
 
         {{-- <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Forms &amp; Tables</div> --}}
