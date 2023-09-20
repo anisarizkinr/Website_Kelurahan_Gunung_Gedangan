@@ -61,19 +61,12 @@
         @endforeach
       </div>
     </div>
-<<<<<<< HEAD
   </div>
-  <!-- Preloader -->
-  <div id="overlayer"></div>
-  <div class="loader">
-=======
-</div>
 
 
 <!-- Preloader -->
 <div id="overlayer"></div>
 <div class="loader">
->>>>>>> b0b5bc400aa6d1e0c52b0840c7e06adcae2765af
     <div class="spinner-border" role="status">
       <span class="visually-hidden">Loading...</span>
     </div>

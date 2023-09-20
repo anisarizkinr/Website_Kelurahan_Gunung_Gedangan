@@ -19,14 +19,9 @@ use App\Http\Controllers\LayananAdminController;
 use App\Http\Controllers\StrukturAdminController;
 use App\Http\Controllers\GeografisUserController;
 use App\Http\Controllers\GsoController;
-<<<<<<< HEAD
 use App\Http\Controllers\WilayahController;
-=======
 use App\Http\Controllers\KontakKamiController;
 use App\Http\Controllers\KontakKamiUserController;
->>>>>>> b0b5bc400aa6d1e0c52b0840c7e06adcae2765af
-use App\Models\Berita;
-use App\Models\Wilayah;
 
 /*
 |--------------------------------------------------------------------------
@@ -99,11 +94,8 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('struktur', StrukturAdminController::class);
     Route::resource('geografis', GeografisController::class);
     Route::resource('gso', GsoController::class);
-<<<<<<< HEAD
     Route::resource('wilayah',WilayahController::class);
-=======
     Route::resource('kontakkami', KontakKamiController::class);
->>>>>>> b0b5bc400aa6d1e0c52b0840c7e06adcae2765af
 });
 
 
