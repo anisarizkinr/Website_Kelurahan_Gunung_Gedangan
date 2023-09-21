@@ -13,13 +13,13 @@
             {{-- <a class="btn btn-info" href="{{url('galeri/create')}}">Tambah</a>
          --}}
           <div class="row">
-            @foreach ($data as $gambar)
+            @foreach ($data as $glr)
             <div class="col-lg-4 col-sm-4">
               <div class="card mb-3">
-                @if ($gambar -> gambar)
-                <img src="{{('storage/'.$gambar -> gambar)}}" class="card-img-top" alt="...">
+                @if ($glr -> gambar)
+                <img src="{{ asset('storage/' . $glr->gambar) }}" class="card-img-top" alt="{{ $glr->gambar }}">
                 @else
-                <img src="{{('/assets/images/galeri/'.$gambar -> id.'.jpg')}}" class="card-img-top" alt="...">
+                <img src="{{('/assets/images/galeri/'.$glr -> id.'.jpg')}}" class="card-img-top" alt="{{ $glr->id }}">
                 @endif
                 {{-- <div class="card-body">
                   <h5 class="card-title">Card title</h5>
