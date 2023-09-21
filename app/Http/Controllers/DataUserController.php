@@ -7,6 +7,7 @@ use App\Models\Kategori;
 use App\Models\KontakKami;
 use App\Models\Judul;
 use App\Models\Maps;
+use App\Models\sosmed;
 use Illuminate\Http\Request;
 
 class DataUserController extends Controller
@@ -16,7 +17,8 @@ class DataUserController extends Controller
         $kontak = KontakKami::orderBy('id','asc')->first();
         $judul = Judul::orderBy('id','asc')->first();
         $maps = Maps::orderBy('id','asc')->first();
-        return view('user.data', compact('paginate', 'kontak','judul','maps'));
+        $sosmed = sosmed::all();
+        return view('user.data', compact('paginate', 'kontak','judul','maps','sosmed'));
     }
    
     public function data_user_tabel(Kategori $kategori)
@@ -25,12 +27,14 @@ class DataUserController extends Controller
         $kontak = KontakKami::orderBy('id','asc')->first();
         $judul = Judul::orderBy('id','asc')->first();
         $maps = Maps::orderBy('id','asc')->first();
+        $sosmed = sosmed::all();
         return view('user.tabel_data', [
             'kategori' => $kategori,
             'data' => $data,
             'kontak' => $kontak,
             'judul' =>$judul,
             'maps' => $maps,
+            'sosmed' => $sosmed,
         ]);
     }
     
@@ -40,12 +44,14 @@ class DataUserController extends Controller
         $kontak = KontakKami::orderBy('id','asc')->first();
         $judul = Judul::orderBy('id','asc')->first();
         $maps = Maps::orderBy('id','asc')->first();
+        $sosmed = sosmed::all();
         return view('user.isi_tabel_data', [
             'kategori' => $kategori,
             'isi_data' => $isi_data,
             'kontak' => $kontak,
             'judul' =>$judul,
             'maps' => $maps,
+            'sosmed' => $sosmed,
         ]);
     }
 

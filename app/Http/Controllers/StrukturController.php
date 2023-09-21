@@ -8,6 +8,7 @@ use App\Models\KontakKami;
 use App\Models\GambarKepengurusan;
 use App\Models\Judul;
 use App\Models\Maps;
+use App\Models\sosmed;
 
 class StrukturController extends Controller
 {
@@ -17,6 +18,7 @@ class StrukturController extends Controller
         $kontak = KontakKami::orderBy('id','asc')->first();
         $judul = Judul::orderBy('id','asc')->first();
         $maps = Maps::orderBy('id','asc')->first();
-        return view('user.profil.struktur', compact('data','gso', 'kontak','judul','maps'));
+        $sosmed = sosmed::all();
+        return view('user.profil.struktur', compact('data','gso', 'kontak','judul','maps', 'sosmed'));
     }
 }

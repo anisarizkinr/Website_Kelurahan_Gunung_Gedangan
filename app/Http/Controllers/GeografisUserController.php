@@ -8,6 +8,7 @@ use App\Models\Wilayah;
 use App\Models\KontakKami;
 use App\Models\Maps;
 use App\Models\Judul;
+use App\Models\sosmed;
 
 class GeografisUserController extends Controller
 {
@@ -17,12 +18,14 @@ class GeografisUserController extends Controller
         $maps = Maps::orderBy('id','asc')->first();
         $kontak = KontakKami::orderBy('id','asc')->first();
         $judul = Judul::orderBy('id','asc')->first();
+        $sosmed= Sosmed::all();
         return view('user.profil.geografis', [
             'data' => $geografis,
             'wilayah' => $wilayah,
             'kontak' =>$kontak,
             'maps' =>$maps,
             'judul'=>$judul,
+            'sosmed'=>$sosmed,
         ]);
     }
 }
