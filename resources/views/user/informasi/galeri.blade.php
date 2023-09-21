@@ -1,25 +1,13 @@
 @extends('layout.master')
 @section('content')
 <body>
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close">
-          <span class="icofont-close js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-
-   
     <div class="section">
     </div>
-
-  
     <!-- Team Start -->
 <div class="container-xxl py-5">
     <div class="container">
         <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <h1 class="mb-4">Galeri Kegiatan Kelurahan Kedundung </h1>
+            <h1 class="mb-4">Galeri Kegiatan Kelurahan @if ($judul) {{ $judul->judul_web }}@endif </h1>
         </div>
         <div>
             {{-- <a class="btn btn-info" href="{{url('galeri/create')}}">Tambah</a>

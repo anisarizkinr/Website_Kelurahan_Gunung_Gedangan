@@ -2,20 +2,12 @@
 @section('content')
 
 <body>
-  <div class="site-mobile-menu site-navbar-target">
-    <div class="site-mobile-menu-header">
-      <div class="site-mobile-menu-close">
-        <span class="icofont-close js-menu-toggle"></span>
-      </div>
-    </div>
-    <div class="site-mobile-menu-body"></div>
-  </div>
   <!-- <div class="col-lg-6 text-center mx-auto">
     <h2 class="font-weight-bold text-primary heading">
       DATA KELURAHAN KEDUNDUNG
     </h2>
   </div> -->
-  <h2 class="map-heading">LETAK GEOGRAFIS KELURAHAN @if ($judul) {{ $judul->judul_web }}@endif</h2>
+  <h2 class="map-heading">Letak Geografis Kelurahan @if ($judul) {{ $judul->judul_web }}@endif</h2>
   <div class="map-container">
   @if ($maps)
     <iframe src="{{ $maps->link }}" width="800" height="450" style="margin-top: 180px;"></iframe>

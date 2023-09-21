@@ -1,24 +1,16 @@
 @extends('layout.master')
 @section('content')
 <body>
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close">
-          <span class="icofont-close js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
     <div class="section"></div>
     <div class="section section-4 bg-light">
       <div class="container">
         <div class="row justify-content-center text-center mb-5">
           <div class="col-lg-5">
             <h2 class="font-weight-bold heading text-primary mb-4">
-              Struktur Kelurahan Kedundung
+              Struktur Kelurahan @if ($judul) {{ $judul->judul_web }}@endif
             </h2>
             <p class="text-black-50">
-              Struktur Organisasi Kelurahan Kedundung menampilkan susunan hierarki yang jelas 
+              Struktur Organisasi Kelurahan @if ($judul) {{ $judul->judul_web }}@endif menampilkan susunan hierarki yang jelas 
               dan terperinci tentang para pejabat dan staf yang bertanggung jawab dalam mengelola 
               dan menyediakan layanan untuk warga.
             </p>
