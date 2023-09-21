@@ -46,7 +46,7 @@
             <div class="col-md-8">
               <div class="card card-secondary">
                   <div class="card-header">
-                      <h3 class="card-title">{{ $title }}</h3>
+                      {{-- <h3 class="card-title">{{ $title }}</h3> --}}
                   </div>
                   <div class="card-body">
                       @if ($errors->any())

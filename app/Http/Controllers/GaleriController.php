@@ -16,14 +16,8 @@ class GaleriController extends Controller
     public function index()
     {
         
-            $galeri = Galeri::all();
-            $title = 'Data Galeri';
-            $paginate = Galeri::orderBy('id', 'asc')->paginate(5);
-    
-            return view(
-                'admin.admin_crud.galeri.index',
-                compact('galeri', 'title', 'paginate')
-            );
+        $galeri = Galeri::orderBy('id','asc')->paginate(5);
+        return view('admin.admin_crud.galeri.index', compact('galeri'));
     }
 
     /**
@@ -34,9 +28,8 @@ class GaleriController extends Controller
     public function create()
     {
         
-            $title = "Tambah Data Galeri";
-            $galeri = Galeri::all();
-            return view('admin.admin_crud.galeri.tambah', compact('title', 'galeri'));
+        $galeri = new Galeri; 
+        return view('admin.admin_crud.galeri.tambah',compact('galeri'));
         
     }
 
@@ -87,7 +80,7 @@ class GaleriController extends Controller
         {
             $title = "Edit Data Galeri";
             $galeri = Galeri::find($id);
-            return view('admin.admin_crud.galeri.edit', compact('title', 'galeri'));
+        return view('admin.admin_crud.galeri.edit', compact('galeri'));
         }
     }
 

@@ -41,7 +41,7 @@
                                 <div class="page-header-breadcrumb">
                                    <ul class="breadcrumb-title">
                                     <li class="breadcrumb-item">
-                                        <a href="{{url('/gelari')}}">
+                                        <a href="{{url('/galeri')}}">
                                             <i class="icofont icofont-home"></i>
                                         </a>
                                     </li>
@@ -84,7 +84,7 @@
                                     </thead>
                                     <tbody>
                               
-                                        @foreach ($paginate as $glr)
+                                        @foreach ($galeri as $glr)
                                         <tr>
                                           <td class="text-black">{{ $loop -> iteration}}</td>
                                           <td>
@@ -136,7 +136,7 @@
         <div class="row">
           <div class="mx-auto">
             <div class="paginate-button col-md-12">
-              {{ $paginate->links() }}
+              {{ $galeri->links() }}
             </div>
           </div>
         </div>
