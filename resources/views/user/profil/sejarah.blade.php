@@ -15,16 +15,16 @@
     <div class="section">
         <div class="container">
           <div class="row text-left mb-5">
-          @if ($sejarah)
             <div class="col-12">
               <h2 class="font-weight-bold heading text-primary mb-4" style="text-align: center;">Asal Usul Nama Kelurahan @if ($judul) {{ $judul->judul_web }}@endif</h2>
             </div>
             <div class="box-sejarah">
-              <p class="text-black-50">
-              {{ $sejarah->isi_sejarah }}
+            @foreach($sejarah as $sjr)
+              <p class="text-black-50" style="background-color: #fefae0; padding-top: 20px; padding-bottom: 20px; padding-right:10px; padding: left 10px;">
+              {{ $sjr->isi_sejarah }}
               </p>
+            @endforeach
             </div>
-            @endif
           </div>
         </div>
       </div>
