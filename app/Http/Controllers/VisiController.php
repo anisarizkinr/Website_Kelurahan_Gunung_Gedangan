@@ -5,6 +5,7 @@ use App\Models\KontakKami;
 use App\Models\Judul;
 use App\Models\Maps;
 use App\Models\sosmed;
+use App\Models\visi;
 use Illuminate\Http\Request;
 
 class VisiController extends Controller

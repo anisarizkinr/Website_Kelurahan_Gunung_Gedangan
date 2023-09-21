@@ -75,6 +75,13 @@
                                 <span class="pcoded-mcaret"></span>
                             </a>
                         </li>
+                        <li>
+                            <a href="{{route('visi.index')}}">
+                                <span class="pcoded-micon"><i class="ti-announcement"></i></span>
+                                <span class="pcoded-mtext" data-i18n="nav.form-components.main">Visi</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
 
                     </ul>
                 </li>
