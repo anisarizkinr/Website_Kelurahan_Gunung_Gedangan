@@ -61,11 +61,11 @@
               <div class="page-header-breadcrumb">
                 <ul class="breadcrumb-title">
                   <li class="breadcrumb-item">
-                    <a href="{{url('/dashboard')}}">
+                    <a href="{{url('/kontakkami')}}">
                       <i class="icofont icofont-home"></i>
                     </a>
                   </li>
-                  <li class="breadcrumb-item"><a href="{{url('/dashboard')}}"></a>
+                  <li class="breadcrumb-item"><a href="{{url('/kontakkami')}}">Kontak Kami</a>
                   </li>
                 </ul>
               </div>
