@@ -41,6 +41,13 @@
                             </a>
                         </li>
                         <li>
+                            <a href="{{route('latar_gambar.index')}}">
+                                <span class="pcoded-micon"><i class="ti-text"></i></span>
+                                <span class="pcoded-mtext" data-i18n="nav.form-components.main">Gambar Landing Page</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+                        <li>
                             <a href="{{route('layanan.index')}}">
                                 <span class="pcoded-micon"><i class="ti-announcement"></i></span>
                                 <span class="pcoded-mtext" data-i18n="nav.form-components.main">Layanan</span>

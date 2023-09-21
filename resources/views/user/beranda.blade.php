@@ -4,9 +4,13 @@
 <body>
   <div class="hero">
     <div class="hero-slide">
-      <div class="img overlay" style="background-image: url('images/gambar_1.png'); opacity: 0.5;"></div>
-      <div class="img overlay" style="background-image: url('images/gambar_2.png'); opacity: 0.5;"></div>
-      <div class="img overlay" style="background-image: url('images/gambar_3.png'); opacity: 0.5;"></div>
+      @foreach ($latar as $ltr )
+      @if ($ltr -> gambar_latar)
+      <img src="{{asset('storage/'.$ltr -> gambar_latar)}}" class="img overlay" style="opacity: 0.5;">
+      @else
+      <img src="{{('assets/images/gambar_latar/'.$ltr -> id.'.png')}}" class="img overlay" style="opacity: 0.5;">
+      @endif
+      @endforeach
     </div>
 
     <div class="container">

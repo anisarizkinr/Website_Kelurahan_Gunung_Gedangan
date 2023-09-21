@@ -27,6 +27,7 @@ use App\Http\Controllers\JudulController;
 use App\Http\Controllers\SejarahAdminController;
 use App\Http\Controllers\SosmedController;
 use App\Http\Controllers\SosmedUserController;
+use App\Http\Controllers\LatarGambarController;
 use App\Models\Maps;
 
 /*
@@ -107,6 +108,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('maps',MapsController::class);
     Route::resource('judul_web',JudulController::class);
     Route::resource('sejarah',SejarahAdminController::class);
+    Route::resource('latar_gambar',LatarGambarController::class);
 });
 
 
