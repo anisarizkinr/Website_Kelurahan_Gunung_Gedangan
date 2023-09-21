@@ -13,7 +13,9 @@
           @endif
           <ul class="list-unstyled social">
             <li>
-              <a href="https://www.instagram.com/kelurahan.kdd"><span class="icon-instagram"></span></a>
+              @foreach ($sosmed as $ss)             
+              <a href="{{ $ss->link }}"><span class="icon-{{ $ss->icon}}"></span></a>
+              @endforeach
             </li>
           </ul>
         </div>
