@@ -15329,3 +15329,17 @@ nav[aria-label="breadcrumb"] li:before {
   margin-top: 28px;
 }
 
+.maps{
+  margin-top: -180px;
+}
+
+.box-sejarah{
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: #e7e393;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
