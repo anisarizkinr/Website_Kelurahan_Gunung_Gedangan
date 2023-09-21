@@ -73,12 +73,6 @@
                                                 @method('PUT')
                                                 <a class="btn btn-warning" href="{{route('kategori.edit',$ktg->id)}}"><i class="icofont icofont-edit"></i></a>
                                             </form>
-                                            {{-- <form action="{{route('kategori.update',$ktg->id)}}" method="POST">
-                                                @csrf
-                                                @method('PUT')
-                                                <input type="hidden" name="id" value="{{$ktg->id}}">
-                                                <button type="submit" class="btn btn-info"><i class="icofont icofont-update"></i></button>
-                                            </form> --}}
                                             <form action="{{route('kategori.destroy',$ktg->id)}}" method="POST">
                                                 @csrf
                                                 @method('DELETE')

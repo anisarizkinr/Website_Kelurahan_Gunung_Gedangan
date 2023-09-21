@@ -10,6 +10,7 @@ use App\Models\KontakKami;
 use App\Models\sosmed;
 use App\Models\Judul;
 use App\Models\Maps;
+use App\Models\LatarGambar;
 
 class UserController extends Controller
 {
@@ -22,6 +23,7 @@ class UserController extends Controller
         $sosmed = sosmed::all();
         $judul = Judul::orderBy('id','asc')->first();
         $maps = Maps::orderBy('id','asc')->first();
+        $latar = LatarGambar::all();
         return view('user.beranda', [
             'data' => $berita, 
             'struktur'=>$struktur, 
@@ -30,29 +32,8 @@ class UserController extends Controller
             'sosmed'=>$sosmed,
             'judul'=>$judul,
             'maps'=>$maps,
+            'latar'=> $latar,
         ]);
-    }
-
-    public function properti()
-    {
-        return view('user.properti');
-
-    }
-    public function tentang()
-    {
-        return view('user.tentang');
-
-    }
-
-    public function servis()
-    {
-        return view('user.servis');
-
-    }
-    public function kontak()
-    {
-        return view('user.kontak');
-
     }
     
 }
