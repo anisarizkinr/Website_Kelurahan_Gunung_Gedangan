@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Models\Visi;
 
@@ -14,12 +13,11 @@ class VisiAdminController extends Controller
      */
     public function index()
     {
-        $visi = Visi::all();
-        $paginate= Visi::orderBy('id', 'asc')->paginate(5);
+        $visi = Visi::orderBy('id', 'asc')->paginate(5);
 
         return view(
             'admin.admin_crud.visi.index',
-            compact('visi', 'paginate')
+            compact('visi')
         );
     }
 

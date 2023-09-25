@@ -16,12 +16,12 @@ class VisimisiSeeder extends Seeder
     {
         DB::table('visimisis')->insert([
             [
-                'judul' => 'KELURAHAN KEDUNDUNG SELALU PRIMA DALAM PELAYANAN',
-                'isi_vm' => ' 1. Profesional dalam melaksanakan tugas
-                2. Ramah dalam melayani masyarakat
-                3. Informatif dalam memberikan pelayanan
-                4. Melayani dengan hati yang tulus
-                5. Akuntable dalam menjalankan tugas ',
+                'judul' => 'MOTTO',
+                'isi_vm' => 'KELURAHAN KEDUNDUNG SELALU PRIMA DALAM PELAYANAN',
+            ],
+            [
+                'judul' => 'PRIMA',
+                'isi_vm' => "1. Profesional dalam melaksanakan tugas\n2. Ramah dalam melayani masyarakat\n3. Informatif dalam memberikan pelayanan\n4. Melayani dengan hati yang tulus\n5. Akuntable dalam menjalankan tugas ",
             ] 
         ]);
     }

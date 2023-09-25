@@ -11,7 +11,7 @@
       <div class="row justify-content-center align-items-center">
         <div class="col-lg-9 text-center">
           <h1 class="heading" data-aos="fade-up" style="text-align: left;">
-            MOTTO dan PRIMA
+            VISI DAN MISI
 
             <!-- <form
               action="#"
@@ -34,34 +34,22 @@
   <div class="section section-6 bg-light">
     <div class="container">
       <div class="row justify-content-center text-center mb-5">
+        @foreach ($visi as $vm )
         <div class="col-lg-6 mb-5 box"> <!-- Tambahkan kelas "box" di sini -->
           <h2 class="font-weight-bold heading text-primary mb-4 centered-text">
-            MOTTO
+            {{$vm->judul}}
           </h2>
-          <h5>" KELURAHAN KEDUNDUNG SELALU PRIMA DALAM PELAYANAN”</h5>
+          <div class="table-responsive">
+            <table class="table">
+              <td>
+                <textarea class="form-control form-control-round custom-textarea" readonly rows="7" style="font-size: 24px;">{{$vm->isi_vm}}</textarea>
+              </td>
+            </table>
         </div>
       </div>
+      @endforeach
 
-
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-lg-6 mb-5 box">
-            <h2 class="font-weight-bold heading text-primary mb-4 centered-text">
-              PRIMA
-            </h2>
-          <h5>
-            1. Profesional dalam melaksanakan tugas <br>
-            2. Ramah dalam melayani masyarakat <br>
-            3. Informatif dalam memberikan pelayanan <br>
-            4. Melayani dengan hati yang tulus <br>
-            5. Akuntable dalam menjalankan tugas <br>
-
-          </h5>
-              
-             
-          </div>
-        </div>
-      </div>
+     
     </div>
   </div>
 

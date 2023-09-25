@@ -21,12 +21,11 @@
                             <div class="page-header-breadcrumb">
                                 <ul class="breadcrumb-title">
                                     <li class="breadcrumb-item">
-                                        <a href="{{url('/dashboard')}}">
+                                        <a href="{{ url('/dashboard') }}">
                                             <i class="icofont icofont-home"></i>
                                         </a>
                                     </li>
-                                    <li class="breadcrumb-item"><a href="{{url('/visi')}}">Visi Misi</a>
-                                    </li>
+                                    <li class="breadcrumb-item"><a href="{{ url('/visi') }}">Visi Misi</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -44,24 +43,23 @@
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>Judul </th>
+                                            <th>Judul</th>
                                             <th>Isi Data</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($visi $vm)
+                                        @foreach ($visi as $vm)
                                         <tr>
-                                            <th scope="row">{{$loop->iteration}}</th>
+                                            <td>{{$loop->iteration}}</td>
                                             <td>{{$vm->judul}}</td>
                                             <td>
-                                                <textarea class="form-control form-control-round custom-textarea" readonly rows="5">{{$vm->isi_vm}}</textarea>
+                                                <textarea class="form-control form-control-round custom-textarea" readonly rows="12">{{$vm->isi_vm}}</textarea>
                                             </td>
                                             <td>
-                                                <form action="{{route('visi.edit',$vm->id)}}" method="POST">
+                                                <form action="{{route('visi.edit', $vm->id)}}" method="GET">
                                                     @csrf
-                                                    @method('PUT')
-                                                    <a class="btn btn-warning" href="{{route('visi.edit',$vm->id)}}"><i class="icofont icofont-edit"></i></a>
+                                                    <button type="submit" class="btn btn-warning"><i class="icofont icofont-edit"></i></button>
                                                 </form>
                                             </td>
                                         </tr>
@@ -71,7 +69,7 @@
                                 </table>
                             </div>
                             <div class="btn-container">
-                                {{$visi->links()}}
+                                {{ $visi->links() }}
                             </div>
                         </div>
                     </div>

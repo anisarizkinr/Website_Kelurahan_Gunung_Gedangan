@@ -28,6 +28,7 @@ use App\Http\Controllers\SejarahAdminController;
 use App\Http\Controllers\SosmedController;
 use App\Http\Controllers\SosmedUserController;
 use App\Http\Controllers\LatarGambarController;
+use App\Http\Controllers\VisiAdminController;
 use App\Models\Maps;
 
 /*
@@ -109,6 +110,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('judul_web',JudulController::class);
     Route::resource('sejarah',SejarahAdminController::class);
     Route::resource('latar_gambar',LatarGambarController::class);
+    Route::resource('visi',VisiAdminController::class);
 });
 
 
