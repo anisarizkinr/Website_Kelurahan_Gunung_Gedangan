@@ -7,7 +7,6 @@ use App\Models\Maps;
 use App\Models\Sejarah;
 use App\Models\sosmed;
 use Illuminate\Http\Request;
-use App\Models\LatarGambar;
 
 
 class SejarahController extends Controller
@@ -18,9 +17,8 @@ class SejarahController extends Controller
         $maps = Maps::orderBy('id','asc')->first();
         $sejarah = Sejarah::all();
         $sosmed = sosmed::all();
-        $latar = LatarGambar::all();
         return view('user.profil.sejarah', compact(
             'kontak','judul', 'maps', 
-            'sejarah','sosmed', 'latar'));
+            'sejarah','sosmed'));
     }
 }
