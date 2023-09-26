@@ -66,7 +66,7 @@
                                     <tbody>
                                         @foreach ($data as $dt)
                                         <tr>
-                                            <th scope="row">{{$dt->id}}</th>
+                                            <th scope="row">{{$loop->iteration}}</th>
                                             <th scope="row">{{$dt->kategori->nama_kategori}}</th>
                                             <td>{{$dt->judul}}</td>
                                             <td>

@@ -58,7 +58,7 @@ class DataUserController extends Controller
     // Admin
     public function pilihdata()
     {
-        $kategori = Kategori::all();
+        $kategori = Kategori::orderBy('id', 'asc')->paginate(6);
         $paginate = Kategori::orderBy('id', 'asc')->paginate(6);
         $kontak = KontakKami::orderBy('id','asc')->first();
         $judul = Judul::orderBy('id','asc')->first();
@@ -68,7 +68,7 @@ class DataUserController extends Controller
 
     public function indexKategori(Kategori $kategori)
     {
-        $data = Data::where('id_kategori', $kategori->id)->paginate(10);
+        $data = Data::where('id_kategori', $kategori->id)->paginate(6);
         $kontak = KontakKami::orderBy('id','asc')->first();
         $judul = Judul::orderBy('id','asc')->first();
         $maps = Maps::orderBy('id','asc')->first();

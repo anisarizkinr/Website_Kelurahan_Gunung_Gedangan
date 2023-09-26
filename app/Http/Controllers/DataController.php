@@ -16,7 +16,7 @@ class DataController extends Controller
      */
     public function index()
     {
-        $data = Data::all();
+        $data = Data::orderBy('id', 'asc')->paginate(6);
         $kategori = Kategori::all();
         $paginate = Data::orderBy('id', 'asc')->paginate(5);
         $firstData = Data::first();

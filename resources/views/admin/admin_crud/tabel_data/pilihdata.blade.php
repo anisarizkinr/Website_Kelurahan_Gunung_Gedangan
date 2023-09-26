@@ -58,7 +58,7 @@
                 </div>
                     <div class="card-block table-border-style">
                         <div class="btn-container">
-                            {{$paginate->links()}}
+                            {{$kategori->links()}}
                           </div>
                     </div>
                 </div>
