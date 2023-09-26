@@ -91,14 +91,14 @@
               </div>
             </div>
 
-            <div class="card-body">
+            {{-- <div class="card-body">
               <a class="btn btn-primary" href="{{ route('geografis.create') }}">Tambah Jumlah Penduduk</a>
               <br><br>
               @if ($message = Session::get('success'))
               <div class="alert alert-success">
                 <p>{{ $message }}</p>
               </div>
-              @endif
+              @endif --}}
 
 
               <div class="card-block table-border-style">
@@ -124,11 +124,11 @@
                               @method('PUT')
                               <a class="btn btn-warning" href="{{route('geografis.edit',$jml->id)}}"><i class="icofont icofont-edit"></i></a>
                           </form>
-                          <form action="{{route('geografis.destroy',$jml->id)}}" method="POST">
+                          {{-- <form action="{{route('geografis.destroy',$jml->id)}}" method="POST">
                               @csrf
                               @method('DELETE')
                               <button type="submit" onclick="return confirm('Apakah anda yakin hapus data ini ? ')" class="btn btn-danger"><i class="icofont icofont-trash"></i></button>
-                          </form>
+                          </form> --}}
                       </td>
                         @endforeach
                     </tbody>
