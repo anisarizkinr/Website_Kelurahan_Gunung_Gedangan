@@ -109,6 +109,7 @@
                         <th>No</th>
                         <th>Jumlah Penduduk</th>
                         <th>Keterangan</th>
+                        <th>Aksi</th>
                       </tr>
                     </thead>
                     <tbody>
