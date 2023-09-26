@@ -30,7 +30,9 @@ class SejarahAdminController extends Controller
      */
     public function create()
     {
-        //
+        $title = "Tambah Data Sejarah";
+        $sejarah = Sejarah::all();
+        return view('admin.admin_crud.sejarah.tambah', compact('title', 'sejarah'));
     }
 
     /**
@@ -41,7 +43,15 @@ class SejarahAdminController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'isi_sejarah' => 'required',
+        ]);
+
+        $sejarah = new Sejarah();
+        $sejarah->isi_sejarah = $request->isi_sejarah;
+        $sejarah->save();
+
+        return redirect()->route('sejarah.index')->with('success', 'Data Sejarah Berhasil Ditambahkan');
     }
 
     /**
@@ -77,12 +87,10 @@ class SejarahAdminController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'judul_sejarah' => 'required',
             'isi_sejarah' => 'required'
         ]);
 
         $sejarah = Sejarah::where('id', $id)->first();
-        $sejarah->judul_sejarah = $request->get('judul_sejarah');
         $sejarah->isi_sejarah = $request->get('isi_sejarah');
         $sejarah->save();
 
@@ -99,6 +107,7 @@ class SejarahAdminController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Sejarah::where('id', $id)->delete();
+        return redirect()->route('sejarah.index')->with('success', 'Data Berita Berhasil Dihapus');
     }
 }
