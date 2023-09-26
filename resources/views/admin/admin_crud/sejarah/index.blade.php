@@ -116,7 +116,7 @@
                       @foreach ($paginate as $sjr)
                       <tr>
                         <th scope="row">{{$loop->iteration}}</th>
-                        <td> <textarea class="form-control form-control-round custom-textarea" readonly rows="5">{{$sjr->isi_sejarah}}</textarea></td>
+                        <td> <textarea class="form-control form-control-round custom-textareasejarah" readonly rows="5">{{$sjr->isi_sejarah}}</textarea></td>
                         <td>
                           <form action="{{ route('sejarah.destroy',$sjr->id) }}" method="POST">
                             <a class="btn btn-warning" href="{{ route('sejarah.edit',$sjr->id) }}"><i class="icofont icofont-edit"></i> </a>
