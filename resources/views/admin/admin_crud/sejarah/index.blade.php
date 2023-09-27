@@ -118,11 +118,16 @@
                         <th scope="row">{{$loop->iteration}}</th>
                         <td> <textarea class="form-control form-control-round custom-textareasejarah" readonly rows="5">{{$sjr->isi_sejarah}}</textarea></td>
                         <td>
-                          <form action="{{ route('sejarah.destroy',$sjr->id) }}" method="POST">
-                            <a class="btn btn-warning" href="{{ route('sejarah.edit',$sjr->id) }}"><i class="icofont icofont-edit"></i> </a>
+                          <form action="{{route('sejarah.edit',$sjr->id)}}" method="POST">
+                            @csrf
+                            @method('PUT')
+                            <a class="btn btn-warning" href="{{route('layanan.edit',$sjr->id)}}"><i class="icofont icofont-edit"></i></a>
+                          </form>
+                          <form action="{{route('sejarah.destroy',$sjr->id)}}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" onclick="return confirm('Apakah anda yakin hapus data ini ?')" class="btn btn-danger"><i class="icofont icofont-trash"></i></button>
+                            <button type="submit" onclick="return confirm('Apakah anda yakin hapus data ini ? ')" class="btn btn-danger"><i class="icofont icofont-trash"></i></button>
+                          </form>
                         </td>
                         @endforeach
                     </tbody>

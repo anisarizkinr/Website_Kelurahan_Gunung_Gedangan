@@ -132,11 +132,16 @@
                         <td>{{$brt->isi_berita}}</td>
                         <td>{{$brt->link}}</td>
                         <td>
-                          <form action="{{ route('berita.destroy',$brt->id) }}" method="POST">
-                            <a class="btn btn-warning" href="{{ route('berita.edit',$brt->id) }}"><i class="icofont icofont-edit"></i> </a>
+                          <form action="{{route('berita.edit',$brt->id)}}" method="POST">
+                            @csrf
+                            @method('PUT')
+                            <a class="btn btn-warning" href="{{route('berita.edit',$brt->id)}}"><i class="icofont icofont-edit"></i></a>
+                          </form>
+                          <form action="{{route('berita.destroy',$brt->id)}}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" onclick="return confirm('Apakah anda yakin hapus data ini ?')" class="btn btn-danger"><i class="icofont icofont-trash"></i></button>
+                            <button type="submit" onclick="return confirm('Apakah anda yakin hapus data ini ? ')" class="btn btn-danger"><i class="icofont icofont-trash"></i></button>
+                          </form>
                         </td>
                         @endforeach
                     </tbody>
